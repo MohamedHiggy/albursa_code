@@ -1,0 +1,121 @@
+.Registration a {
+  text-decoration: none; }
+.Registration .text {
+  color: #bbbbbb;
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: bold; }
+.Registration .header {
+  padding: 20px 0 10px 0; }
+  .Registration .header .main-box {
+    display: flex;
+    justify-content: space-between; }
+    .Registration .header .main-box .register-btn {
+      text-align: center;
+      line-height: 2em; }
+      .Registration .header .main-box .register-btn .go-reg-ven {
+        border: 1px solid #000000;
+        padding: 5px 15px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000000; }
+        .Registration .header .main-box .register-btn .go-reg-ven:hover {
+          background-color: #000000;
+          color: #ffffff; }
+.Registration .login-form {
+  padding-top: 30px; }
+  .Registration .login-form .reset-pass {
+    padding-bottom: 50px; }
+  .Registration .login-form .login {
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff; }
+    .Registration .login-form .login .title {
+      text-align: center;
+      padding: 40px 0; }
+      .Registration .login-form .login .title h2 {
+        color: #333333;
+        font-size: 48px;
+        font-weight: bold; }
+    .Registration .login-form .login .form-login {
+      padding: 0 30px; }
+      .Registration .login-form .login .form-login .form-group .form-control {
+        text-align: left;
+        /*rtl file*/
+        border-radius: 0; }
+        .Registration .login-form .login .form-login .form-group .form-control:focus {
+          border-color: #eaa93f;
+          box-shadow: inset 0 0.5px 0.5px rgba(0, 0, 0, 0.075), 0 0 4px rgba(234, 169, 63, 0.6); }
+      .Registration .login-form .login .form-login .form-group .forget-pass {
+        color: #505050;
+        float: right;
+        /*rtl file*/
+        padding: 0px 0 15px 0; }
+        .Registration .login-form .login .form-login .form-group .forget-pass:hover {
+          text-decoration: underline; }
+      .Registration .login-form .login .form-login .login-btn {
+        background-color: #eaa93f;
+        border: none;
+        border-radius: 0; }
+    .Registration .login-form .login .another-signIn {
+      padding: 15px 0; }
+      .Registration .login-form .login .another-signIn .title {
+        color: #707070;
+        font-size: 16px; }
+        .Registration .login-form .login .another-signIn .title::before {
+          display: inline-block;
+          content: "";
+          border-bottom: 0.07rem solid #c4c4c4;
+          width: 11rem;
+          margin: 0 1.3rem;
+          transform: translateY(-0.3rem); }
+        .Registration .login-form .login .another-signIn .title::after {
+          display: inline-block;
+          content: "";
+          border-bottom: 0.07rem solid #c4c4c4;
+          width: 11rem;
+          margin: 0 1.3rem;
+          transform: translateY(-0.3rem); }
+      .Registration .login-form .login .another-signIn .brand-signIn {
+        display: flex;
+        justify-content: space-evenly; }
+        .Registration .login-form .login .another-signIn .brand-signIn .brand-box {
+          border: 1px solid #c4c4c4;
+          width: 114px;
+          text-align: center;
+          height: 57px;
+          line-height: 3em; }
+          .Registration .login-form .login .another-signIn .brand-signIn .brand-box button {
+            background: transparent;
+            border: none;
+            outline: none; }
+            .Registration .login-form .login .another-signIn .brand-signIn .brand-box button img {
+              width: 35px; }
+    .Registration .login-form .login .go-signUp {
+      text-align: center;
+      padding: 20px 0 60px 0;
+      font-size: 16px;
+      font-weight: normal; }
+      .Registration .login-form .login .go-signUp a {
+        color: #000000;
+        font-weight: bold; }
+        .Registration .login-form .login .go-signUp a:hover {
+          text-decoration: underline; }
+
+@media (max-width: 576px) {
+  .header .main-box {
+    justify-content: space-between !important; }
+    .header .main-box .go-reg-ven {
+      padding: 5px;
+      font-size: 12px; }
+
+  .login-form .login {
+    width: 100% !important; }
+    .login-form .login .another-signIn .title::before {
+      width: 5rem !important; }
+    .login-form .login .another-signIn .title::after {
+      width: 5rem !important; } }
+
+/*# sourceMappingURL=main.css.map */
