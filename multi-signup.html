@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--- basic page needs
+      ================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>multi signup</title>
+
+    <!-- CSS
+      ================================================== -->
+    <link rel="stylesheet" href="dist/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/vendors/normalize.css" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+
+  <body>
+    <div class="Registration ms-form">
+      <!--______________Header______________-->
+      <div class="header">
+        <div class="container">
+          <div class="main-box">
+            <div class="logo">
+              <img src="dist/icons/logo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--______________Form______________-->
+      <div class="multi-step-form">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-12 col-md-offset-6"
+            >
+              <div class="bussines-signup">
+                <form id="msform" class="msform">
+                  <!-- progressbar -->
+                  <ul id="progressbar" class="progressbar">
+                    <li class="active">Basic information</li>
+                    <li>Company information</li>
+                    <li>Subscribtion</li>
+                  </ul>
+                  <!-- first fieldset -->
+                  <fieldset>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control input-focus"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        class="form-control input-focus"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control input-focus">
+                        <option class="option">1</option>
+                        <option class="option">2</option>
+                        <option class="option">3</option>
+                        <option class="option">4</option>
+                      </select>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-3">
+                        <select class="form-control input-focus">
+                          <option class="option">+20</option>
+                          <option class="option">+30</option>
+                          <option class="option">+40</option>
+                          <option class="option">+50</option>
+                        </select>
+                      </div>
+                      <div class="col-9">
+                        <input
+                          type="text"
+                          class="form-control input-focus"
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <p class="title">you are a</p>
+                      <div class="form-check">
+                        <label class="form-check-label" for="company">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="company"
+                            value="company"
+                            checked
+                          />
+                          Company
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="Person">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="Person"
+                            value="Person"
+                          />
+                          Person
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <input
+                      type="button"
+                      name="next"
+                      class="next action-button btn-block"
+                      value="Next"
+                    />
+                  </fieldset>
+
+                  <!-- second fieldset -->
+                  <fieldset>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control input-focus"
+                        placeholder="Company name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control input-focus">
+                        <option>Sector</option>
+                        <option>Sector1</option>
+                        <option>Sector2</option>
+                        <option>Sector3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control input-focus">
+                        <option>Specialty</option>
+                        <option>Specialty1</option>
+                        <option>Specialty2</option>
+                        <option>Specialty3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control input-focus"
+                        placeholder="ZIP code"
+                      />
+                    </div>
+                    <input
+                      type="button"
+                      name="previous"
+                      class="previous action-button btn-block"
+                      value="Back"
+                    />
+                    <input
+                      type="button"
+                      name="next"
+                      class="next action-button btn-block"
+                      value="Next"
+                    />
+                  </fieldset>
+
+                  <!-- third fieldset -->
+                  <fieldset>
+                    <h3 class="plan-title">Choose your plan</h3>
+                    <p class="text">
+                      Enrich your business and join a vast community where you
+                      can
+                    </p>
+                    <ul class="list-style">
+                      <li class="list">
+                        <img src="dist/icons/mark.svg" />
+                        rent/sell real estats
+                      </li>
+                      <li class="list">
+                        <img src="dist/icons/mark.svg" />
+                        apply to tenders
+                      </li>
+                      <li class="list">
+                        <img src="dist/icons/mark.svg" />
+                        sell products
+                      </li>
+                      <li class="list">
+                        <img src="dist/icons/mark.svg" />
+                        sell construction services
+                      </li>
+                    </ul>
+                    <ul class="list-style list-style-prices">
+                      <li class="list">
+                        <label class="box" for="price1">
+                          <input
+                            type="radio"
+                            name="prices"
+                            id="price1"
+                            value="price1"
+                            class="radio"
+                          />
+                          <div class="title">
+                            <p class="price"><span class="dollar">$</span>45</p>
+                            <p class="text">billed yearly</p>
+                          </div>
+                        </label>
+                      </li>
+                      <li class="list">
+                        <label class="box" for="price2">
+                          <input
+                            type="radio"
+                            name="prices"
+                            id="price2"
+                            value="price2"
+                            class="radio"
+                          />
+                          <div class="title">
+                            <p class="price"><span class="dollar">$</span>25</p>
+                            <p class="text">billed every 6 months</p>
+                          </div>
+                        </label>
+                      </li>
+                      <li class="list">
+                        <label class="box" for="price3">
+                          <input
+                            type="radio"
+                            name="prices"
+                            id="price3"
+                            value="price3"
+                            class="radio"
+                          />
+                          <div class="title">
+                            <p class="price"><span class="dollar">$</span>5</p>
+                            <p class="text">billed monthly</p>
+                          </div>
+                        </label>
+                      </li>
+                    </ul>
+                    <input
+                      type="button"
+                      name="previous"
+                      class="previous action-button btn-block"
+                      value="Back"
+                    />
+                    <button
+                      type="submit"
+                      name="submi"
+                      class="submit action-button btn-block"
+                    >
+                      Finish
+                    </button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS
+      ================================================== -->
+    <script src="dist/js/vendors/jquery-3.4.1.min.js"></script>
+    <script src="dist/js/vendors/jquery-easing-min.js"></script>
+    <script src="dist/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/main.js"></script>
+  </body>
+</html>
