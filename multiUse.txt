@@ -1,5 +1,1 @@
 sass --watch dist/sass/main.scss:dist/css/main.css
-
-a4el el backgrtound el sfra see more
-
-3ayz a3mlm f ay desc en el klam ynthy awl el str

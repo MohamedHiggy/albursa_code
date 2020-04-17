@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--- basic page needs
+      ================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>real state desc</title>
+
+    <!-- CSS
+      ================================================== -->
+    <link rel="stylesheet" href="dist/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/vendors/normalize.css" />
+    <link rel="stylesheet" href="dist/css/vendors/font-awesome.min.css" />
+    <link rel="stylesheet" href="dist/css/vendors/slick.css" />
+    <link rel="stylesheet" href="dist/css/vendors/slick-theme.css" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+
+  <body>
+    <div class="real-state-desc">
+      <!--_______________Nav Bars_______________-->
+      <div class="header" id="header">
+        <!--_______________top nav_______________-->
+        <div class="top-nav">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <ul class="list-style left-list-style">
+                  <li class="list">
+                    <a href="about.html">
+                      About
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#">
+                      Forum
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="contact.html">
+                      Talk to us
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#">
+                      Sell with us
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="tenders-for-user.html">
+                      Tenders
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <ul class="list-style right-list-style">
+                  <li class="list">
+                    <div class="dropdown">
+                      <span>
+                        <img src="dist/imgs/turk.png" alt="" />
+                        English - USD
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--_______________middle nav_______________-->
+        <div class="middle-nav">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-1">
+                <div class="logo">
+                  <a href="Home.html">
+                    <img src="dist/icons/logo.svg" alt="logo" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="search-bar">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      id="dropdown"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Dropdown
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown">
+                      <button class="dropdown-item" type="button">
+                        Action
+                      </button>
+                      <button class="dropdown-item" type="button">
+                        Another action
+                      </button>
+                      <button class="dropdown-item" type="button">
+                        Something else here
+                      </button>
+                    </div>
+                  </div>
+                  <form action="" class="search-form">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="what are you looking for?"
+                      aria-label="Search"
+                    />
+                    <button type="submit" class="icon-search">
+                      <img src="dist/icons/search.svg" alt="search" />
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="middle-nav-btns">
+                  <ul class="list-style">
+                    <li class="list">
+                      <a href="#">
+                        <img src="dist/icons/heart.svg" alt="" />
+                        Wishlist
+                      </a>
+                    </li>
+                    <li class="list">
+                      <a href="login.html">Sign In</a>
+                    </li>
+                    <li class="list">
+                      <a href="signup.html" class="register-btn">Register</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--_______________content_______________-->
+      <div class="desc-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="desc-header">
+                <div class="top-links">
+                  <ul class="list-style">
+                    <li class="list">
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item">
+                            <img src="dist/imgs/turk.png" alt="" />
+                            <span>turkey</span>
+                          </li>
+                          <li class="breadcrumb-item">
+                            <span>Chicago</span>
+                          </li>
+                          <li class="breadcrumb-item">
+                            <span>Luxor</span>
+                          </li>
+                          <li class="breadcrumb-item">
+                            <span>1521</span>
+                          </li>
+                        </ol>
+                      </nav>
+                    </li>
+                    <li class="list btns">
+                      <button class="btn-love">
+                        Save
+                      </button>
+                      <button
+                        class="share"
+                        data-toggle="modal"
+                        data-target="#shareModel"
+                      >
+                        <img src="dist/icons/share.svg" alt="" />
+                        Share
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="slider" id="wrapper">
+                <div class="slide">
+                  <img src="dist/imgs/state-desc/1.png" alt="" />
+                  <span class="sale">For Sale</span>
+                </div>
+                <div class="slide">
+                  <img src="dist/imgs/state-desc/2.jpg" alt="" />
+                  <span class="sale">For Sale</span>
+                </div>
+                <div class="slide">
+                  <img src="dist/imgs/state-desc/1.png" alt="" />
+                  <span class="sale">For Sale</span>
+                </div>
+                <div class="slide">
+                  <img src="dist/imgs/state-desc/2.jpg" alt="" />
+                  <span class="sale">For Sale</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="desc-details">
+                <div class="header">
+                  <p class="place">
+                    1932 N Burling St Chicago, IL 60614 Lincoln Park
+                  </p>
+                  <p class="price"><b>$5.422</b></p>
+                  <ul class="list-style">
+                    <li class="list">
+                      <img src="dist/icons/Bed.svg" alt="" />
+                      <span class="details-title">3 <b>Beds</b></span>
+                    </li>
+                    <li class="list">
+                      <img src="dist/icons/bathroom.svg" alt="" />
+                      <span class="details-title">5 <b>Baths</b></span>
+                    </li>
+                    <li class="list">
+                      <img src="dist/icons/space.svg" alt="" />
+                      <span class="details-title">
+                        2500<b>M<sup>2</sup></b>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="overview">
+                  <h2 class="title">Overview</h2>
+                  <ul class="list-style">
+                    <li class="list">
+                      <img src="dist/icons/home.svg" alt="" class="mb-3" />
+                      <p class="type">Type</p>
+                      <p class="desc-type">Chalet</p>
+                    </li>
+                    <li class="list">
+                      <img src="dist/icons/dollar.svg" alt="" class="mb-4" />
+                      <p class="type">Cost</p>
+                      <p class="desc-type">$36 / M<sup>2</sup></p>
+                    </li>
+                    <li class="list">
+                      <img src="dist/icons/Built.svg" alt="" class="mb-3" />
+                      <p class="type">Built</p>
+                      <p class="desc-type">40 yrs ago</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="amenities">
+                  <!--amenities amenities -->
+                  <div class="amenities-details">
+                    <h2 class="title">Internal amenities</h2>
+                    <ul class="list-style">
+                      <li class="list">
+                        <ul class="list-style-list">
+                          <li class="list-list">
+                            2 Bed Rooms
+                          </li>
+                          <li class="list-list">
+                            2 Bed Rooms
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="list">
+                        <ul class="list-style-list">
+                          <li class="list-list">
+                            Heating Fuel: Gas
+                          </li>
+                          <li class="list-list">
+                            2 Bed Rooms
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="list">
+                        <ul class="list-style-list">
+                          <li class="list-list">
+                            Floors: Carpet, Hardwood
+                          </li>
+                          <li class="list-list">
+                            2 Bed Rooms
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--External amenities -->
+                  <div class="amenities-details">
+                    <h2 class="title">External amenities</h2>
+                    <ul class="list-style">
+                      <li class="list">
+                        <ul class="list-style-list">
+                          <li class="list-list">
+                            2 Bed Rooms
+                          </li>
+                          <li class="list-list">
+                            2 Bed Rooms
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="list">
+                        <ul class="list-style-list">
+                          <li class="list-list">
+                            Heating Fuel: Gas
+                          </li>
+                          <li class="list-list">
+                            2 Bed Rooms
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="list">
+                        <ul class="list-style-list">
+                          <li class="list-list">
+                            Floors: Carpet, Hardwood
+                          </li>
+                          <li class="list-list">
+                            2 Bed Rooms
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="estate-description">
+                  <h2 class="title">Description</h2>
+                  <p class="description">
+                    Unprecedented urban estate. 25,000 square foot masterpiece
+                    on Lincoln Park's finest street. Sited on an enormous 177' x
+                    149' parcel totaling more than eight city lots, every step
+                    has been taken to provide complete privacy and tranquility.
+                    manicured grounds with multiple fountains, reflecting pool,
+                    and hand-forged antique garden pavilion transport you to
+                    another world. Absolutely no expense was spared inside or
+                    out throughout this sun-filled mansion. Grand in every way,
+                    but not overwhelming, the design is perfect for large scale
+                    entertaining as well as intimate everyday living. This home
+                    is nothing short of magnificent at every turn -- truly a one
+                    in a lifetime opportunity that could never be replicated.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="contact-supplier">
+                <div class="supplier-form">
+                  <h2 class="title">Contact Supplier</h2>
+                  <form action="">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control input-focus"
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control input-focus"
+                        placeholder="Phone"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control input-focus"
+                        placeholder="E-mail"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <textarea
+                        cols="30"
+                        rows="10"
+                        placeholder="Message"
+                        class="form-control input-focus"
+                      ></textarea>
+                    </div>
+                    <button class="btn btn-block">Send</button>
+                  </form>
+                </div>
+                <div class="vendor-details">
+                  <ul class="list-style">
+                    <li class="list">
+                      <p class="vendor-name">
+                        Vendor: <a href="vendor-profile.html">Ahmed Galal</a>
+                      </p>
+                    </li>
+                    <li class="list vector-contact">
+                      <a href="#">
+                        <img src="dist/icons/chat.svg" alt="" />
+                        Chat
+                      </a>
+                      <a href="#">
+                        <img src="dist/icons/phone.svg" alt="" />
+                        Call
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3418.4703000971467!2d31.37810754458528!3d31.04100453335831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1587164042536!5m2!1sen!2seg"
+                  frameborder="0"
+                  style="border: 0;"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+                <div class="map-btn">
+                  <a target="_blank" href="#" class="google-map-link"
+                    >view on Google Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="highlights">
+            <div class="highlights-content">
+              <ul class="list-style">
+                <li class="list">
+                  <h2 class="title">Similar homes</h2>
+                </li>
+                <li class="list">
+                  <a href="#" class="see-more">See more</a>
+                </li>
+              </ul>
+              <div class="row">
+                <div class="col-lg-3">
+                  <a href="#" class="anchor-card">
+                    <div class="card real-state-card">
+                      <img
+                        class="card-img-top"
+                        src="dist/imgs/Realestate/4.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">
+                          1932 N Burling St Lincoln Park, Chicago, IL
+                        </p>
+                        <h3 class="card-title">
+                          <span class="dollar">$</span>
+                          4,000,000
+                        </h3>
+                        <div class="home-details">
+                          <ul class="list-style">
+                            <li class="list">
+                              <img src="dist/icons/Bed.svg" alt="" />
+                              <span class="numbers">3 <span>Bd</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/bathroom.svg" alt="" />
+                              <span class="numbers">5 <span>Ba</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/space.svg" alt="" />
+                              <span class="numbers"
+                                >2500 <span>M<sup>2</sup></span></span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a href="#" class="anchor-card">
+                    <div class="card real-state-card">
+                      <img
+                        class="card-img-top"
+                        src="dist/imgs/Realestate/2.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">
+                          1932 N Burling St Lincoln Park, Chicago, IL
+                        </p>
+                        <h3 class="card-title">
+                          <span class="dollar">$</span>
+                          4,000,000
+                        </h3>
+                        <div class="home-details">
+                          <ul class="list-style">
+                            <li class="list">
+                              <img src="dist/icons/Bed.svg" alt="" />
+                              <span class="numbers">3 <span>Bd</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/bathroom.svg" alt="" />
+                              <span class="numbers">5 <span>Ba</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/space.svg" alt="" />
+                              <span class="numbers"
+                                >2500 <span>M<sup>2</sup></span></span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a href="#" class="anchor-card">
+                    <div class="card real-state-card">
+                      <img
+                        class="card-img-top"
+                        src="dist/imgs/Realestate/1.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">
+                          1932 N Burling St Lincoln Park, Chicago, IL
+                        </p>
+                        <h3 class="card-title">
+                          <span class="dollar">$</span>
+                          4,000,000
+                        </h3>
+                        <div class="home-details">
+                          <ul class="list-style">
+                            <li class="list">
+                              <img src="dist/icons/Bed.svg" alt="" />
+                              <span class="numbers">3 <span>Bd</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/bathroom.svg" alt="" />
+                              <span class="numbers">5 <span>Ba</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/space.svg" alt="" />
+                              <span class="numbers"
+                                >2500 <span>M<sup>2</sup></span></span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a href="#" class="anchor-card">
+                    <div class="card real-state-card">
+                      <img
+                        class="card-img-top"
+                        src="dist/imgs/Realestate/3.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">
+                          1932 N Burling St Lincoln Park, Chicago, IL
+                        </p>
+                        <h3 class="card-title">
+                          <span class="dollar">$</span>
+                          4,000,000
+                        </h3>
+                        <div class="home-details">
+                          <ul class="list-style">
+                            <li class="list">
+                              <img src="dist/icons/Bed.svg" alt="" />
+                              <span class="numbers">3 <span>Bd</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/bathroom.svg" alt="" />
+                              <span class="numbers">5 <span>Ba</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/space.svg" alt="" />
+                              <span class="numbers"
+                                >2500 <span>M<sup>2</sup></span></span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlights-content">
+              <ul class="list-style">
+                <li class="list">
+                  <h2 class="title">New Listings</h2>
+                </li>
+                <li class="list">
+                  <a href="#" class="see-more">See more</a>
+                </li>
+              </ul>
+              <div class="row">
+                <div class="col-lg-3">
+                  <a href="#" class="anchor-card">
+                    <div class="card real-state-card">
+                      <img
+                        class="card-img-top"
+                        src="dist/imgs/Realestate/1.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">
+                          1932 N Burling St Lincoln Park, Chicago, IL
+                        </p>
+                        <h3 class="card-title">
+                          <span class="dollar">$</span>
+                          4,000,000
+                        </h3>
+                        <div class="home-details">
+                          <ul class="list-style">
+                            <li class="list">
+                              <img src="dist/icons/Bed.svg" alt="" />
+                              <span class="numbers">3 <span>Bd</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/bathroom.svg" alt="" />
+                              <span class="numbers">5 <span>Ba</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/space.svg" alt="" />
+                              <span class="numbers"
+                                >2500 <span>M<sup>2</sup></span></span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a href="#" class="anchor-card">
+                    <div class="card real-state-card">
+                      <img
+                        class="card-img-top"
+                        src="dist/imgs/Realestate/4.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">
+                          1932 N Burling St Lincoln Park, Chicago, IL
+                        </p>
+                        <h3 class="card-title">
+                          <span class="dollar">$</span>
+                          4,000,000
+                        </h3>
+                        <div class="home-details">
+                          <ul class="list-style">
+                            <li class="list">
+                              <img src="dist/icons/Bed.svg" alt="" />
+                              <span class="numbers">3 <span>Bd</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/bathroom.svg" alt="" />
+                              <span class="numbers">5 <span>Ba</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/space.svg" alt="" />
+                              <span class="numbers"
+                                >2500 <span>M<sup>2</sup></span></span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a href="#" class="anchor-card">
+                    <div class="card real-state-card">
+                      <img
+                        class="card-img-top"
+                        src="dist/imgs/Realestate/3.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">
+                          1932 N Burling St Lincoln Park, Chicago, IL
+                        </p>
+                        <h3 class="card-title">
+                          <span class="dollar">$</span>
+                          4,000,000
+                        </h3>
+                        <div class="home-details">
+                          <ul class="list-style">
+                            <li class="list">
+                              <img src="dist/icons/Bed.svg" alt="" />
+                              <span class="numbers">3 <span>Bd</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/bathroom.svg" alt="" />
+                              <span class="numbers">5 <span>Ba</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/space.svg" alt="" />
+                              <span class="numbers"
+                                >2500 <span>M<sup>2</sup></span></span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a href="#" class="anchor-card">
+                    <div class="card real-state-card">
+                      <img
+                        class="card-img-top"
+                        src="dist/imgs/Realestate/2.png"
+                        alt="Card image cap"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">
+                          1932 N Burling St Lincoln Park, Chicago, IL
+                        </p>
+                        <h3 class="card-title">
+                          <span class="dollar">$</span>
+                          4,000,000
+                        </h3>
+                        <div class="home-details">
+                          <ul class="list-style">
+                            <li class="list">
+                              <img src="dist/icons/Bed.svg" alt="" />
+                              <span class="numbers">3 <span>Bd</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/bathroom.svg" alt="" />
+                              <span class="numbers">5 <span>Ba</span></span>
+                            </li>
+                            <li class="list">
+                              <img src="dist/icons/space.svg" alt="" />
+                              <span class="numbers"
+                                >2500 <span>M<sup>2</sup></span></span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--_______________Footer_______________-->
+      <div class="footer">
+        <div class="container">
+          <div class="top-footer">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="left-links">
+                  <ul class="list-style">
+                    <li class="list"><a href="about.html">About</a></li>
+                    <li class="list"><a href="faq.html">FAQ</a></li>
+                    <li class="list"><a href="contact.html">Talk to us</a></li>
+                  </ul>
+                  <ul class="list-style">
+                    <li class="list"><a href="faq.html">Privacy policy</a></li>
+                    <li class="list">
+                      <a href="faq.html">Terms & conditions </a>
+                    </li>
+                  </ul>
+                  <ul class="list-style">
+                    <li class="list"><a href="#">Forum</a></li>
+                    <li class="list"><a href="#">Sell with us</a></li>
+                    <li class="list">
+                      <a href="tenders-for-user.html">Tenders</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="right-links">
+                  <ul class="list-style">
+                    <li class="list">
+                      <p class="title">Follow Us</p>
+                    </li>
+                    <li class="list">
+                      <ul class="social-media-links">
+                        <li class="list">
+                          <a href="#"
+                            ><img src="dist/icons/linkedin.svg" alt=""
+                          /></a>
+                        </li>
+                        <li class="list">
+                          <a href="#"
+                            ><img src="dist/icons/twitter.svg" alt=""
+                          /></a>
+                        </li>
+                        <li class="list">
+                          <a href="#"
+                            ><img src="dist/icons/facebook.svg" alt=""
+                          /></a>
+                        </li>
+                        <li class="list">
+                          <a href="#"
+                            ><img src="dist/icons/instagram.svg" alt=""
+                          /></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="list">
+                      <button class="lang lang-active">English</button>
+                      <button class="lang">Türk</button>
+                      <button class="lang">العربية</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="footer-title">
+                  © 2020 Albursa® Inc. All rights reserved
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="share-model modal fade"
+      id="shareModel"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Share to
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-style">
+              <li class="list">
+                <a href="#">
+                  <img src="dist/icons/facebook.svg" alt="" />
+                  <p class="social-media-title">Facebook</p>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <img src="dist/icons/instagram.svg" alt="" />
+                  <p class="social-media-title">Instagram</p>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <img src="dist/icons/linkedin.svg" alt="" />
+                  <p class="social-media-title">linkedin</p>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#">
+                  <img src="dist/icons/twitter.svg" alt="" />
+                  <p class="social-media-title">twitter</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS
+      ================================================== -->
+    <script src="dist/js/vendors/jquery-3.4.1.min.js"></script>
+    <script src="dist/js/vendors/jquery-migrate-1.2.1.min.js"></script>
+    <script src="dist/js/vendors/slick.min.js"></script>
+    <script src="dist/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/main.js"></script>
+  </body>
+</html>

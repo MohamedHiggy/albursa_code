@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tenders apply</title>
+    <title>Contact</title>
 
     <!-- CSS
       ================================================== -->
@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <div class="tenders-form">
+    <div class="contact-page">
       <!--_______________Nav Bars_______________-->
       <div class="header" id="header">
         <!--_______________top nav_______________-->
@@ -84,14 +84,8 @@
               <div class="col-lg-7">
                 <div class="search-bar">
                   <div class="dropdown">
-                    <button
-                      class="btn btn-secondary dropdown-toggle"
-                      type="button"
-                      id="dropdown"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
                       Dropdown
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdown">
@@ -107,12 +101,7 @@
                     </div>
                   </div>
                   <form action="" class="search-form">
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="what are you looking for?"
-                      aria-label="Search"
-                    />
+                    <input class="form-control" type="text" placeholder="what are you looking for?" aria-label="Search" />
                     <button type="submit" class="icon-search">
                       <img src="dist/icons/search.svg" alt="search" />
                     </button>
@@ -140,91 +129,123 @@
             </div>
           </div>
         </div>
+        <!--_______________bottom nav_______________-->
+        <div class="bottom-nav">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="nav-links">
+                  <ul class="list-style">
+                    <li class="list">
+                      <button class="btn active" type="button">
+                        All categories
+                      </button>
+                    </li>
+                    <li class="list">
+                      <button class="btn dropdown-toggle" type="button" type="button" id="dropdown" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Materials
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdown">
+                        <button class="dropdown-item" type="button">
+                          Action
+                        </button>
+                        <button class="dropdown-item" type="button">
+                          Another action
+                        </button>
+                        <button class="dropdown-item" type="button">
+                          Something else here
+                        </button>
+                      </div>
+                    </li>
+                    <li class="list">
+                      <button class="btn" type="button">
+                        Machinery & Equipement
+                      </button>
+                    </li>
+                    <li class="list">
+                      <button class="btn" type="button">
+                        Real Estate
+                      </button>
+                    </li>
+                    <li class="list">
+                      <button class="btn" type="button">
+                        Services
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!--_______________form_______________-->
-      <div class="create-tender">
+      <!--_______________contact_______________-->
+      <div class="contact">
         <div class="container">
           <div class="row">
-            <div class="create-tender-form">
-              <h1 class="title">Create Tender</h1>
-              <form action="">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control input-focus"
-                    placeholder="Tender title"
-                  />
+            <div class="col-lg-6">
+              <div class="left-side-title">
+                <div class="box">
+                  <h2 class="main-title">
+                    Have a problem? <br />
+                    don’t hesitate to contact us
+                  </h2>
+                  <p class="desc">
+                    or you can go to <a href="faq.html">FAQ</a> to explore common
+                    questions
+                  </p>
                 </div>
-                <div class="form-group dropdown-select">
-                  <select class="form-control input-focus">
-                    <option class="option">Secotr</option>
-                    <option class="option">Secotr 1</option>
-                    <option class="option">Secotr 2</option>
-                    <option class="option">Secotr 3</option>
-                  </select>
-                  <img src="dist/icons/down-arrow.svg" alt="" />
-                </div>
-                <div class="form-group add-Tags">
-                  <input
-                    type="text"
-                    class="form-control input-focus"
-                    placeholder="Tags"
-                  />
-                  <button
-                    class="add-tag"
-                    type="button"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="add another tag"
-                    id="add-tag"
-                  >
-                    <img src="dist/icons/plus.svg" alt="" />
-                  </button>
-                </div>
-                <!--here inputs of tags add-->
-                <div id="tagsAdded"></div>
-
-                <div class="form-group">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="contact-form">
+                <form action="">
+                  <h2 class="title">Contact Us</h2>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control input-focus"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control input-focus"
+                      placeholder="Phone"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control input-focus"
+                      placeholder="Email"
+                    />
+                  </div>
                   <div class="form-group">
                     <textarea
-                      cols="40"
-                      rows="8"
+                      cols="30"
+                      rows="10"
+                      placeholder="Message"
                       class="form-control input-focus"
-                      placeholder="Brief"
                     ></textarea>
                   </div>
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control input-focus"
-                    placeholder="Location"
-                  />
-                </div>
-                <div class="form-group input-Date">
-                  <img
-                    src="dist/icons/calendar.svg"
-                    alt=""
-                    class="clender-icon"
-                  />
-                  <input
-                    type="text"
-                    id="datepicker"
-                    autocomplete="off"
-                    placeholder="Closing date"
-                    class="form-control input-focus"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="customFileLang" class="file-label">
-                    <input type="file" class="file-input" id="customFileLang" />
-                    <img src="dist/icons/upload 1.svg" alt="" />
-                    Upload attachment
-                  </label>
-                </div>
-                <button type="submit" class="btn btn-block">post</button>
-              </form>
+                  <button type="submit" class="btn btn-block">Send</button>
+                </form>
+                <h3 class="title">Reach out</h3>
+                <ul class="list-style">
+                  <li class="list">
+                    <img src="dist/icons/phone.svg" alt="" />
+                    <p class="title">+201021489394</p>
+                  </li>
+                  <li class="list">
+                    <img src="dist/icons/mail.svg" alt="" />
+                    <p class="title">Albursa@gmail.com</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -266,24 +287,16 @@
                     <li class="list">
                       <ul class="social-media-links">
                         <li class="list">
-                          <a href="#"
-                            ><img src="dist/icons/linkedin.svg" alt=""
-                          /></a>
+                          <a href="#"><img src="dist/icons/linkedin.svg" alt="" /></a>
                         </li>
                         <li class="list">
-                          <a href="#"
-                            ><img src="dist/icons/twitter.svg" alt=""
-                          /></a>
+                          <a href="#"><img src="dist/icons/twitter.svg" alt="" /></a>
                         </li>
                         <li class="list">
-                          <a href="#"
-                            ><img src="dist/icons/facebook.svg" alt=""
-                          /></a>
+                          <a href="#"><img src="dist/icons/facebook.svg" alt="" /></a>
                         </li>
                         <li class="list">
-                          <a href="#"
-                            ><img src="dist/icons/instagram.svg" alt=""
-                          /></a>
+                          <a href="#"><img src="dist/icons/instagram.svg" alt="" /></a>
                         </li>
                       </ul>
                     </li>
@@ -313,11 +326,9 @@
     </div>
     <!-- JS
       ================================================== -->
-    <script src="dist/js/vendors/jquery-3.4.1.min.js"></script>
-    <script src="dist/js/vendors/jquery-migrate-1.2.1.min.js"></script>
-    <script src="dist/js/vendors/jquery-ui.min.js"></script>
-    <script src="dist/js/vendors/slick.min.js"></script>
-    <script src="dist/js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="dist/js/main.js"></script>
-  </body>
+      <script src="dist/js/vendors/jquery-3.4.1.min.js"></script>
+      <script src="dist/js/vendors/jquery-migrate-1.2.1.min.js"></script>
+      <script src="dist/js/vendors/slick.min.js"></script>
+      <script src="dist/js/vendors/bootstrap.bundle.min.js"></script>
+      <script src="dist/js/main.js"></script>
 </html>
