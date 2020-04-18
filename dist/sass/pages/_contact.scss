@@ -1,0 +1,55 @@
+.contact-page {
+  .contact {
+    padding: 50px 0;
+    .left-side-title {
+      height: 100%;
+      display: table;
+      .box {
+        display: table-cell;
+        vertical-align: middle;
+        .main-title {
+          font-weight: bold;
+          font-size: 36px;
+          color: #000000;
+        }
+        .desc {
+          font-weight: normal;
+          font-size: 14px;
+          color: #000000;
+        }
+      }
+    }
+    .contact-form {
+      form {
+        .btn {
+          background-color: #eaa93f;
+          color: #ffffff;
+          outline: none;
+        }
+      }
+      .title {
+        font-weight: bold;
+        font-size: 18px;
+        padding: 25px 0;
+        margin: 0;
+        color: #000000;
+      }
+      .list-style {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        .list {
+          text-align: center;
+          .title {
+            margin: 0;
+            padding-bottom: 0;
+            font-weight: normal;
+            font-size: 16px;
+            color: #323232;
+          }
+        }
+      }
+    }
+  }
+}

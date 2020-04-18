@@ -1,0 +1,114 @@
+.tenders-apply {
+  .content {
+    padding: 40px 0;
+    .tender-content {
+      .header {
+        .title {
+          font-weight: 500;
+          font-size: 28px;
+          color: #000000;
+          margin: 0;
+        }
+        .time {
+          font-weight: normal;
+          font-size: 14px;
+          color: #505050;
+        }
+      }
+      .tender-desc {
+        .desc-title {
+          font-weight: normal;
+          font-size: 24px;
+          color: #151515;
+        }
+        .desc {
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 30px;
+          padding-left: 15px; /*rtl file*/
+          color: rgba(36, 36, 36, 0.81);
+        }
+      }
+      .attachments {
+        .files {
+          .title {
+            font-weight: normal;
+            font-size: 24px;
+            color: #151515;
+          }
+          .list-style {
+            padding: 0 0 0 15px; /*rtl file*/
+            .list {
+              margin: 10px 0;
+              a {
+                font-weight: 300;
+                font-size: 12px;
+                color: #141525;
+                background: #dbdbdb;
+                border-radius: 5px;
+                padding: 5px;
+                text-decoration: none;
+              }
+              span {
+                font-weight: normal;
+                font-size: 14px;
+                color: #000000;
+              }
+            }
+          }
+        }
+        .more-details {
+          .list-style {
+            margin: 0;
+            display: flex;
+            padding: 10px 0;
+            .list {
+              margin: 0 10px;
+            }
+          }
+        }
+
+        .tender-features {
+          .list-style {
+            margin: 0;
+            display: flex;
+            padding: 10px 0;
+            .list {
+              margin: 0 10px;
+              &:first-child {
+                margin-left: 0; /*rtl file*/
+              }
+              .features {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 14px;
+                padding: 3px 18px;
+                border: 1px solid #505050;
+                color: #505050;
+              }
+            }
+          }
+        }
+      }
+    }
+    .apply-tender-form {
+      padding: 40px 0;
+      form {
+        padding: 50px 10px;
+        .title {
+          font-weight: 600;
+          font-size: 28px;
+          padding-bottom: 10px;
+          color: #000000;
+        }
+        button {
+          background: #eaa93f;
+          border: none;
+          outline: none;
+          color: #ffffff;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

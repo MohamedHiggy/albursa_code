@@ -1,0 +1,377 @@
+body,
+html {
+  font-family: "San Francisco", Helvetica, Arial, san-serif;
+}
+.list-style {
+  list-style: none;
+}
+textarea {
+  resize: none;
+}
+.form-control {
+  border-radius: 0;
+}
+a.anchor-card {
+  text-decoration: none;
+}
+.file-label {
+  border: 1px solid #a7a7a7;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #505050;
+  padding: 10px 0;
+  cursor: pointer;
+  .file-input {
+    visibility: hidden;
+    width: 0;
+  }
+}
+
+nav {
+  .breadcrumb {
+    background-color: transparent;
+    .breadcrumb-item {
+      padding: 0;
+      span {
+        margin-right: 6px;
+        font-weight: normal;
+        font-size: 16px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+.card {
+  width: 100% !important;
+  .theater {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #383838;
+    text-align: center;
+    padding: 5px 10px;
+    .ad {
+      font-weight: normal;
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+  .card-body {
+    padding: 8px;
+    border: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+    .card-text {
+      font-weight: normal;
+      font-size: 16px;
+      color: #505050;
+      margin: 0;
+    }
+    .card-title {
+      color: #242424;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 4px 0;
+    }
+    .sets {
+      margin: 0;
+      font-weight: normal;
+      font-size: 14px;
+      color: #242424;
+    }
+    .home-details {
+      .list-style {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        .list {
+          .numbers {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #505050;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact-supplier {
+  height: 100%;
+  .supplier-form {
+    padding: 20px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 8px rgba(0, 0, 0, 0.1);
+    .title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      color: #000000;
+    }
+    .btn {
+      background-color: #eaa93f;
+      color: #ffffff;
+      outline: none;
+      border-radius: 0;
+    }
+  }
+  .vendor-details {
+    padding: 20px 0;
+    .list-style {
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      .list {
+        .vendor-name {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000;
+        }
+      }
+      .vector-contact {
+        a {
+          margin: 0 5px;
+          font-weight: normal;
+          font-size: 16px;
+          text-decoration: none;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+.products-sec {
+  padding: 30px;
+  .content {
+    padding: 15px 0;
+    .title-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      .main-title {
+        color: #1f2b2c;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .see-more {
+        display: block;
+        text-decoration: none;
+        line-height: 3em;
+        color: #000000;
+        font-size: 18px;
+        &:hover {
+          color: #eaa93f;
+        }
+      }
+    }
+  }
+  .ads {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    .images-ad {
+      padding: 15px 0;
+      width: 300px;
+      height: 600px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+#ui-datepicker-div {
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-top: 0.25rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.ui-datepicker-calendar thead th {
+  padding: 0.25rem 0;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #78909c;
+}
+.ui-datepicker-calendar tbody td {
+  width: 2.5rem;
+  text-align: center;
+  padding: 0;
+}
+.ui-datepicker-calendar tbody td a {
+  display: block;
+  border-radius: 0.25rem;
+  line-height: 2rem;
+  transition: 0.3s all;
+  color: #546e7a;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+.ui-datepicker-calendar tbody td a:hover {
+  background-color: #f5d196;
+}
+.ui-datepicker-calendar tbody td a.ui-state-active {
+  background-color: #eaa93f;
+  color: white;
+}
+.ui-datepicker-header a.ui-corner-all {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+  transition: 0.3s all;
+}
+.ui-datepicker-header a.ui-corner-all:hover {
+  background-color: #eceff1;
+}
+.ui-datepicker-header a.ui-datepicker-prev {
+  left: 0;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+  background-position: 50%;
+  transform: rotate(180deg);
+}
+.ui-datepicker-header a.ui-datepicker-next {
+  right: 0;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 50%;
+}
+.ui-datepicker-header a > span {
+  display: none;
+}
+.ui-datepicker-title {
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+}
+.ui-datepicker-week-col {
+  color: #78909c;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.input-focus {
+  &:focus {
+    border-color: #eaa93f;
+    box-shadow: none;
+  }
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+  .slide {
+    img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+    .sale {
+      position: absolute;
+      width: 187.95px;
+      height: 48px;
+      top: 10px;
+      left: 10px;
+      line-height: 3em;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.76);
+      font-weight: normal;
+      font-size: 16px;
+      color: #000000;
+      transition: all 300ms ease;
+    }
+  }
+  .arrow-btn {
+    outline: none;
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0 none;
+    margin-top: -22.5px;
+    text-align: center;
+    z-index: 5;
+  }
+  .NextArrow {
+    right: 10px;
+  }
+
+  .PrevArrow {
+    left: 10px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    list-style-type: none;
+    li {
+      margin: 0 1.5rem;
+    }
+    button {
+      display: block;
+      width: 3rem;
+      height: 0.2rem;
+      padding: 0;
+      border: none;
+      background-color: #ffffff;
+      text-indent: -9999px;
+    }
+    li.slick-active button {
+      background-color: #eaa93f;
+    }
+  }
+}
+
+.share-model {
+  .modal-dialog {
+    .modal-content {
+      .modal-body {
+        .list-style {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: space-evenly;
+          text-align: center;
+          .list {
+            a {
+              text-decoration: none;
+              font-size: 16px;
+              color: #a7a7a7;
+              .social-media-title {
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

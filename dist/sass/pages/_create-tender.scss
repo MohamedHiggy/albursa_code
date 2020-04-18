@@ -1,0 +1,67 @@
+.tenders-form {
+  .create-tender {
+    padding: 50px 0;
+    .create-tender-form {
+      .title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 28px;
+        color: #000000;
+      }
+      margin: 0 auto;
+      form {
+        .dropdown-select {
+          position: relative;
+          select {
+            -ms-appearance: none;
+            -o-appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            cursor: pointer;
+          }
+          img {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+          }
+        }
+        .input-Date {
+          position: relative;
+          .input-focus {
+            padding-left: 35px;
+          }
+          .clender-icon {
+            position: absolute;
+            top: 5px;
+            left: 5px; /*rtl file*/
+          }
+        }
+        .add-Tags {
+          position: relative;
+          .add-tag {
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            top: 0;
+            right: 0;
+            outline: none;
+            height: 100%;
+            img {
+              height: 100%;
+            }
+          }
+        }
+        .btn {
+          background-color: #eaa93f;
+          outline: none;
+          border: 0;
+          border-radius: 0;
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
