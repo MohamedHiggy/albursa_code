@@ -16,4 +16,15 @@
 @import "pages/about";
 @import "pages/faq";
 @import "pages/vendor-profile";
+@import "pages/category-page";
 @import "pages/search-result";
+
+/*______________________________________________________
+admin Style
+______________________________________________________*/
+
+@import "userAdmin/global/style";
+@import "userAdmin/global/siderBar";
+@import "userAdmin/pages/adminProfile";
+@import "userAdmin/pages/admin-profile-two";
+@import "userAdmin/pages/admin-setting";

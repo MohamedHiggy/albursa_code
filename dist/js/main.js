@@ -247,3 +247,37 @@ $(document).ready(function () {
     $(this).toggleClass("btn-love-toggle");
   });
 });
+
+$(document).ready(function () {
+  $(" select ,.form-control").change(function () {
+    $(".send-data").removeAttr("disabled");
+  });
+});
+
+
+
+//tabs of active link
+const tabsLink = document.querySelectorAll(
+  ".profile-content .tabs .list-style .list .btn-tab"
+);
+tabsLink.forEach((clickedTab) => {
+  clickedTab.addEventListener("click", () => {
+    tabsLink.forEach((tabLink) => {
+      tabLink.classList.remove("active-tab");
+    });
+    clickedTab.classList.add("active-tab");
+  });
+});
+//tabs of content
+const tabs = document.querySelectorAll("[data-tab-target]");
+const tabContents = document.querySelectorAll("[data-tab-content]");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.tabTarget);
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("tab-active");
+    });
+    target.classList.add("tab-active");
+  });
+});

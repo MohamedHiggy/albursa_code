@@ -1868,6 +1868,58 @@ table {
       .vendor-profile-page .vendor-profile .contact-supplier .vendor-details .list-style .list a:hover {
         color: #eaa93f; }
 
+.category-page .category-content {
+  padding: 40px 30px; }
+  .category-page .category-content .side-filter {
+    border: 1px solid #c4c4c4;
+    padding: 15px;
+    height: 100%; }
+    .category-page .category-content .side-filter .list-style {
+      padding: 0; }
+      .category-page .category-content .side-filter .list-style .list .head-tag {
+        font-size: 18px; }
+        .category-page .category-content .side-filter .list-style .list .head-tag:hover {
+          padding-left: 10px; }
+        .category-page .category-content .side-filter .list-style .list .head-tag .fa-angle-right {
+          float: right;
+          position: relative;
+          top: 6px; }
+          .category-page .category-content .side-filter .list-style .list .head-tag .fa-angle-right.down {
+            transform: rotate(90deg); }
+      .category-page .category-content .side-filter .list-style .list a {
+        position: relative;
+        transition: 0.3s;
+        font-weight: normal;
+        font-size: 16px;
+        color: #000000;
+        text-decoration: none; }
+        .category-page .category-content .side-filter .list-style .list a:hover {
+          color: #eaa93f; }
+      .category-page .category-content .side-filter .list-style .list .child-links {
+        position: relative;
+        display: none; }
+        .category-page .category-content .side-filter .list-style .list .child-links:before {
+          content: "";
+          position: absolute;
+          left: 3px;
+          top: 0;
+          width: 3px;
+          height: 100%;
+          background-color: #666666; }
+        .category-page .category-content .side-filter .list-style .list .child-links a {
+          position: relative;
+          margin-left: 15px; }
+          .category-page .category-content .side-filter .list-style .list .child-links a:hover:before {
+            content: "";
+            position: absolute;
+            left: -12px;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background-color: #eaa93f; }
+  .category-page .category-content .side-category .card {
+    border-radius: 0; }
+
 .search-results-page .search-results {
   padding: 80px 40px; }
   .search-results-page .search-results .filter {
@@ -1948,5 +2000,378 @@ table {
                 box-shadow: none; }
   .search-results-page .search-results .search-results-content .products-sec {
     padding: 0; }
+
+/*______________________________________________________
+admin Style
+______________________________________________________*/
+.nav-user-admin .header .middle-nav {
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1); }
+.nav-user-admin .profile-user-admin-content {
+  padding: 20px 0 0 0; }
+
+.side-bar {
+  height: 100%;
+  padding: 20px 0;
+  border-right: 1px solid #a7a7a7;
+  /*rtl file*/ }
+  .side-bar .list-style {
+    padding: 30px 30px 0 30px; }
+    .side-bar .list-style .list {
+      margin-bottom: 20px; }
+      .side-bar .list-style .list svg {
+        margin-right: 10px;
+        /*rtl file*/ }
+      .side-bar .list-style .list a {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #505050;
+        text-decoration: none; }
+        .side-bar .list-style .list a:hover {
+          color: #eaa93f; }
+    .side-bar .list-style .active a {
+      color: #eaa93f; }
+
+.user-admin-profile .profile-user-admin-content .profile-content {
+  padding: 40px 0; }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .header .vendor-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; }
+    .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .header .vendor-img img {
+      width: 100%;
+      height: 100%; }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .header .vendor-desc .vendor-name {
+    font-weight: 500;
+    font-size: 22px;
+    color: #000000; }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .header .vendor-desc .vendor-job {
+    font-weight: 500;
+    font-size: 16px;
+    color: #242424; }
+    .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .header .vendor-desc .vendor-job span {
+      font-weight: bold; }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .bottom .vendor-main-desc {
+    width: 60%;
+    word-break: break-all;
+    font-weight: normal;
+    font-size: 14px;
+    color: #505050; }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .bottom .vendor-winning {
+    font-weight: 600;
+    font-size: 16px;
+    color: #4caf50; }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .bottom .vendor-place,
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .bottom .vendor-number {
+    color: #505050;
+    font-size: 16px; }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .vendor-rating p {
+    margin: 0; }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .vendor-rating .vendor-number-rate {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    color: #000000; }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .vendor-rating .vendor-reviews {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #505050; }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .vendor-rating .edit-profile {
+    display: block;
+    border: 1px solid #242424;
+    width: 150px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #242424;
+    text-align: center;
+    line-height: 3em;
+    text-decoration: none; }
+    .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .vendor-rating .edit-profile:hover {
+      background-color: #242424;
+      color: #ffffff; }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .vendor-rating .stars-rating .checked {
+    color: #eaa93f; }
+  .user-admin-profile .profile-user-admin-content .profile-content .products-sec {
+    padding-left: 0;
+    padding-right: 0; }
+
+.user-admin-profile-two .profile-content .tabs {
+  padding-top: 40px; }
+  .user-admin-profile-two .profile-content .tabs .list-style {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-bottom: 1px solid #f1f1f1; }
+    .user-admin-profile-two .profile-content .tabs .list-style .list .btn-tab {
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: capitalize;
+      color: #242424; }
+      .user-admin-profile-two .profile-content .tabs .list-style .list .btn-tab:focus {
+        outline: none;
+        box-shadow: none; }
+    .user-admin-profile-two .profile-content .tabs .list-style .list:hover {
+      border-bottom: 1px solid #eaa93f; }
+      .user-admin-profile-two .profile-content .tabs .list-style .list:hover .btn-tab {
+        color: #eaa93f; }
+    .user-admin-profile-two .profile-content .tabs .list-style .tab-active {
+      border-bottom: 1px solid #eaa93f; }
+      .user-admin-profile-two .profile-content .tabs .list-style .tab-active .active-tab {
+        color: #eaa93f; }
+.user-admin-profile-two .profile-content [data-tab-content] {
+  display: none; }
+.user-admin-profile-two .profile-content .tab-active[data-tab-content] {
+  display: inline-table; }
+.user-admin-profile-two .profile-content .wishlist {
+  padding: 30px 0;
+  width: 100%; }
+  .user-admin-profile-two .profile-content .wishlist .items-number .number {
+    font-weight: 500;
+    font-size: 14px;
+    color: #707070; }
+  .user-admin-profile-two .profile-content .wishlist .wishlist-box {
+    position: relative;
+    width: 897px;
+    height: 136px;
+    background: #ffffff;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1); }
+    .user-admin-profile-two .profile-content .wishlist .wishlist-box .list-style {
+      padding: 0;
+      display: flex;
+      justify-content: start; }
+      .user-admin-profile-two .profile-content .wishlist .wishlist-box .list-style .list {
+        padding: 5px 10px; }
+        .user-admin-profile-two .profile-content .wishlist .wishlist-box .list-style .list .img {
+          width: 100%;
+          height: 100%; }
+          .user-admin-profile-two .profile-content .wishlist .wishlist-box .list-style .list .img img {
+            width: 100%;
+            height: 100%; }
+        .user-admin-profile-two .profile-content .wishlist .wishlist-box .list-style .list .desc {
+          font-weight: normal;
+          font-size: 16px;
+          color: #505050;
+          margin: 0; }
+        .user-admin-profile-two .profile-content .wishlist .wishlist-box .list-style .list .price {
+          font-weight: bold;
+          font-size: 18px;
+          color: #242424;
+          margin: 0; }
+        .user-admin-profile-two .profile-content .wishlist .wishlist-box .list-style .list .sets-num {
+          font-weight: normal;
+          font-size: 14px;
+          color: #242424; }
+        .user-admin-profile-two .profile-content .wishlist .wishlist-box .list-style .list .status {
+          font-weight: bold;
+          font-size: 16px;
+          color: #4caf50;
+          margin: 0; }
+    .user-admin-profile-two .profile-content .wishlist .wishlist-box .delete-wishlist-box {
+      position: absolute;
+      top: 10px;
+      right: 10px; }
+      .user-admin-profile-two .profile-content .wishlist .wishlist-box .delete-wishlist-box .close:focus {
+        outline: none;
+        box-shadow: none; }
+
+/*_______________________user-admin-profile-proposals page_______________________*/
+.user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals {
+  padding: 35px 0;
+  width: 100%; }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .header-links {
+    width: 95%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1; }
+    .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .header-links .go-back {
+      text-decoration: none;
+      margin-right: 5px; }
+    .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .header-links .product-name {
+      font-weight: 500;
+      font-size: 22px;
+      color: #000000; }
+    .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .header-links .cat-name {
+      font-weight: 500;
+      font-size: 20px;
+      color: #505050; }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-num {
+    padding: 10px 0; }
+    .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-num .num {
+      font-weight: 500;
+      font-size: 18px;
+      color: #505050; }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .proposal-box {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 10px 0; }
+    .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .proposal-box .list-style {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between; }
+      .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .proposal-box .list-style .list .proposal-name {
+        font-weight: bold;
+        font-size: 16px;
+        color: #505050; }
+      .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .proposal-box .list-style .list .proposal-desc {
+        font-weight: bold;
+        font-size: 13px;
+        color: #505050; }
+      .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .proposal-box .list-style .list .proposal-time {
+        font-weight: 600;
+        font-size: 14px;
+        color: #000000; }
+    .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .proposal-box:hover {
+      background-color: #fffbf4;
+      border-bottom: 1px solid #fffbf4; }
+      .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .proposal-box:hover .list-style .list .proposal-name {
+        color: #eaa93f; }
+      .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .proposal-box:hover .list-style .list .proposal-desc {
+        color: #eaa93f; }
+      .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .proposal-box:hover .list-style .list .proposal-time {
+        color: #eaa93f; }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .time {
+    font-weight: normal;
+    font-size: 12px;
+    color: #707070;
+    margin-bottom: 3px; }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .title {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #000000; }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .cover-letter-desc {
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(36, 36, 36, 0.81); }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .time-cost .sub-title {
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(36, 36, 36, 0.81); }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .attachments .list-style {
+    padding: 0; }
+    .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .attachments .list-style .list {
+      margin-bottom: 10px; }
+      .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .attachments .list-style .list a {
+        background-color: #dbdbdb;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 12px;
+        color: #141525;
+        padding: 6px;
+        border-radius: 1px; }
+      .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .attachments .list-style .list span {
+        font-weight: normal;
+        font-size: 14px;
+        color: #000000; }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .about-vendor {
+    width: 80%; }
+    .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .about-vendor .list-style {
+      padding: 0;
+      display: flex; }
+      .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .about-vendor .list-style .list img {
+        max-width: 50px;
+        max-height: 50px; }
+      .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .about-vendor .list-style .list .vendor-name {
+        font-weight: normal;
+        font-size: 16px;
+        color: #000000; }
+      .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .about-vendor .list-style .list .vendor-desc {
+        font-weight: normal;
+        font-size: 14px;
+        color: #505050; }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .job-start .list-style {
+    padding: 0;
+    margin: 0;
+    display: flex; }
+    .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .job-start .list-style .button-list {
+      width: 50%; }
+    .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .job-start .list-style .list .start {
+      border: none;
+      width: 100%;
+      background-color: #eaa93f;
+      color: #ffffff;
+      text-decoration: none;
+      height: 100%; }
+      .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .job-start .list-style .list .start:focus {
+        outline: none;
+        box-shadow: none; }
+    .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .job-start .list-style .list .title {
+      margin: 0; }
+    .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .job-start .list-style .list .note-desc {
+      font-weight: normal;
+      font-size: 14px;
+      color: #476c63;
+      margin: 0; }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .contact-supplier .vendor-details .list-style {
+    justify-content: center; }
+
+.user-admin-setting .profile-user-admin-content .profile-content {
+  padding: 20px 40px; }
+  .user-admin-setting .profile-user-admin-content .profile-content .edit-form .form-row .form-group {
+    position: relative; }
+    .user-admin-setting .profile-user-admin-content .profile-content .edit-form .form-row .form-group label {
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 19px;
+      text-transform: capitalize;
+      color: #000000; }
+    .user-admin-setting .profile-user-admin-content .profile-content .edit-form .form-row .form-group .edit-icon {
+      position: absolute;
+      top: 42px;
+      right: 20px; }
+    .user-admin-setting .profile-user-admin-content .profile-content .edit-form .form-row .form-group select {
+      cursor: pointer;
+      -o-appearance: none;
+      -ms-appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+    .user-admin-setting .profile-user-admin-content .profile-content .edit-form .form-row .form-group .select-arrow {
+      position: absolute;
+      top: 45px;
+      right: 20px; }
+  .user-admin-setting .profile-user-admin-content .profile-content .edit-form .btn-settings {
+    border-radius: 0;
+    background-color: #eaa93f;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff; }
+  .user-admin-setting .profile-user-admin-content .profile-content .btn-signOut {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000; }
+  .user-admin-setting .profile-user-admin-content .profile-content .btn-deactivate {
+    font-weight: 600;
+    font-size: 14px;
+    color: #de4848; }
+  .user-admin-setting .profile-user-admin-content .profile-content .btn:focus {
+    outline: none;
+    box-shadow: none; }
+
+.logout-model .modal-dialog .modal-content {
+  border-radius: 0;
+  border: none;
+  padding: 15px; }
+  .logout-model .modal-dialog .modal-content .logout-form {
+    text-align: center; }
+    .logout-model .modal-dialog .modal-content .logout-form .title {
+      font-weight: 500;
+      font-size: 28px;
+      color: #000000; }
+    .logout-model .modal-dialog .modal-content .logout-form .btn {
+      color: #ffffff; }
+      .logout-model .modal-dialog .modal-content .logout-form .btn:focus {
+        outline: none;
+        box-shadow: none; }
+    .logout-model .modal-dialog .modal-content .logout-form .btn-close {
+      background-color: #eaa93f; }
+    .logout-model .modal-dialog .modal-content .logout-form .btn-submit {
+      background-color: #de4848; }
 
 /*# sourceMappingURL=main.css.map */

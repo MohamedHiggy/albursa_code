@@ -1,0 +1,97 @@
+.user-admin-profile {
+  .profile-user-admin-content {
+    .profile-content {
+      padding: 40px 0;
+      .vendor-details {
+        .header {
+          .vendor-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .vendor-desc {
+            .vendor-name {
+              font-weight: 500;
+              font-size: 22px;
+              color: #000000;
+            }
+            .vendor-job {
+              font-weight: 500;
+              font-size: 16px;
+              color: #242424;
+              span {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .bottom {
+          .vendor-main-desc {
+            width: 60%;
+            word-break: break-all;
+            font-weight: normal;
+            font-size: 14px;
+            color: #505050;
+          }
+          .vendor-winning {
+            font-weight: 600;
+            font-size: 16px;
+            color: #4caf50;
+          }
+          .vendor-place,
+          .vendor-number {
+            color: #505050;
+            font-size: 16px;
+          }
+        }
+        .vendor-rating {
+          p {
+            margin: 0;
+          }
+          .vendor-number-rate {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 26px;
+            color: #000000;
+          }
+          .vendor-reviews {
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 17px;
+            text-transform: capitalize;
+            color: #505050;
+          }
+          .edit-profile {
+            display: block;
+            border: 1px solid #242424;
+            width: 150px;
+            height: 45px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #242424;
+            text-align: center;
+            line-height: 3em;
+            text-decoration: none;
+            &:hover {
+              background-color: #242424;
+              color: #ffffff;
+            }
+          }
+          .stars-rating {
+            .checked {
+              color: #eaa93f;
+            }
+          }
+        }
+      }
+      .products-sec {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}

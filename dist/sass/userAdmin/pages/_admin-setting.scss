@@ -1,0 +1,93 @@
+.user-admin-setting {
+  .profile-user-admin-content {
+    .profile-content {
+      padding: 20px 40px;
+      .edit-form {
+        .form-row {
+          .form-group {
+            position: relative;
+            label {
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 19px;
+              text-transform: capitalize;
+              color: #000000;
+            }
+            .edit-icon {
+              position: absolute;
+              top: 42px;
+              right: 20px;
+            }
+            select {
+              cursor: pointer;
+              -o-appearance: none;
+              -ms-appearance: none;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+            }
+            .select-arrow {
+              position: absolute;
+              top: 45px;
+              right: 20px;
+            }
+          }
+        }
+        .btn-settings {
+          border-radius: 0;
+          background-color: #eaa93f;
+          font-weight: 500;
+          font-size: 14px;
+          color: #ffffff;
+        }
+      }
+      .btn-signOut {
+        font-weight: 600;
+        font-size: 14px;
+        color: #000000;
+      }
+      .btn-deactivate {
+        font-weight: 600;
+        font-size: 14px;
+        color: #de4848;
+      }
+      .btn {
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.logout-model {
+  .modal-dialog {
+    .modal-content {
+      border-radius: 0;
+      border: none;
+      padding: 15px;
+      .logout-form {
+        text-align: center;
+        .title {
+          font-weight: 500;
+          font-size: 28px;
+          color: #000000;
+        }
+        .btn {
+          color: #ffffff;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        .btn-close {
+          background-color: #eaa93f;
+        }
+        .btn-submit {
+          background-color: #de4848;
+        }
+      }
+    }
+  }
+}
