@@ -112,6 +112,92 @@
         }
       }
     }
+    .tenders {
+      width: 90%;
+      padding: 20px 0;
+      .table {
+        thead {
+          border-bottom: 1px solid #f1f1f1;
+          tr {
+            th {
+              font-weight: 500;
+              font-size: 14px;
+              text-transform: capitalize;
+              color: #707070;
+            }
+          }
+        }
+        tbody {
+          tr {
+            .tender-winner {
+              color: #5e8bff;
+            }
+            td,
+            th {
+              font-weight: 500;
+              font-size: 14px;
+              color: #242424;
+              a {
+                color: #242424;
+              }
+            }
+            th {
+              font-weight: bold;
+            }
+            td.status-active {
+              font-weight: bold;
+              color: #4caf50;
+            }
+            td.status-ended {
+              color: #707070;
+            }
+            td.status-rejected {
+              font-weight: bold;
+              color: #ff3b30;
+            }
+
+            td {
+              button {
+                border: none;
+                background-color: transparent;
+                font-weight: 500;
+                font-size: 14px;
+                font-weight: 550;
+                &:focus {
+                  box-shadow: none;
+                  outline: none;
+                }
+              }
+              .delete-row {
+                color: #ff3b30;
+              }
+
+              .edit-row,
+              .see-more-btn {
+                color: #242424;
+              }
+            }
+          }
+        }
+      }
+      .btn-create {
+        height: 48px;
+        width: 180px;
+        line-height: 48px;
+        .btn-create-tender {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          background-color: #eaa93f;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 16px;
+          text-transform: capitalize;
+          color: #ffffff;
+        }
+      }
+    }
   }
 }
 /*_______________________user-admin-profile-proposals page_______________________*/

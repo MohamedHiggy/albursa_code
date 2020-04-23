@@ -6,20 +6,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tenders apply</title>
+    <title>Home</title>
 
     <!-- CSS
       ================================================== -->
-    <link rel="stylesheet" href="dist/css/vendors/bootstrap.min.css" />
-    <link rel="stylesheet" href="dist/css/vendors/normalize.css" />
-    <link rel="stylesheet" href="dist/css/vendors/font-awesome.min.css" />
-    <link rel="stylesheet" href="dist/css/vendors/slick.css" />
-    <link rel="stylesheet" href="dist/css/vendors/slick-theme.css" />
-    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/normalize.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/font-awesome.min.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/slick.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/slick-theme.css" />
+    <link rel="stylesheet" href="../dist/css/main.css" />
   </head>
 
   <body>
-    <div class="tenders-apply">
+    <div class="admin-tender-details">
       <!--_______________Nav Bars_______________-->
       <div class="header" id="header">
         <!--_______________top nav_______________-->
@@ -29,7 +29,7 @@
               <div class="col-lg-6 col-md-6">
                 <ul class="list-style left-list-style">
                   <li class="list">
-                    <a href="about.html">
+                    <a href="../about.html">
                       About
                     </a>
                   </li>
@@ -39,7 +39,7 @@
                     </a>
                   </li>
                   <li class="list">
-                    <a href="contact.html">
+                    <a href="../contact.html">
                       Talk to us
                     </a>
                   </li>
@@ -49,7 +49,7 @@
                     </a>
                   </li>
                   <li class="list">
-                    <a href="tenders-for-user.html">
+                    <a href="../tenders-for-user.html">
                       Tenders
                     </a>
                   </li>
@@ -60,7 +60,7 @@
                   <li class="list">
                     <div class="dropdown">
                       <span>
-                        <img src="dist/imgs/turk.png" alt="" />
+                        <img src="../dist/imgs/turk.png" alt="" />
                         English - USD
                       </span>
                     </div>
@@ -76,12 +76,12 @@
             <div class="row">
               <div class="col-lg-1">
                 <div class="logo">
-                  <a href="Home.html">
-                    <img src="dist/icons/logo.svg" alt="logo" />
+                  <a href="../Home.html">
+                    <img src="../dist/icons/logo.svg" alt="logo" />
                   </a>
                 </div>
               </div>
-              <div class="col-lg-7">
+              <div class="col-lg-8">
                 <div class="search-bar">
                   <div class="dropdown">
                     <button
@@ -114,25 +114,27 @@
                       aria-label="Search"
                     />
                     <button type="submit" class="icon-search">
-                      <img src="dist/icons/search.svg" alt="search" />
+                      <img src="../dist/icons/search.svg" alt="search" />
                     </button>
                   </form>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-3">
                 <div class="middle-nav-btns">
                   <ul class="list-style">
                     <li class="list">
                       <a href="#">
-                        <img src="dist/icons/heart.svg" alt="" />
+                        <img src="../dist/icons/heart.svg" alt="" />
                         Wishlist
                       </a>
                     </li>
                     <li class="list">
-                      <a href="login.html">Sign In</a>
-                    </li>
-                    <li class="list">
-                      <a href="signup.html" class="register-btn">Register</a>
+                      <a href="user-admin-profile.html">
+                        <img
+                          src="../dist/icons/adminIcons/profile-i.svg"
+                          alt=""
+                        />
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -142,129 +144,122 @@
         </div>
       </div>
 
-      <!--_______________content_______________-->
-      <div class="content">
+      <!--_______________tender details content_______________-->
+      <div class="tender-details">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
-              <div class="tender-content">
-                <div class="header">
+            <div class="col-lg-12">
+              <div class="header">
+                <ul class="list-style">
+                  <li class="list">
+                    <button class="delete">
+                      <img src="../dist/icons/adminIcons/a-delete.svg" alt="" />
+                      Delete
+                    </button>
+                  </li>
+                  <li class="list">
+                    <a href="#" class="edit">
+                      <img src="../dist/icons/adminIcons/a-edit.svg" alt="" />
+                      Edit
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a
+                      href="user-admin-tender-proposals.html"
+                      class="see-proposals"
+                    >
+                      see proposals
+                    </a>
+                  </li>
+                  <li class="list">
+                    <button class="move">
+                      Move out of stock
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="desc-content pt-5">
+                <div class="content-header">
                   <h2 class="title">Residential Tower</h2>
-                  <p class="time"><span>Posted</span>2 Hours ago</p>
+                  <p class="time">Posted <span>2 Hours ago</span></p>
                 </div>
-                <div class="tender-desc">
-                  <h2 class="desc-title">Description</h2>
+                <div class="content-desc">
+                  <h2 class="title mb-3">Description</h2>
                   <p class="desc">
                     Currently under construction, the 400-foot-tall tower will
                     contain almost 400 residential units when completed, 40% of
                     which will be below market rate.Currently under
                     construction, the 400-foot-tall tower will contain almost
+                    400 residential units when completed,
+                    <br /><br />
+                    40% of which will be below market rate.Currently under
+                    construction, the 400-foot-tall tower will contain almost
                     400 residential units when completed, 40% of which will be
-                    below market rate.Currently under construction, the
-                    400-foot-tall tower will contain almost 400 residential
+                    below market rate.Currently under construction,
+                    <br /><br />
+                    the 400-foot-tall tower will contain almost 400 residential
                     units when completed, 40% of which will be below market
                     rate.Currently under construction, the 400-foot-tall tower
                     will contain almost 400 residential units when completed,
                     40% of which will be below market rate.Currently under
-                    construction, the 400-foot-tall tower will contain almost
-                    400 residential units when completed, 40% of which will be
-                    below market rate.Currently under construction, the
+                    construction, the
                   </p>
                 </div>
                 <div class="attachments">
-                  <div class="files">
-                    <h2 class="title">Attachments</h2>
-                    <ul class="list-style">
-                      <li class="list">
-                        <a href="#">PDF</a>
-                        <span>Building design</span>
-                      </li>
-                      <li class="list">
-                        <a href="#">PDF</a>
-                        <span>Building design</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="more-details">
-                    <ul class="list-style">
-                      <li class="list">
-                        <img src="dist/icons/place.svg" alt="" />
-                        <span class="details-title"
-                          >6th of October city ,Egypt</span
-                        >
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/Vector.svg" alt="" />
-                        <span class="details-title">02-Apr-2020</span>
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/person.svg" alt="" />
-                        <span class="details-title"
-                          >10-20 <b>proposals</b></span
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="tender-features">
-                    <ul class="list-style">
-                      <li class="list">
-                        <span class="features">CONSTRUCTION</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <span class="list">
-                        <span class="features">BULDING</span>
-                      </span>
-                    </ul>
-                  </div>
+                  <h2 class="title mb-3">Attachments</h2>
+                  <ul class="list-style">
+                    <li class="list">
+                      <a href="#">pdf</a>
+                      <span>Building design</span>
+                    </li>
+                    <li class="list">
+                      <a href="#">pdf</a>
+                      <span>Building design</span>
+                    </li>
+                  </ul>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="apply-tender-form">
-                <form action="">
-                  <h2 class="title">Apply Now</h2>
-                  <div class="form-group">
-                    <textarea
-                      cols="40"
-                      rows="8"
-                      class="form-control input-focus"
-                      placeholder="Cover Letter"
-                    ></textarea>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control input-focus"
-                      placeholder="Expected Cost"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control input-focus"
-                      placeholder="Estimated Time"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="customFileLang" class="file-label n">
-                      <input
-                        type="file"
-                        class="file-input"
-                        id="customFileLang"
-                      />
-                      <img src="dist/icons/upload 1.svg" alt="" />
-                      Upload attachment
-                    </label>
-                  </div>
-                  <button type="submit" class="btn btn-block">
-                    Submit
-                  </button>
-                </form>
+                <div class="more-content">
+                  <ul class="list-style">
+                    <li class="list">
+                      <img src="../dist/icons/place.svg" alt="" />
+                      <span class="sub-content">
+                        6th of October city ,Egypt
+                      </span>
+                    </li>
+                    <li class="list">
+                      <img src="../dist/icons/person.svg" alt="" />
+                      <span class="sub-content">02-Apr-2020</span>
+                    </li>
+                    <li class="list">
+                      <img src="../dist/icons/vector.svg" alt="" />
+                      <span class="sub-content">10-20 proposals</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="features">
+                  <ul class="list-style">
+                    <li class="list">
+                      <span class="feature">
+                        CONSTRUCTION
+                      </span>
+                    </li>
+                    <li class="list">
+                      <span class="feature">
+                        BULDING
+                      </span>
+                    </li>
+                    <li class="list">
+                      <span class="feature">
+                        CONSTRUCTION
+                      </span>
+                    </li>
+                    <li class="list">
+                      <span class="feature">
+                        BULDING
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -279,21 +274,25 @@
               <div class="col-lg-8">
                 <div class="left-links">
                   <ul class="list-style">
-                    <li class="list"><a href="about.html">About</a></li>
-                    <li class="list"><a href="faq.html">FAQ</a></li>
-                    <li class="list"><a href="contact.html">Talk to us</a></li>
+                    <li class="list"><a href="../about.html">About</a></li>
+                    <li class="list"><a href="../faq.html">FAQ</a></li>
+                    <li class="list">
+                      <a href="../contact.html">Talk to us</a>
+                    </li>
                   </ul>
                   <ul class="list-style">
-                    <li class="list"><a href="faq.html">Privacy policy</a></li>
                     <li class="list">
-                      <a href="faq.html">Terms & conditions </a>
+                      <a href="../faq.html">Privacy policy</a>
+                    </li>
+                    <li class="list">
+                      <a href="../faq.html">Terms & conditions </a>
                     </li>
                   </ul>
                   <ul class="list-style">
                     <li class="list"><a href="#">Forum</a></li>
                     <li class="list"><a href="#">Sell with us</a></li>
                     <li class="list">
-                      <a href="tenders-for-user.html">Tenders</a>
+                      <a href="../tenders-for-user.html">Tenders</a>
                     </li>
                   </ul>
                 </div>
@@ -308,22 +307,22 @@
                       <ul class="social-media-links">
                         <li class="list">
                           <a href="#"
-                            ><img src="dist/icons/linkedin.svg" alt=""
+                            ><img src="../dist/icons/linkedin.svg" alt=""
                           /></a>
                         </li>
                         <li class="list">
                           <a href="#"
-                            ><img src="dist/icons/twitter.svg" alt=""
+                            ><img src="../dist/icons/twitter.svg" alt=""
                           /></a>
                         </li>
                         <li class="list">
                           <a href="#"
-                            ><img src="dist/icons/facebook.svg" alt=""
+                            ><img src="../dist/icons/facebook.svg" alt=""
                           /></a>
                         </li>
                         <li class="list">
                           <a href="#"
-                            ><img src="dist/icons/instagram.svg" alt=""
+                            ><img src="../dist/icons/instagram.svg" alt=""
                           /></a>
                         </li>
                       </ul>
@@ -344,7 +343,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <p class="footer-title">
-                  © 2020 Albursa® Inc. All rights reserved
+                  © 2020 Albursa ® Inc. All rights reserved
                 </p>
               </div>
             </div>
@@ -352,29 +351,12 @@
         </div>
       </div>
     </div>
-
-    <!--======================================
-      view tender alert
-      if you want to show it go to css and remove display:none that have class block-alert
-    ==============================-->
-    <div class="block-alert">
-      <div class="block-alert-desc">
-        <p class="desc">
-          You should have vendor account to see tinder description sign up as a
-          vendor and see all tenders without any constraints
-        </p>
-        <ul class="list-style">
-          <li class="list"><a href="signup.html" class="SignUp">Sign up</a></li>
-          <li class="list"><a href="login.html" class="SignIn">Sign in</a></li>
-        </ul>
-      </div>
-    </div>
     <!-- JS
       ================================================== -->
-    <script src="dist/js/vendors/jquery-3.4.1.min.js"></script>
-    <script src="dist/js/vendors/jquery-migrate-1.2.1.min.js"></script>
-    <script src="dist/js/vendors/slick.min.js"></script>
-    <script src="dist/js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="../dist/js/vendors/jquery-3.4.1.min.js"></script>
+    <script src="../dist/js/vendors/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../dist/js/vendors/slick.min.js"></script>
+    <script src="../dist/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/main.js"></script>
   </body>
 </html>

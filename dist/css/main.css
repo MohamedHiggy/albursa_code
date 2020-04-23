@@ -304,6 +304,54 @@ table {
     .share-model .modal-dialog .modal-content .modal-body .list-style .list a .social-media-title {
       margin-top: 10px; }
 
+.block-alert {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(187, 187, 187, 0.98);
+  top: 0;
+  left: 0; }
+  .block-alert .block-alert-desc {
+    padding: 60px 40px 0 40px;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+    background: #ffffff;
+    box-shadow: 0px -8px 30px rgba(0, 0, 0, 0.1); }
+    .block-alert .block-alert-desc .desc {
+      font-weight: normal;
+      font-size: 32px;
+      color: #000000; }
+    .block-alert .block-alert-desc .list-style {
+      display: flex;
+      padding: 0;
+      margin: 0; }
+      .block-alert .block-alert-desc .list-style .list {
+        margin-right: 10px; }
+        .block-alert .block-alert-desc .list-style .list a {
+          display: block;
+          text-decoration: none;
+          width: 180px;
+          height: 48px;
+          text-align: center;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 48px; }
+        .block-alert .block-alert-desc .list-style .list .SignUp {
+          color: #ffffff;
+          background-color: #eaa93f; }
+          .block-alert .block-alert-desc .list-style .list .SignUp:hover {
+            background-color: #dfb168; }
+        .block-alert .block-alert-desc .list-style .list .SignIn {
+          color: #2c2c2c;
+          border: 1px solid #2c2c2c; }
+          .block-alert .block-alert-desc .list-style .list .SignIn:hover {
+            background-color: #2c2c2c;
+            color: #ffffff; }
+
 .header {
   height: auto;
   position: relative;
@@ -2180,6 +2228,65 @@ ______________________________________________________*/
       .user-admin-profile-two .profile-content .wishlist .wishlist-box .delete-wishlist-box .close:focus {
         outline: none;
         box-shadow: none; }
+.user-admin-profile-two .profile-content .tenders {
+  width: 90%;
+  padding: 20px 0; }
+  .user-admin-profile-two .profile-content .tenders .table thead {
+    border-bottom: 1px solid #f1f1f1; }
+    .user-admin-profile-two .profile-content .tenders .table thead tr th {
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: capitalize;
+      color: #707070; }
+  .user-admin-profile-two .profile-content .tenders .table tbody tr .tender-winner {
+    color: #5e8bff; }
+  .user-admin-profile-two .profile-content .tenders .table tbody tr td,
+  .user-admin-profile-two .profile-content .tenders .table tbody tr th {
+    font-weight: 500;
+    font-size: 14px;
+    color: #242424; }
+    .user-admin-profile-two .profile-content .tenders .table tbody tr td a,
+    .user-admin-profile-two .profile-content .tenders .table tbody tr th a {
+      color: #242424; }
+  .user-admin-profile-two .profile-content .tenders .table tbody tr th {
+    font-weight: bold; }
+  .user-admin-profile-two .profile-content .tenders .table tbody tr td.status-active {
+    font-weight: bold;
+    color: #4caf50; }
+  .user-admin-profile-two .profile-content .tenders .table tbody tr td.status-ended {
+    color: #707070; }
+  .user-admin-profile-two .profile-content .tenders .table tbody tr td.status-rejected {
+    font-weight: bold;
+    color: #ff3b30; }
+  .user-admin-profile-two .profile-content .tenders .table tbody tr td button {
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    font-weight: 550; }
+    .user-admin-profile-two .profile-content .tenders .table tbody tr td button:focus {
+      box-shadow: none;
+      outline: none; }
+  .user-admin-profile-two .profile-content .tenders .table tbody tr td .delete-row {
+    color: #ff3b30; }
+  .user-admin-profile-two .profile-content .tenders .table tbody tr td .edit-row,
+  .user-admin-profile-two .profile-content .tenders .table tbody tr td .see-more-btn {
+    color: #242424; }
+  .user-admin-profile-two .profile-content .tenders .btn-create {
+    height: 48px;
+    width: 180px;
+    line-height: 48px; }
+    .user-admin-profile-two .profile-content .tenders .btn-create .btn-create-tender {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      background-color: #eaa93f;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff; }
 
 /*_______________________user-admin-profile-proposals page_______________________*/
 .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals {
@@ -2373,5 +2480,94 @@ ______________________________________________________*/
       background-color: #eaa93f; }
     .logout-model .modal-dialog .modal-content .logout-form .btn-submit {
       background-color: #de4848; }
+
+.admin-tender-details .tender-details {
+  padding: 30px 0; }
+  .admin-tender-details .tender-details .header {
+    width: 60%; }
+    .admin-tender-details .tender-details .header .list-style {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between; }
+      .admin-tender-details .tender-details .header .list-style .list button {
+        border: none;
+        background-color: transparent; }
+        .admin-tender-details .tender-details .header .list-style .list button:focus {
+          box-shadow: none;
+          outline: none; }
+      .admin-tender-details .tender-details .header .list-style .list .delete {
+        font-weight: 500;
+        font-size: 14px;
+        color: #ff3b30; }
+      .admin-tender-details .tender-details .header .list-style .list .move {
+        font-weight: 500;
+        font-size: 14px;
+        color: #242424; }
+      .admin-tender-details .tender-details .header .list-style .list a {
+        text-decoration: none; }
+      .admin-tender-details .tender-details .header .list-style .list .edit {
+        font-weight: 500;
+        font-size: 14px;
+        color: #242424; }
+      .admin-tender-details .tender-details .header .list-style .list .see-proposals {
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #5e8bff; }
+  .admin-tender-details .tender-details .desc-content {
+    width: 60%; }
+    .admin-tender-details .tender-details .desc-content .title {
+      font-weight: 500;
+      font-size: 28px;
+      color: #000000;
+      margin: 0; }
+    .admin-tender-details .tender-details .desc-content .content-header .time {
+      font-weight: normal;
+      font-size: 14px;
+      color: #505050; }
+    .admin-tender-details .tender-details .desc-content .content-desc .desc {
+      font-weight: normal;
+      font-size: 20px;
+      color: rgba(36, 36, 36, 0.81);
+      padding-left: 40px; }
+    .admin-tender-details .tender-details .desc-content .attachments .list-style .list {
+      margin-bottom: 10px; }
+      .admin-tender-details .tender-details .desc-content .attachments .list-style .list a {
+        background-color: #dbdbdb;
+        border-radius: 1px;
+        padding: 6px;
+        font-weight: 300;
+        font-size: 12px;
+        color: #141525;
+        text-decoration: none; }
+      .admin-tender-details .tender-details .desc-content .attachments .list-style .list span {
+        font-weight: normal;
+        font-size: 14px;
+        color: #000000; }
+    .admin-tender-details .tender-details .desc-content .more-content .list-style {
+      padding: 0;
+      display: flex;
+      justify-content: space-around; }
+      .admin-tender-details .tender-details .desc-content .more-content .list-style .list span {
+        font-weight: 600;
+        font-size: 14px;
+        color: #505050; }
+    .admin-tender-details .tender-details .desc-content .features {
+      line-height: 2em;
+      overflow: hidden; }
+      .admin-tender-details .tender-details .desc-content .features .list-style {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap; }
+        .admin-tender-details .tender-details .desc-content .features .list-style .list {
+          margin-right: 15px; }
+          .admin-tender-details .tender-details .desc-content .features .list-style .list .feature {
+            padding: 5px 15px;
+            border: 1px solid #505050;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+            color: #505050; }
 
 /*# sourceMappingURL=main.css.map */

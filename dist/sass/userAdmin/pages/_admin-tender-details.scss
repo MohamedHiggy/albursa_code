@@ -1,0 +1,127 @@
+.admin-tender-details {
+  .tender-details {
+    padding: 30px 0;
+    .header {
+      width: 60%;
+      .list-style {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        .list {
+          button {
+            border: none;
+            background-color: transparent;
+            &:focus {
+              box-shadow: none;
+              outline: none;
+            }
+          }
+          .delete {
+            font-weight: 500;
+            font-size: 14px;
+            color: #ff3b30;
+          }
+          .move {
+            font-weight: 500;
+            font-size: 14px;
+            color: #242424;
+          }
+          a {
+            text-decoration: none;
+          }
+          .edit {
+            font-weight: 500;
+            font-size: 14px;
+            color: #242424;
+          }
+          .see-proposals {
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #5e8bff;
+          }
+        }
+      }
+    }
+    .desc-content {
+      width: 60%;
+      .title {
+        font-weight: 500;
+        font-size: 28px;
+        color: #000000;
+        margin: 0;
+      }
+      .content-header {
+        .time {
+          font-weight: normal;
+          font-size: 14px;
+          color: #505050;
+        }
+      }
+      .content-desc {
+        .desc {
+          font-weight: normal;
+          font-size: 20px;
+          color: rgba(36, 36, 36, 0.81);
+          padding-left: 40px;
+        }
+      }
+      .attachments {
+        .list-style {
+          .list {
+            margin-bottom: 10px;
+            a {
+              background-color: #dbdbdb;
+              border-radius: 1px;
+              padding: 6px;
+              font-weight: 300;
+              font-size: 12px;
+              color: #141525;
+              text-decoration: none;
+            }
+            span {
+              font-weight: normal;
+              font-size: 14px;
+              color: #000000;
+            }
+          }
+        }
+      }
+      .more-content {
+        .list-style {
+          padding: 0;
+          display: flex;
+          justify-content: space-around;
+          .list {
+            span {
+              font-weight: 600;
+              font-size: 14px;
+              color: #505050;
+            }
+          }
+        }
+      }
+      .features {
+        line-height: 2em;
+        overflow: hidden;
+        .list-style {
+          margin: 0;
+          display: flex;
+          flex-wrap: wrap;
+          .list {
+            margin-right: 15px;
+            .feature {
+              padding: 5px 15px;
+              border: 1px solid #505050;
+              font-weight: 600;
+              font-size: 14px;
+              text-align: center;
+              color: #505050;
+            }
+          }
+        }
+      }
+    }
+  }
+}
