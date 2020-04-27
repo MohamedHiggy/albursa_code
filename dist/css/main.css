@@ -2570,4 +2570,275 @@ ______________________________________________________*/
             text-align: center;
             color: #505050; }
 
+/*______________________________________________________
+vendor Style
+______________________________________________________*/
+.vendor-content .vendor-side-bar {
+  height: 100%;
+  border-right: 1px solid #a7a7a7;
+  padding: 40px 0; }
+  .vendor-content .vendor-side-bar .logo {
+    text-align: center; }
+  .vendor-content .vendor-side-bar .side-bar-links {
+    padding-top: 60px; }
+    .vendor-content .vendor-side-bar .side-bar-links .list-style {
+      margin: 0; }
+      .vendor-content .vendor-side-bar .side-bar-links .list-style .list {
+        margin-bottom: 20px; }
+        .vendor-content .vendor-side-bar .side-bar-links .list-style .list a {
+          text-decoration: none;
+          font-weight: normal;
+          font-size: 16px;
+          color: #505050; }
+          .vendor-content .vendor-side-bar .side-bar-links .list-style .list a img {
+            margin-right: 5px; }
+          .vendor-content .vendor-side-bar .side-bar-links .list-style .list a:hover {
+            color: #eaa93f; }
+        .vendor-content .vendor-side-bar .side-bar-links .list-style .list a.active {
+          color: #eaa93f; }
+
+.vendor-setting .vendor-content {
+  padding: 0 40px; }
+  .vendor-setting .vendor-content .vendor-setting-content {
+    height: 100%;
+    padding-top: 100px; }
+    .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs {
+      width: 40%; }
+      .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs .list-style {
+        border-bottom: 1px solid #f1f1f1;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs .list-style .list {
+          cursor: pointer;
+          padding-bottom: 8px; }
+          .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs .list-style .list .tab-link {
+            font-weight: 600;
+            font-size: 16px;
+            color: #242424;
+            text-transform: capitalize; }
+          .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs .list-style .list:hover {
+            border-bottom: 1px solid #eaa93f; }
+            .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs .list-style .list:hover .tab-link {
+              color: #eaa93f; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs .list-style .current {
+          border-bottom: 1px solid #eaa93f; }
+          .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs .list-style .current .tab-link {
+            color: #eaa93f; }
+    .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content {
+      width: 80%; }
+      .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab {
+        padding: 30px 0; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .form-row .form-group {
+          position: relative; }
+          .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .form-row .form-group label {
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 19px;
+            text-transform: capitalize;
+            color: #000000; }
+          .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .form-row .form-group .edit-icon {
+            position: absolute;
+            top: 42px;
+            right: 20px; }
+          .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .form-row .form-group .delete-icon {
+            position: absolute;
+            top: 42px;
+            right: 20px;
+            cursor: pointer; }
+          .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .form-row .form-group select {
+            cursor: pointer;
+            -o-appearance: none;
+            -ms-appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none; }
+          .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .form-row .form-group .select-arrow {
+            position: absolute;
+            top: 45px;
+            right: 20px; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .btn-settings {
+          border-radius: 0;
+          background-color: #eaa93f;
+          font-weight: 500;
+          font-size: 14px;
+          color: #ffffff; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .account-settings .btn-signOut {
+          font-weight: 600;
+          font-size: 14px;
+          color: #000000; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .account-settings .btn-deactivate {
+          font-weight: 600;
+          font-size: 14px;
+          color: #de4848; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .account-settings .btn:focus {
+          outline: none;
+          box-shadow: none; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .profile-settings .upload-img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%; }
+          .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .profile-settings .upload-img label.cabinet {
+            display: block;
+            cursor: pointer;
+            border-radius: 50%;
+            height: 100%;
+            width: 100%; }
+            .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .profile-settings .upload-img label.cabinet input.file {
+              border-radius: 50%;
+              position: relative;
+              height: 100%;
+              width: 100%;
+              width: auto;
+              opacity: 0;
+              -moz-opacity: 0;
+              filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+              margin-top: -30px; }
+            .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .profile-settings .upload-img label.cabinet figure {
+              background-color: #e5e5e5;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%; }
+              .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .profile-settings .upload-img label.cabinet figure img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%; }
+            .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .profile-settings .upload-img label.cabinet .item-img {
+              width: 100%;
+              height: 100%; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .plan-settings .current .title {
+          font-weight: bold;
+          font-size: 16px;
+          text-transform: capitalize;
+          color: #242424;
+          margin-bottom: 10px; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .plan-settings .current .plan-price {
+          border: 1px solid #c4c4c4;
+          width: 222px;
+          height: 90px;
+          text-align: center; }
+          .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .plan-settings .current .plan-price .price {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+            margin: 0;
+            color: #000000; }
+          .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .plan-settings .current .plan-price .type {
+            font-weight: normal;
+            font-size: 16px;
+            color: #707070;
+            margin: 0; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .plan-settings .history .title {
+          font-weight: bold;
+          font-size: 16px;
+          color: #242424; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .plan-settings .history table thead tr th {
+          font-weight: 500;
+          font-size: 14px;
+          text-transform: capitalize;
+          color: #707070; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .plan-settings .history table tbody tr td {
+          font-weight: 600;
+          font-size: 14px;
+          text-transform: capitalize;
+          color: #000000; }
+        .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .plan-settings .list-style {
+          display: flex;
+          padding: 0;
+          width: 50%;
+          justify-content: space-around; }
+          .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .plan-settings .list-style .list {
+            height: 48px; }
+            .vendor-setting .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .plan-settings .list-style .list a {
+              text-decoration: none;
+              width: 100%;
+              height: 100%;
+              display: block;
+              background: #eaa93f;
+              text-align: center;
+              line-height: 48px;
+              padding: 0 35px;
+              font-size: 16px;
+              font-weight: 600;
+              color: #ffffff;
+              text-transform: capitalize; }
+
+.crop-img-model #upload-demo {
+  width: 250px;
+  height: 250px;
+  padding-bottom: 25px; }
+.crop-img-model .modal-footer #cropImageBtn {
+  background-color: #eaa93f;
+  border: none; }
+  .crop-img-model .modal-footer #cropImageBtn:focus {
+    box-shadow: none;
+    outline: none; }
+
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content {
+  width: 100%; }
+  .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table {
+    margin: 0; }
+    .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr {
+      border-bottom: 1px solid #f1f1f1; }
+      .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td {
+        padding-left: 0;
+        font-weight: bold;
+        font-size: 12px;
+        color: #505050;
+        /* On mouse-over, add a grey background color */
+        /* When the checkbox is checked, add a blue background */
+        /* Create the checkmark/indicator (hidden when not checked) */
+        /* Show the checkmark when checked */
+        /* Style the checkmark/indicator */ }
+        .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td a {
+          font-weight: bold;
+          font-size: 14px;
+          color: #505050; }
+        .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .container {
+          height: 25px;
+          width: 25px;
+          display: block;
+          position: relative;
+          cursor: pointer;
+          font-size: 22px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          /* Create a custom checkbox */ }
+          .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0; }
+          .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .container .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border: 1px solid rgba(36, 36, 36, 0.72); }
+        .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .container:hover input ~ .checkmark {
+          background-color: #ffffff; }
+        .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .container input:checked ~ .checkmark {
+          background-color: #ffffff; }
+        .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none; }
+        .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .container input:checked ~ .checkmark:after {
+          display: block; }
+        .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .container .checkmark:after {
+          left: 9px;
+          top: 5px;
+          width: 5px;
+          height: 10px;
+          border: solid #000000;
+          border-width: 0 2px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
 /*# sourceMappingURL=main.css.map */

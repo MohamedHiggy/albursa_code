@@ -281,3 +281,21 @@ tabs.forEach((tab) => {
     target.classList.add("tab-active");
   });
 });
+
+$(document).ready(function () {
+  // Show the first tab and hide the rest
+  $('.vendor-tabs .list-style .list:first-child').addClass('current');
+  $('.vendor-tabs-content .div-tab').hide();
+  $('.vendor-tabs-content .div-tab:first').show();
+
+  // Click function
+  $('.vendor-tabs .list-style .list').click(function () {
+    $('.vendor-tabs .list-style .list').removeClass('current');
+    $(this).addClass('current');
+    $('.vendor-tabs-content .div-tab').hide();
+
+    var activeTab = $(this).find('span').attr('data-tab');
+    $(activeTab).fadeIn();
+    return false;
+  });
+});

@@ -1,0 +1,248 @@
+.vendor-setting {
+  .vendor-content {
+    padding: 0 40px;
+    .vendor-setting-content {
+      height: 100%;
+      padding-top: 100px;
+      .vendor-tabs {
+        width: 40%;
+        .list-style {
+          border-bottom: 1px solid #f1f1f1;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: space-between;
+          .list {
+            cursor: pointer;
+            padding-bottom: 8px;
+            .tab-link {
+              font-weight: 600;
+              font-size: 16px;
+              color: #242424;
+              text-transform: capitalize;
+            }
+            &:hover {
+              border-bottom: 1px solid #eaa93f;
+              .tab-link {
+                color: #eaa93f;
+              }
+            }
+          }
+          .current {
+            border-bottom: 1px solid #eaa93f;
+            .tab-link {
+              color: #eaa93f;
+            }
+          }
+        }
+      }
+      .vendor-tabs-content {
+        width: 80%;
+        .div-tab {
+          padding: 30px 0;
+          .form-row {
+            .form-group {
+              position: relative;
+              label {
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 19px;
+                text-transform: capitalize;
+                color: #000000;
+              }
+              .edit-icon {
+                position: absolute;
+                top: 42px;
+                right: 20px;
+              }
+
+              .delete-icon {
+                position: absolute;
+                top: 42px;
+                right: 20px;
+                cursor: pointer;
+              }
+              select {
+                cursor: pointer;
+                -o-appearance: none;
+                -ms-appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              }
+              .select-arrow {
+                position: absolute;
+                top: 45px;
+                right: 20px;
+              }
+            }
+          }
+          .btn-settings {
+            border-radius: 0;
+            background-color: #eaa93f;
+            font-weight: 500;
+            font-size: 14px;
+            color: #ffffff;
+          }
+          .account-settings {
+            .btn-signOut {
+              font-weight: 600;
+              font-size: 14px;
+              color: #000000;
+            }
+            .btn-deactivate {
+              font-weight: 600;
+              font-size: 14px;
+              color: #de4848;
+            }
+            .btn {
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
+            }
+          }
+          .profile-settings {
+            .upload-img {
+              width: 120px;
+              height: 120px;
+              border-radius: 50%;
+              label.cabinet {
+                display: block;
+                cursor: pointer;
+                border-radius: 50%;
+                height: 100%;
+                width: 100%;
+                input.file {
+                  border-radius: 50%;
+                  position: relative;
+                  height: 100%;
+                  width: 100%;
+                  width: auto;
+                  opacity: 0;
+                  -moz-opacity: 0;
+                  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+                  margin-top: -30px;
+                }
+                figure {
+                  background-color: #e5e5e5;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                  }
+                }
+                .item-img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+          .plan-settings {
+            .current {
+              .title {
+                font-weight: bold;
+                font-size: 16px;
+                text-transform: capitalize;
+                color: #242424;
+                margin-bottom: 10px;
+              }
+              .plan-price {
+                border: 1px solid #c4c4c4;
+                width: 222px;
+                height: 90px;
+                text-align: center;
+                .price {
+                  font-weight: bold;
+                  font-size: 22px;
+                  line-height: 26px;
+                  margin: 0;
+                  color: #000000;
+                }
+                .type {
+                  font-weight: normal;
+                  font-size: 16px;
+                  color: #707070;
+                  margin: 0;
+                }
+              }
+            }
+            .history {
+              .title {
+                font-weight: bold;
+                font-size: 16px;
+                color: #242424;
+              }
+              table {
+                thead {
+                  tr {
+                    th {
+                      font-weight: 500;
+                      font-size: 14px;
+                      text-transform: capitalize;
+                      color: #707070;
+                    }
+                  }
+                }
+                tbody {
+                  tr {
+                    td {
+                      font-weight: 600;
+                      font-size: 14px;
+                      text-transform: capitalize;
+                      color: #000000;
+                    }
+                  }
+                }
+              }
+            }
+            .list-style {
+              display: flex;
+              padding: 0;
+              width: 50%;
+              justify-content: space-around;
+              .list {
+                height: 48px;
+                a {
+                  text-decoration: none;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                  background: #eaa93f;
+                  text-align: center;
+                  line-height: 48px;
+                  padding: 0 35px;
+                  font-size: 16px;
+                  font-weight: 600;
+                  color: #ffffff;
+                  text-transform: capitalize;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.crop-img-model {
+  #upload-demo {
+    width: 250px;
+    height: 250px;
+    padding-bottom: 25px;
+  }
+  .modal-footer {
+    #cropImageBtn {
+      background-color: #eaa93f;
+      border: none;
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+}

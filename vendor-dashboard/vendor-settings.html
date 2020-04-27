@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--- basic page needs
+      ================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>vendor settings</title>
+
+    <!-- CSS
+      ================================================== -->
+    <link rel="stylesheet" href="../dist/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/normalize.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/font-awesome.min.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/slick.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/slick-theme.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/croppie.css" />
+    <link rel="stylesheet" href="../dist/css/main.css" />
+  </head>
+
+  <body>
+    <div class="vendor-setting">
+      <!--_______________Nav Bars_______________-->
+      <div class="header" id="header">
+        <!--_______________top nav_______________-->
+        <div class="top-nav">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <ul class="list-style left-list-style">
+                  <li class="list">
+                    <a href="../about.html">
+                      About
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#">
+                      Forum
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="../contact.html">
+                      Talk to us
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#">
+                      Sell with us
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="../tenders-for-user.html">
+                      Tenders
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <ul class="list-style right-list-style">
+                  <li class="list">
+                    <div class="dropdown">
+                      <span>
+                        <img src="../dist/imgs/turk.png" alt="" />
+                        English - USD
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--_______________ vendor-content _______________-->
+      <div class="vendor-content">
+        <div class="container-fluid">
+          <div class="row">
+            <!--_______________ vendor-side-bar _______________-->
+            <div class="col-lg-2">
+              <div class="vendor-side-bar">
+                <div class="logo">
+                  <a href="../Home.html">
+                    <img src="../dist/icons/logo.svg" alt="" />
+                  </a>
+                </div>
+                <div class="side-bar-links">
+                  <ul class="list-style">
+                    <li class="list">
+                      <a href="vendor-dashboard.html">
+                        <img
+                          src="../dist/icons/adminIcons/dashboard.svg"
+                          alt=""
+                        />
+                        Dashboard
+                      </a>
+                    </li>
+                    <li class="list">
+                      <a href="vendor-mails.html">
+                        <img src="../dist/icons/adminIcons/inbox.svg" alt="" />
+                        Inbox
+                      </a>
+                    </li>
+                    <li class="list">
+                      <a href="vendor-profile.html">
+                        <img
+                          src="../dist/icons/adminIcons/profile.svg"
+                          alt=""
+                        />
+                        Profile
+                      </a>
+                    </li>
+                    <li class="list">
+                      <a href="#">
+                        <img src="../dist/icons/adminIcons/chat.svg" alt="" />
+                        Chat
+                      </a>
+                    </li>
+                    <li class="list">
+                      <a href="vendor-settings.html" class="active">
+                        <img
+                          src="../dist/icons/adminIcons/setting.svg"
+                          alt=""
+                        />
+                        Settings
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!--_______________ vendor content details _______________-->
+            <div class="col-lg-10">
+              <div class="vendor-setting-content">
+                <!--================ vendor tabs ==================-->
+                <div class="vendor-tabs">
+                  <ul class="list-style">
+                    <li class="list">
+                      <span class="tab-link" data-tab="#tab-1">
+                        Account Settings
+                      </span>
+                    </li>
+                    <li class="list">
+                      <span class="tab-link" data-tab="#tab-2">
+                        Profile Settings
+                      </span>
+                    </li>
+                    <li class="list">
+                      <span class="tab-link" data-tab="#tab-3">
+                        Plan & billing
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!--================ vendor-tabs-content ==================-->
+                <div class="vendor-tabs-content">
+                  <!--_________________ account-settings  ______________________-->
+                  <div class="div-tab" id="tab-1">
+                    <div class="account-settings">
+                      <form action="" class="edit-form mb-4">
+                        <div class="form-row mb-3">
+                          <div class="form-group col-5 mr-3">
+                            <label for="nameInput">Name</label>
+                            <input
+                              type="text"
+                              class="form-control input-focus"
+                              id="nameInput"
+                              value="ALBURSA"
+                            />
+                            <img
+                              src="../dist/icons/adminIcons/edit.svg"
+                              alt=""
+                              class="edit-icon"
+                            />
+                          </div>
+                          <div class="form-group col-5">
+                            <label for="emailInput">E-MAIL</label>
+                            <input
+                              type="email"
+                              class="form-control input-focus"
+                              id="emailInput"
+                              value="albursa2020@albursa.com"
+                            />
+                            <img
+                              src="../dist/icons/adminIcons/edit.svg"
+                              alt=""
+                              class="edit-icon"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-row mb-3">
+                          <div class="form-group col-5 mr-3">
+                            <label for="organizationInput"
+                              >organization name</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control input-focus"
+                              id="organizationInput"
+                              value="ALBURSA INC "
+                            />
+                            <img
+                              src="../dist/icons/adminIcons/edit.svg"
+                              alt=""
+                              class="edit-icon"
+                            />
+                          </div>
+                          <div class="form-group col-5">
+                            <label for="roleInput">Role</label>
+                            <input
+                              type="text"
+                              class="form-control input-focus"
+                              id="roleInput"
+                              value="sales manger"
+                            />
+                            <img
+                              src="../dist/icons/adminIcons/edit.svg"
+                              alt=""
+                              class="edit-icon"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-row mb-3">
+                          <div class="form-group col-5 mr-3">
+                            <label for="phoneInput">Phone Number</label>
+                            <input
+                              type="text"
+                              class="form-control input-focus"
+                              id="phoneInput"
+                              value="+21090564185"
+                            />
+                            <img
+                              src="../dist/icons/adminIcons/edit.svg"
+                              alt=""
+                              class="edit-icon"
+                            />
+                          </div>
+                          <div class="form-group col-5">
+                            <label for="telephoneInput">Telephone number</label>
+                            <input
+                              type="text"
+                              class="form-control input-focus"
+                              id="telephoneInput"
+                              value="0502324749"
+                            />
+                            <img
+                              src="../dist/icons/adminIcons/edit.svg"
+                              alt=""
+                              class="edit-icon"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-row mb-3">
+                          <div class="form-group col-5 mr-3">
+                            <label for="countrySelect">Country</label>
+                            <select
+                              class="form-control input-focus"
+                              id="countrySelect"
+                            >
+                              <option value="Egypt" selected>Egypt</option>
+                              <option value="Kuwait">Kuwait</option>
+                              <option value="Turkey">Turkey</option>
+                            </select>
+                            <img
+                              src="../dist/icons/adminIcons/down-arrow.svg"
+                              alt=""
+                              class="select-arrow"
+                            />
+                          </div>
+                          <div class="form-group col-5">
+                            <label for="citySelect">City</label>
+                            <select
+                              class="form-control input-focus"
+                              id="citySelect"
+                            >
+                              <option value="Cairo" selected>Cairo</option>
+                              <option value="Kuwait">Kuwait</option>
+                              <option value="Ankara">Ankara</option>
+                            </select>
+                            <img
+                              src="../dist/icons/adminIcons/down-arrow.svg"
+                              alt=""
+                              class="select-arrow"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-row mb-3">
+                          <div class="form-group col-5">
+                            <label for="zipInput">Zip Code</label>
+                            <input
+                              type="text"
+                              class="form-control input-focus"
+                              id="zipInput"
+                              value="3541"
+                            />
+                            <img
+                              src="../dist/icons/adminIcons/edit.svg"
+                              alt=""
+                              class="edit-icon"
+                            />
+                          </div>
+                        </div>
+
+                        <button class="btn btn-settings mr-2" type="button">
+                          Change Password
+                        </button>
+                        <button
+                          class="btn btn-settings send-data"
+                          type="submit"
+                          disabled
+                        >
+                          Save changes
+                        </button>
+                      </form>
+                      <button
+                        class="btn btn-signOut"
+                        data-toggle="modal"
+                        data-target="#exampleModalCenter"
+                      >
+                        Sign out
+                      </button>
+                      <br />
+                      <button class="btn btn-deactivate">
+                        Deactivate your account
+                      </button>
+                    </div>
+                  </div>
+                  <!--_________________ profile-settings  ______________________-->
+                  <div class="div-tab" id="tab-2">
+                    <div class="profile-settings">
+                      <form action="" class="profile-form">
+                        <div class="form-row mb-3">
+                          <div class="upload-img">
+                            <label class="cabinet center-block">
+                              <figure>
+                                <img
+                                  src=""
+                                  class="gambar img-responsive img-thumbnail"
+                                  id="item-img-output"
+                                />
+                              </figure>
+                              <input
+                                type="file"
+                                class="item-img file center-block"
+                                name="file_photo"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-row mb-3">
+                          <div class="form-group col-12">
+                            <label for="nameInput">Description</label>
+                            <textarea
+                              name=""
+                              id="nameInput"
+                              cols="30"
+                              rows="5"
+                              class="form-control input-focus"
+                              placeholder="Add brief description"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="form-row mb-3">
+                          <div class="form-group col-6">
+                            <label for="sectorSelect">Sector</label>
+                            <select
+                              class="form-control input-focus"
+                              id="sectorSelect"
+                            >
+                              <option value="Design" selected>Design</option>
+                              <option value="Design-2">Design 2</option>
+                              <option value="Design-2">Design 3</option>
+                            </select>
+                            <img
+                              src="../dist/icons/adminIcons/down-arrow.svg"
+                              alt=""
+                              class="select-arrow"
+                            />
+                          </div>
+                          <div class="form-group col-6">
+                            <label for="specialitySelect">Speciality</label>
+                            <select
+                              class="form-control input-focus"
+                              id="specialitySelect"
+                            >
+                              <option value="Archticture" selected
+                                >Archticture</option
+                              >
+                              <option value="Archticture-1"
+                                >Archticture 1</option
+                              >
+                              <option value="Archticture-2"
+                                >Archticture 2</option
+                              >
+                            </select>
+                            <img
+                              src="../dist/icons/adminIcons/down-arrow.svg"
+                              alt=""
+                              class="select-arrow"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-row mb-3">
+                          <div class="form-group col-6">
+                            <label for="websiteSelect">Website</label>
+                            <select
+                              class="form-control input-focus"
+                              id="websiteSelect"
+                            >
+                              <option value="facebook" selected
+                                >facebook</option
+                              >
+                              <option value="Twitter">Twitter</option>
+                              <option value="Instagram">Instagram</option>
+                            </select>
+                            <small
+                              id="websiteSelect"
+                              class="form-text text-muted"
+                              >Add your username or your profile URL.</small
+                            >
+                            <img
+                              src="../dist/icons/adminIcons/down-arrow.svg"
+                              alt=""
+                              class="select-arrow"
+                            />
+                          </div>
+                          <div class="form-group col-6 add-websites">
+                            <label for="facebook-Input">facebook</label>
+                            <input
+                              type="text"
+                              class="form-control input-focus"
+                              id="facebook-Input"
+                            />
+                            <img
+                              src="../dist/icons/adminIcons/delete.svg"
+                              alt=""
+                              class="delete-icon"
+                            />
+                          </div>
+                        </div>
+                        <button class="btn btn-settings" type="submit">
+                          Save changes
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <!--_________________ plan-settings  ______________________-->
+                  <div class="div-tab" id="tab-3">
+                    <div class="plan-settings">
+                      <div class="current">
+                        <h2 class="title">current plan</h2>
+                        <div class="plan-price">
+                          <h2 class="price pt-3">$5</h2>
+                          <p class="type">billed monthly</p>
+                        </div>
+                      </div>
+                      <div class="history mt-4">
+                        <h2 class="title">Billing History</h2>
+                        <table class="table table-borderless">
+                          <thead>
+                            <tr>
+                              <th scope="col">transaction id</th>
+                              <th scope="col">date</th>
+                              <th scope="col">Amount</th>
+                              <th scope="col">payment method</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="transaction-id">201235412324854123</td>
+                              <td class="date">7 / 6 / 2020</td>
+                              <td class="amount">$5</td>
+                              <td class="payment-method">************005</td>
+                            </tr>
+                            <tr>
+                              <td class="transaction-id">201235412324854123</td>
+                              <td class="date">7 / 6 / 2020</td>
+                              <td class="amount">$5</td>
+                              <td class="payment-method">************005</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <ul class="list-style">
+                        <li class="list">
+                          <a href="#">change plan</a>
+                        </li>
+                        <li class="list">
+                          <a href="#">change payment method</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--_______________Footer_______________-->
+      <div class="footer">
+        <div class="container">
+          <div class="top-footer">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="left-links">
+                  <ul class="list-style">
+                    <li class="list"><a href="../about.html">About</a></li>
+                    <li class="list"><a href="../faq.html">FAQ</a></li>
+                    <li class="list">
+                      <a href="../contact.html">Talk to us</a>
+                    </li>
+                  </ul>
+                  <ul class="list-style">
+                    <li class="list"><a href="#">Privacy policy</a></li>
+                    <li class="list"><a href="#">Terms & conditions </a></li>
+                  </ul>
+                  <ul class="list-style">
+                    <li class="list"><a href="#">Forum</a></li>
+                    <li class="list"><a href="#">Sell with us</a></li>
+                    <li class="list">
+                      <a href="../tenders-for-user.html">Tenders</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="right-links">
+                  <ul class="list-style">
+                    <li class="list">
+                      <p class="title">Follow Us</p>
+                    </li>
+                    <li class="list">
+                      <ul class="social-media-links">
+                        <li class="list">
+                          <a href="#"
+                            ><img src="../dist/icons/linkedin.svg" alt=""
+                          /></a>
+                        </li>
+                        <li class="list">
+                          <a href="#"
+                            ><img src="../dist/icons/twitter.svg" alt=""
+                          /></a>
+                        </li>
+                        <li class="list">
+                          <a href="#"
+                            ><img src="../dist/icons/facebook.svg" alt=""
+                          /></a>
+                        </li>
+                        <li class="list">
+                          <a href="#"
+                            ><img src="../dist/icons/instagram.svg" alt=""
+                          /></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="list">
+                      <button class="lang lang-active">English</button>
+                      <button class="lang">Türk</button>
+                      <button class="lang">العربية</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="footer-title">
+                  © 2020 Albursa® Inc. All rights reserved
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--_______________logout-model_______________-->
+    <div
+      class="modal logout-model fade bd-example-modal-sm"
+      tabindex="-1"
+      id="exampleModalCenter"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+          <form action="" class="logout-form">
+            <h3 class="title mb-3">Are you sure</h3>
+            <button class="btn btn-close" data-dismiss="modal" type="button">
+              Cancel
+            </button>
+            <button class="btn btn-submit" type="submit">
+              Yes
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--_______________crop img model_______________-->
+    <div
+      class="modal fade crop-img-model"
+      id="cropImagePop"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div id="upload-demo" class="center-block"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" id="cropImageBtn" class="btn btn-primary">
+              Crop
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS
+      ================================================== -->
+    <script src="../dist/js/vendors/jquery-3.4.1.min.js"></script>
+    <script src="../dist/js/vendors/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../dist/js/vendors/slick.min.js"></script>
+    <script src="../dist/js/vendors/croppie.js"></script>
+    <script src="../dist/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/main.js"></script>
+    <script src="../dist/js/upload-img.js"></script>
+  </body>
+</html>

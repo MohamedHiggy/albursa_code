@@ -10,18 +10,18 @@
 
     <!-- CSS
       ================================================== -->
-    <link rel="stylesheet" href="dist/css/vendors/bootstrap.min.css" />
-    <link rel="stylesheet" href="dist/css/vendors/normalize.css" />
-    <link rel="stylesheet" href="dist/css/vendors/font-awesome.min.css" />
-    <link rel="stylesheet" href="dist/css/vendors/slick.css" />
-    <link rel="stylesheet" href="dist/css/vendors/slick-theme.css" />
-    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/normalize.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/font-awesome.min.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/slick.css" />
+    <link rel="stylesheet" href="../dist/css/vendors/slick-theme.css" />
+    <link rel="stylesheet" href="../dist/css/main.css" />
   </head>
 
   <body>
     <div class="tenders-for-user">
       <!--_______________Nav Bars_______________-->
-      <div class="header">
+      <div class="header" id="header">
         <!--_______________top nav_______________-->
         <div class="top-nav">
           <div class="container-fluid">
@@ -29,7 +29,7 @@
               <div class="col-lg-6 col-md-6">
                 <ul class="list-style left-list-style">
                   <li class="list">
-                    <a href="#">
+                    <a href="../about.html">
                       About
                     </a>
                   </li>
@@ -39,7 +39,7 @@
                     </a>
                   </li>
                   <li class="list">
-                    <a href="#">
+                    <a href="../contact.html">
                       Talk to us
                     </a>
                   </li>
@@ -49,7 +49,7 @@
                     </a>
                   </li>
                   <li class="list">
-                    <a href="#">
+                    <a href="../tenders-for-user.html">
                       Tenders
                     </a>
                   </li>
@@ -60,7 +60,7 @@
                   <li class="list">
                     <div class="dropdown">
                       <span>
-                        <img src="dist/imgs/turk.png" alt="" />
+                        <img src="../dist/imgs/turk.png" alt="" />
                         English - USD
                       </span>
                     </div>
@@ -76,12 +76,12 @@
             <div class="row">
               <div class="col-lg-1">
                 <div class="logo">
-                  <a href="Home.html">
-                    <img src="dist/icons/logo.svg" alt="logo" />
+                  <a href="../Home.html">
+                    <img src="../dist/icons/logo.svg" alt="logo" />
                   </a>
                 </div>
               </div>
-              <div class="col-lg-7">
+              <div class="col-lg-9">
                 <div class="search-bar">
                   <div class="dropdown">
                     <button
@@ -114,44 +114,26 @@
                       aria-label="Search"
                     />
                     <button type="submit" class="icon-search">
-                      <img src="dist/icons/search.svg" alt="search" />
+                      <img src="../dist/icons/search.svg" alt="search" />
                     </button>
                   </form>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-2">
                 <div class="middle-nav-btns">
                   <ul class="list-style">
                     <li class="list">
-                      <img src="dist/icons/heart.svg" alt="" />
-                      <a href="#">Wishlist</a>
-                    </li>
-                    <li class="list">
-                      <a href="login.html">Sign In</a>
-                    </li>
-                    <li class="list">
-                      <a href="signup.html" class="register-btn">Register</a>
+                      <a href="vendor-dashboard.html">
+                        <img
+                          src="../dist/icons/adminIcons/profile-i.svg"
+                          alt=""
+                        />
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!--_______________main-header_______________-->
-      <div class="main-header">
-        <div class="container">
-          <div class="header-content">
-            <h3 class="header-title">
-              Best constructors agancy Best supplier all in one place
-            </h3>
-            <p class="lead header-desc">
-              Albursa is giving you this opportunity to see or post tinders with
-              all industry workers in one place
-            </p>
-            <button class="btn button">Post your tender now</button>
           </div>
         </div>
       </div>
@@ -184,304 +166,274 @@
           <div class="row">
             <div class="Tenders-content">
               <div class="col-lg-12 construction">
-                <div class="box">
-                  <div class="header">
-                    <h2 class="title">Residential Tower</h2>
-                    <p class="posted-time"><span>Posted</span> 2 Hours ago</p>
-                    <p class="tenders-desc">
-                      Currently under construction, the 400-foot-tall tower will
-                      contain almost 400 residential units when completed, 40%
-                      of which will be below market rate.
-                    </p>
+                <a href="tender-details.html" class="anchor-card">
+                  <div class="box">
+                    <div class="header">
+                      <h2 class="title">Residential Tower</h2>
+                      <p class="posted-time"><span>Posted</span> 2 Hours ago</p>
+                      <p class="tenders-desc">
+                        Currently under construction, the 400-foot-tall tower
+                        will contain almost 400 residential units when
+                        completed, 40% of which will be below market rate.
+                      </p>
+                    </div>
+                    <div class="tenders-features">
+                      <ul class="list-style">
+                        <li class="list">
+                          <span class="features">CONSTRUCTION</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="more-details">
+                      <ul class="list-style">
+                        <li class="list">
+                          <img src="../dist/icons/place.svg" alt="" />
+                          <span class="details-title"
+                            >6th of October city ,Egypt</span
+                          >
+                        </li>
+                        <li class="list">
+                          <img src="../dist/icons/Vector.svg" alt="" />
+                          <span class="details-title">02-Apr-2020</span>
+                        </li>
+                        <li class="list">
+                          <img src="../dist/icons/person.svg" alt="" />
+                          <span class="details-title"
+                            >10-20 <b>proposals</b></span
+                          >
+                        </li>
+                      </ul>
+                      <a href="tender-details.html" class="tender-applay"
+                        >Apply</a
+                      >
+                    </div>
                   </div>
-                  <div class="tenders-features">
-                    <ul class="list-style">
-                      <li class="list">
-                        <span class="features">CONSTRUCTION</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="more-details">
-                    <ul class="list-style">
-                      <li class="list">
-                        <img src="dist/icons/place.svg" alt="" />
-                        <span class="details-title"
-                          >6th of October city ,Egypt</span
-                        >
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/Vector.svg" alt="" />
-                        <span class="details-title">02-Apr-2020</span>
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/person.svg" alt="" />
-                        <span class="details-title"
-                          >10-20 <b>proposals</b></span
-                        >
-                      </li>
-                    </ul>
-                    <a href="tender-apply.html" class="tender-applay">Apply</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 materials">
-                <div class="box">
-                  <div class="header">
-                    <h2 class="title">Residential Tower</h2>
-                    <p class="posted-time"><span>Posted</span> 2 Hours ago</p>
-                    <p class="tenders-desc">
-                      Currently under construction, the 400-foot-tall tower will
-                      contain almost 400 residential units when completed, 40%
-                      of which will be below market rate.
-                    </p>
-                  </div>
-                  <div class="tenders-features">
-                    <ul class="list-style">
-                      <li class="list">
-                        <span class="features">CONSTRUCTION</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="more-details">
-                    <ul class="list-style">
-                      <li class="list">
-                        <img src="dist/icons/place.svg" alt="" />
-                        <span class="details-title"
-                          >6th of October city ,Egypt</span
-                        >
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/Vector.svg" alt="" />
-                        <span class="details-title">02-Apr-2020</span>
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/person.svg" alt="" />
-                        <span class="details-title"
-                          >10-20 <b>proposals</b></span
-                        >
-                      </li>
-                    </ul>
-                    <a href="tender-apply.html" class="tender-applay">Apply</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 materials">
-                <div class="box">
-                  <div class="header">
-                    <h2 class="title">Residential Tower</h2>
-                    <p class="posted-time"><span>Posted</span> 2 Hours ago</p>
-                    <p class="tenders-desc">
-                      Currently under construction, the 400-foot-tall tower will
-                      contain almost 400 residential units when completed, 40%
-                      of which will be below market rate.
-                    </p>
-                  </div>
-                  <div class="tenders-features">
-                    <ul class="list-style">
-                      <li class="list">
-                        <span class="features">CONSTRUCTION</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="more-details">
-                    <ul class="list-style">
-                      <li class="list">
-                        <img src="dist/icons/place.svg" alt="" />
-                        <span class="details-title"
-                          >6th of October city ,Egypt</span
-                        >
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/Vector.svg" alt="" />
-                        <span class="details-title">02-Apr-2020</span>
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/person.svg" alt="" />
-                        <span class="details-title"
-                          >10-20 <b>proposals</b></span
-                        >
-                      </li>
-                    </ul>
-                    <a href="tender-apply.html" class="tender-applay">Apply</a>
-                  </div>
-                </div>
+                </a>
               </div>
               <div class="col-lg-12 construction">
-                <div class="box">
-                  <div class="header">
-                    <h2 class="title">Residential Tower</h2>
-                    <p class="posted-time"><span>Posted</span> 2 Hours ago</p>
-                    <p class="tenders-desc">
-                      Currently under construction, the 400-foot-tall tower will
-                      contain almost 400 residential units when completed, 40%
-                      of which will be below market rate.
-                    </p>
+                <a href="tender-details.html" class="anchor-card">
+                  <div class="box">
+                    <div class="header">
+                      <h2 class="title">Residential Tower</h2>
+                      <p class="posted-time"><span>Posted</span> 2 Hours ago</p>
+                      <p class="tenders-desc">
+                        Currently under construction, the 400-foot-tall tower
+                        will contain almost 400 residential units when
+                        completed, 40% of which will be below market rate.
+                      </p>
+                    </div>
+                    <div class="tenders-features">
+                      <ul class="list-style">
+                        <li class="list">
+                          <span class="features">CONSTRUCTION</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="more-details">
+                      <ul class="list-style">
+                        <li class="list">
+                          <img src="../dist/icons/place.svg" alt="" />
+                          <span class="details-title"
+                            >6th of October city ,Egypt</span
+                          >
+                        </li>
+                        <li class="list">
+                          <img src="../dist/icons/Vector.svg" alt="" />
+                          <span class="details-title">02-Apr-2020</span>
+                        </li>
+                        <li class="list">
+                          <img src="../dist/icons/person.svg" alt="" />
+                          <span class="details-title"
+                            >10-20 <b>proposals</b></span
+                          >
+                        </li>
+                      </ul>
+                      <a href="tender-details.html" class="tender-applay"
+                        >Apply</a
+                      >
+                    </div>
                   </div>
-                  <div class="tenders-features">
-                    <ul class="list-style">
-                      <li class="list">
-                        <span class="features">CONSTRUCTION</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="more-details">
-                    <ul class="list-style">
-                      <li class="list">
-                        <img src="dist/icons/place.svg" alt="" />
-                        <span class="details-title"
-                          >6th of October city ,Egypt</span
-                        >
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/Vector.svg" alt="" />
-                        <span class="details-title">02-Apr-2020</span>
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/person.svg" alt="" />
-                        <span class="details-title"
-                          >10-20 <b>proposals</b></span
-                        >
-                      </li>
-                    </ul>
-                    <a href="tender-apply.html" class="tender-applay">Apply</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 materials">
-                <div class="box">
-                  <div class="header">
-                    <h2 class="title">Residential Tower</h2>
-                    <p class="posted-time"><span>Posted</span> 2 Hours ago</p>
-                    <p class="tenders-desc">
-                      Currently under construction, the 400-foot-tall tower will
-                      contain almost 400 residential units when completed, 40%
-                      of which will be below market rate.
-                    </p>
-                  </div>
-                  <div class="tenders-features">
-                    <ul class="list-style">
-                      <li class="list">
-                        <span class="features">CONSTRUCTION</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="more-details">
-                    <ul class="list-style">
-                      <li class="list">
-                        <img src="dist/icons/place.svg" alt="" />
-                        <span class="details-title"
-                          >6th of October city ,Egypt</span
-                        >
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/Vector.svg" alt="" />
-                        <span class="details-title">02-Apr-2020</span>
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/person.svg" alt="" />
-                        <span class="details-title"
-                          >10-20 <b>proposals</b></span
-                        >
-                      </li>
-                    </ul>
-                    <a href="tender-apply.html" class="tender-applay">Apply</a>
-                  </div>
-                </div>
+                </a>
               </div>
               <div class="col-lg-12 construction">
-                <div class="box">
-                  <div class="header">
-                    <h2 class="title">Residential Tower</h2>
-                    <p class="posted-time"><span>Posted</span> 2 Hours ago</p>
-                    <p class="tenders-desc">
-                      Currently under construction, the 400-foot-tall tower will
-                      contain almost 400 residential units when completed, 40%
-                      of which will be below market rate.
-                    </p>
+                <a href="tender-details.html" class="anchor-card">
+                  <div class="box">
+                    <div class="header">
+                      <h2 class="title">Residential Tower</h2>
+                      <p class="posted-time"><span>Posted</span> 2 Hours ago</p>
+                      <p class="tenders-desc">
+                        Currently under construction, the 400-foot-tall tower
+                        will contain almost 400 residential units when
+                        completed, 40% of which will be below market rate.
+                      </p>
+                    </div>
+                    <div class="tenders-features">
+                      <ul class="list-style">
+                        <li class="list">
+                          <span class="features">CONSTRUCTION</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="more-details">
+                      <ul class="list-style">
+                        <li class="list">
+                          <img src="../dist/icons/place.svg" alt="" />
+                          <span class="details-title"
+                            >6th of October city ,Egypt</span
+                          >
+                        </li>
+                        <li class="list">
+                          <img src="../dist/icons/Vector.svg" alt="" />
+                          <span class="details-title">02-Apr-2020</span>
+                        </li>
+                        <li class="list">
+                          <img src="../dist/icons/person.svg" alt="" />
+                          <span class="details-title"
+                            >10-20 <b>proposals</b></span
+                          >
+                        </li>
+                      </ul>
+                      <a href="tender-details.html" class="tender-applay"
+                        >Apply</a
+                      >
+                    </div>
                   </div>
-                  <div class="tenders-features">
-                    <ul class="list-style">
-                      <li class="list">
-                        <span class="features">CONSTRUCTION</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                      <li class="list">
-                        <span class="features">BULDING</span>
-                      </li>
-                    </ul>
+                </a>
+              </div>
+              <div class="col-lg-12 construction">
+                <a href="tender-details.html" class="anchor-card">
+                  <div class="box">
+                    <div class="header">
+                      <h2 class="title">Residential Tower</h2>
+                      <p class="posted-time"><span>Posted</span> 2 Hours ago</p>
+                      <p class="tenders-desc">
+                        Currently under construction, the 400-foot-tall tower
+                        will contain almost 400 residential units when
+                        completed, 40% of which will be below market rate.
+                      </p>
+                    </div>
+                    <div class="tenders-features">
+                      <ul class="list-style">
+                        <li class="list">
+                          <span class="features">CONSTRUCTION</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="more-details">
+                      <ul class="list-style">
+                        <li class="list">
+                          <img src="../dist/icons/place.svg" alt="" />
+                          <span class="details-title"
+                            >6th of October city ,Egypt</span
+                          >
+                        </li>
+                        <li class="list">
+                          <img src="../dist/icons/Vector.svg" alt="" />
+                          <span class="details-title">02-Apr-2020</span>
+                        </li>
+                        <li class="list">
+                          <img src="../dist/icons/person.svg" alt="" />
+                          <span class="details-title"
+                            >10-20 <b>proposals</b></span
+                          >
+                        </li>
+                      </ul>
+                      <a href="tender-details.html" class="tender-applay"
+                        >Apply</a
+                      >
+                    </div>
                   </div>
-                  <div class="more-details">
-                    <ul class="list-style">
-                      <li class="list">
-                        <img src="dist/icons/place.svg" alt="" />
-                        <span class="details-title"
-                          >6th of October city ,Egypt</span
-                        >
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/Vector.svg" alt="" />
-                        <span class="details-title">02-Apr-2020</span>
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/person.svg" alt="" />
-                        <span class="details-title"
-                          >10-20 <b>proposals</b></span
-                        >
-                      </li>
-                    </ul>
-                    <a href="tender-apply.html" class="tender-applay">Apply</a>
+                </a>
+              </div>
+              <div class="col-lg-12 materials">
+                <a href="tender-details.html" class="anchor-card">
+                  <div class="box">
+                    <div class="header">
+                      <h2 class="title">Residential Tower</h2>
+                      <p class="posted-time"><span>Posted</span> 2 Hours ago</p>
+                      <p class="tenders-desc">
+                        Currently under construction, the 400-foot-tall tower
+                        will contain almost 400 residential units when
+                        completed, 40% of which will be below market rate.
+                      </p>
+                    </div>
+                    <div class="tenders-features">
+                      <ul class="list-style">
+                        <li class="list">
+                          <span class="features">CONSTRUCTION</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                        <li class="list">
+                          <span class="features">BULDING</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="more-details">
+                      <ul class="list-style">
+                        <li class="list">
+                          <img src="../dist/icons/place.svg" alt="" />
+                          <span class="details-title"
+                            >6th of October city ,Egypt</span
+                          >
+                        </li>
+                        <li class="list">
+                          <img src="../dist/icons/Vector.svg" alt="" />
+                          <span class="details-title">02-Apr-2020</span>
+                        </li>
+                        <li class="list">
+                          <img src="../dist/icons/person.svg" alt="" />
+                          <span class="details-title"
+                            >10-20 <b>proposals</b></span
+                          >
+                        </li>
+                      </ul>
+                      <a href="tender-details.html" class="tender-applay"
+                        >Apply</a
+                      >
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -496,9 +448,11 @@
               <div class="col-lg-8">
                 <div class="left-links">
                   <ul class="list-style">
-                    <li class="list"><a href="#">About</a></li>
-                    <li class="list"><a href="#">FAQ</a></li>
-                    <li class="list"><a href="#">Talk to us</a></li>
+                    <li class="list"><a href="../about.html">About</a></li>
+                    <li class="list"><a href="../faq.html">FAQ</a></li>
+                    <li class="list">
+                      <a href="../contact.html">Talk to us</a>
+                    </li>
                   </ul>
                   <ul class="list-style">
                     <li class="list"><a href="#">Privacy policy</a></li>
@@ -507,7 +461,9 @@
                   <ul class="list-style">
                     <li class="list"><a href="#">Forum</a></li>
                     <li class="list"><a href="#">Sell with us</a></li>
-                    <li class="list"><a href="#">Tenders</a></li>
+                    <li class="list">
+                      <a href="../tenders-for-user.html">Tenders</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -521,22 +477,22 @@
                       <ul class="social-media-links">
                         <li class="list">
                           <a href="#"
-                            ><img src="dist/icons/linkedin.svg" alt=""
+                            ><img src="../dist/icons/linkedin.svg" alt=""
                           /></a>
                         </li>
                         <li class="list">
                           <a href="#"
-                            ><img src="dist/icons/twitter.svg" alt=""
+                            ><img src="../dist/icons/twitter.svg" alt=""
                           /></a>
                         </li>
                         <li class="list">
                           <a href="#"
-                            ><img src="dist/icons/facebook.svg" alt=""
+                            ><img src="../dist/icons/facebook.svg" alt=""
                           /></a>
                         </li>
                         <li class="list">
                           <a href="#"
-                            ><img src="dist/icons/instagram.svg" alt=""
+                            ><img src="../dist/icons/instagram.svg" alt=""
                           /></a>
                         </li>
                       </ul>
@@ -567,10 +523,10 @@
     </div>
     <!-- JS
       ================================================== -->
-    <script src="dist/js/vendors/jquery-3.4.1.min.js"></script>
-    <script src="dist/js/vendors/jquery-migrate-1.2.1.min.js"></script>
-    <script src="dist/js/vendors/slick.min.js"></script>
-    <script src="dist/js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="../dist/js/vendors/jquery-3.4.1.min.js"></script>
+    <script src="../dist/js/vendors/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../dist/js/vendors/slick.min.js"></script>
+    <script src="../dist/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/main.js"></script>
   </body>
 </html>
