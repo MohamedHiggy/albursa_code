@@ -20,12 +20,12 @@
                     color: #505050;
                   }
                   .container {
-                    height: 25px;
-                    width: 25px;
+                    height: 20px;
+                    width: 20px;
                     display: block;
                     position: relative;
                     cursor: pointer;
-                    font-size: 22px;
+                    font-size: 20px;
                     -webkit-user-select: none;
                     -moz-user-select: none;
                     -ms-user-select: none;
@@ -68,12 +68,12 @@
 
                   /* Style the checkmark/indicator */
                   .container .checkmark:after {
-                    left: 9px;
-                    top: 5px;
-                    width: 5px;
+                    left: 11px;
+                    top: 2px;
+                    width: 6px;
                     height: 10px;
                     border: solid #000000;
-                    border-width: 0 2px 3px 0;
+                    border-width: 0 2px 2px 0;
                     -webkit-transform: rotate(45deg);
                     -ms-transform: rotate(45deg);
                     transform: rotate(45deg);

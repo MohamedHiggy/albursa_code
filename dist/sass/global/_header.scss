@@ -90,13 +90,13 @@
       }
     }
     .middle-nav-btns {
+      width: 100%;
       .list-style {
         display: flex;
         justify-content: space-between;
         margin: 0;
         padding: 5px 0 0 0;
         .list {
-          margin: 0 15px;
           text-align: center;
           a {
             display: block;
