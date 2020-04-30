@@ -88,7 +88,7 @@
                 <div class="side-bar-links">
                   <ul class="list-style">
                     <li class="list">
-                      <a href="vendor-dashboard.html"  class="active">
+                      <a href="vendor-dashboard.html" class="active">
                         <img
                           src="../dist/icons/adminIcons/dashboard.svg"
                           alt=""
@@ -134,32 +134,31 @@
             <!--_______________ vendor content details _______________-->
             <div class="col-lg-10">
               <div class="vendor-setting-content">
-
                 <!--================ vendor highlights ==================-->
                 <div class="vendor-highlights">
-                <ul class="list-style">
+                  <ul class="list-style">
                     <li class="list">
-                        <p class="title">All time views</p>
-                        <p class="sub-title">4K</p>
+                      <p class="title">All time views</p>
+                      <p class="sub-title">4K</p>
                     </li>
                     <li class="list">
-                        <p class="title">All time engagement</p>
-                        <p class="sub-title">2K</p>
+                      <p class="title">All time engagement</p>
+                      <p class="sub-title">2K</p>
                     </li>
                     <li class="list">
-                        <p class="title">In stock</p>
-                        <p class="sub-title">18</p>
+                      <p class="title">In stock</p>
+                      <p class="sub-title">18</p>
                     </li>
                     <li class="list">
-                        <p class="title">Out of stock</p>
-                        <p class="sub-title">30</p>
+                      <p class="title">Out of stock</p>
+                      <p class="sub-title">30</p>
                     </li>
                     <li class="list">
-                        <p class="title">Inbox</p>
-                        <p class="sub-title">40</p>
+                      <p class="title">Inbox</p>
+                      <p class="sub-title">40</p>
                     </li>
-                </ul>
-                </div>          
+                  </ul>
+                </div>
 
                 <!--================ vendor tabs ==================-->
                 <div class="vendor-tabs">
@@ -186,44 +185,1586 @@
                 <div class="vendor-tabs-content">
                   <!--_________________ all-mails  ______________________-->
                   <div class="div-tab" id="tab-1">
-
                     <!--================ vendor filters ==================-->
                     <div class="vendor-filters">
-                        <ul class="list-style">
+                      <ul class="list-style">
+                        <li class="list">
+                          <ul class="list-style-two">
                             <li class="list">
-                                <ul class="list-style-two">
-                                    <li class="list">
-                                        <div class="form-group">
-                                            <label for="status">status</label>
-                                            <select class="form-control input-focus" id="status">
-                                              <option>active</option>
-                                              <option>Rejected</option>
-                                              <option>waiting</option>
-                                              <option>out of stock</option>
-                                              <option>In stock</option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li class="list">
-                                        <div class="form-group">
-                                            <input type="search" class="form-control input-focus">
-                                        </div>
-                                    </li>
-                                </ul>
+                              <div class="form-group">
+                                <select class="form-control input-focus">
+                                  <option>active</option>
+                                  <option>Rejected</option>
+                                  <option>waiting</option>
+                                  <option>out of stock</option>
+                                  <option>In stock</option>
+                                </select>
+                                <img
+                                  src="../dist/icons/adminIcons/down-arrow.svg"
+                                  alt=""
+                                />
+                              </div>
                             </li>
                             <li class="list">
-                                <a href="add-product.html">Add Product</a>
+                              <div class="form-group">
+                                <input
+                                  type="search"
+                                  class="form-control input-focus input-search"
+                                  placeholder="Search"
+                                />
+                              </div>
                             </li>
-                        </ul>
+                          </ul>
+                        </li>
+                        <li class="list">
+                          <a href="add-product.html">
+                            <img
+                              src="../dist/icons/adminIcons/add-product.svg"
+                              alt=""
+                              class="mr-2"
+                            />
+                            Add Product
+                          </a>
+                        </li>
+                      </ul>
                     </div>
 
+                    <!--================ vendor table ==================-->
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">item</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Views</th>
+                          <th scope="col">in stock</th>
+                          <th scope="col">Mail sent</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="item-content">
+                            <a href="#"
+                              >W156 Model 5ton chinese wheel loader compare
+                              to...</a
+                            >
+                          </td>
+                          <td class="status-waiting">Waiting for approval</td>
+                          <td class="Views">-</td>
+                          <td class="instock">-</td>
+                          <td class="mail-sent">-</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            <a href="#"
+                              >W156 Model 5ton chinese wheel loader compare
+                              to...</a
+                            >
+                          </td>
+                          <td class="status-rejected">Rejected</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            <a href="#"
+                              >W156 Model 5ton chinese wheel loader compare
+                              to...</a
+                            >
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            <a href="#"
+                              >W156 Model 5ton chinese wheel loader compare
+                              to...</a
+                            >
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            <a href="#"
+                              >W156 Model 5ton chinese wheel loader compare
+                              to...</a
+                            >
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            <a href="#"
+                              >W156 Model 5ton chinese wheel loader compare
+                              to...</a
+                            >
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            <a href="#"
+                              >W156 Model 5ton chinese wheel loader compare
+                              to...</a
+                            >
+                          </td>
+                          <td class="status-out">Out of stock</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            <a href="#"
+                              >W156 Model 5ton chinese wheel loader compare
+                              to...</a
+                            >
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            <a href="#"
+                              >W156 Model 5ton chinese wheel loader compare
+                              to...</a
+                            >
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--================ vendor pagination ==================-->
+                    <div class="vendor-pagination">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a
+                              class="page-link previous-page-link"
+                              href="#"
+                              aria-label="Previous"
+                            >
+                              <span aria-hidden="true">&laquo;</span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link active-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item">
+                            <a
+                              class="page-link next-page-link"
+                              href="#"
+                              aria-label="Next"
+                            >
+                              <span aria-hidden="true">&raquo;</span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
                   </div>
+
                   <!--_________________ mails-sent  ______________________-->
                   <div class="div-tab" id="tab-2">
-                    
+                    <!--================ vendor filters ==================-->
+                    <div class="vendor-filters">
+                      <ul class="list-style">
+                        <li class="list">
+                          <ul class="list-style-two">
+                            <li class="list">
+                              <div class="form-group">
+                                <select class="form-control input-focus">
+                                  <option>active</option>
+                                  <option>Rejected</option>
+                                  <option>waiting</option>
+                                  <option>out of stock</option>
+                                  <option>In stock</option>
+                                </select>
+                                <img
+                                  src="../dist/icons/adminIcons/down-arrow.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </li>
+                            <li class="list">
+                              <div class="form-group">
+                                <input
+                                  type="search"
+                                  class="form-control input-focus input-search"
+                                  placeholder="Search"
+                                />
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="list">
+                          <a href="add-real-estate.html">
+                            <img
+                              src="../dist/icons/adminIcons/add-product.svg"
+                              alt=""
+                              class="mr-2"
+                            />
+                            Add Product
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!--================ vendor table ==================-->
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">item</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Views</th>
+                          <th scope="col">in stock</th>
+                          <th scope="col">Mail sent</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-waiting">Waiting for approval</td>
+                          <td class="Views">-</td>
+                          <td class="instock">-</td>
+                          <td class="mail-sent">-</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-rejected">Rejected</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-out">Out of stock</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--================ vendor pagination ==================-->
+                    <div class="vendor-pagination">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a
+                              class="page-link previous-page-link"
+                              href="#"
+                              aria-label="Previous"
+                            >
+                              <span aria-hidden="true">&laquo;</span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link active-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item">
+                            <a
+                              class="page-link next-page-link"
+                              href="#"
+                              aria-label="Next"
+                            >
+                              <span aria-hidden="true">&raquo;</span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
                   </div>
+
                   <!--_________________ mails-receive  ______________________-->
                   <div class="div-tab" id="tab-3">
+                    <!--================ vendor filters ==================-->
+                    <div class="vendor-filters">
+                      <ul class="list-style">
+                        <li class="list">
+                          <ul class="list-style-two">
+                            <li class="list">
+                              <div class="form-group">
+                                <select class="form-control input-focus">
+                                  <option>active</option>
+                                  <option>Rejected</option>
+                                  <option>waiting</option>
+                                  <option>out of stock</option>
+                                  <option>In stock</option>
+                                </select>
+                                <img
+                                  src="../dist/icons/adminIcons/down-arrow.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </li>
+                            <li class="list">
+                              <div class="form-group">
+                                <input
+                                  type="search"
+                                  class="form-control input-focus input-search"
+                                  placeholder="Search"
+                                />
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="list">
+                          <a href="add-product.html">
+                            <img
+                              src="../dist/icons/adminIcons/add-product.svg"
+                              alt=""
+                              class="mr-2"
+                            />
+                            Add Product
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!--================ vendor table ==================-->
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">item</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Views</th>
+                          <th scope="col">in stock</th>
+                          <th scope="col">Mail sent</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-waiting">Waiting for approval</td>
+                          <td class="Views">-</td>
+                          <td class="instock">-</td>
+                          <td class="mail-sent">-</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-rejected">Rejected</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-out">Out of stock</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="item-content">
+                            W156 Model 5ton chinese wheel loader compare to...
+                          </td>
+                          <td class="status-active">Active</td>
+                          <td class="Views">800</td>
+                          <td class="instock">1000</td>
+                          <td class="mail-sent">1000</td>
+                          <!--dropdwon contain delete and edit-->
+                          <td class="more-options dropleft">
+                            <button
+                              class="btn more"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              <img
+                                src="../dist/icons/adminIcons/dropdown-see.svg"
+                                alt=""
+                              />
+                              more
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <button class="btn delete-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-delete.svg"
+                                  alt=""
+                                />
+                                Delete
+                              </button>
+                              <button class="btn edit-btn">
+                                <img
+                                  src="../dist/icons/adminIcons/a-edit.svg"
+                                  alt=""
+                                />
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--================ vendor pagination ==================-->
+                    <div class="vendor-pagination">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a
+                              class="page-link previous-page-link"
+                              href="#"
+                              aria-label="Previous"
+                            >
+                              <span aria-hidden="true">&laquo;</span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link active-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item">
+                            <a
+                              class="page-link next-page-link"
+                              href="#"
+                              aria-label="Next"
+                            >
+                              <span aria-hidden="true">&raquo;</span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
                   </div>
                 </div>
               </div>

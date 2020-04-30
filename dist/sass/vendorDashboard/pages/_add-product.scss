@@ -1,0 +1,65 @@
+.add-product {
+  .vendor-content {
+    .vendor-setting-content {
+      width: 80%;
+      .add-product-content {
+        padding-bottom: 50px;
+        form {
+          .img-uploaded {
+          }
+          .title {
+            font-weight: 500;
+            font-size: 14px;
+            color: #000000;
+          }
+          .form-row {
+            .form-group {
+              position: relative;
+              small {
+                font-weight: normal;
+                color: #a4a4a4;
+                .add-more {
+                  background-color: transparent;
+                  border: none;
+                  font-weight: bold;
+                  font-size: 14px;
+                  color: #d5b34f;
+                  &:focus {
+                    outline: none;
+                    box-shadow: none;
+                  }
+                }
+              }
+              select {
+                cursor: pointer;
+                -o-appearance: none;
+                -ms-appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              }
+              .select-arrow {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+              }
+            }
+          }
+          .btn-post {
+            width: 250px;
+            border-radius: 0;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #eaa93f;
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
