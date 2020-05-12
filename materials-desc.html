@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!--- basic page needs
       ================================================== -->
     <meta charset="UTF-8" />
@@ -17,645 +18,543 @@
     <link rel="stylesheet" href="dist/css/vendors/slick-theme.css" />
     <link rel="stylesheet" href="dist/css/vendors/jquery.fancybox.css" />
     <link rel="stylesheet" href="dist/css/main.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="materials-desc-page">
-      <!--_______________Nav Bars_______________-->
-      <div class="header" id="header">
-        <!--_______________top nav_______________-->
-        <div class="top-nav">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-6 col-md-6">
-                <ul class="list-style left-list-style">
-                  <li class="list">
-                    <a href="about.html">
-                      About
-                    </a>
-                  </li>
-                  <li class="list">
-                    <a href="#">
-                      Forum
-                    </a>
-                  </li>
-                  <li class="list">
-                    <a href="contact.html">
-                      Talk to us
-                    </a>
-                  </li>
-                  <li class="list">
-                    <a href="#">
-                      Sell with us
-                    </a>
-                  </li>
-                  <li class="list">
-                    <a href="tenders-for-user.html">
-                      Tenders
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <ul class="list-style right-list-style">
-                  <li class="list">
-                    <div class="dropdown">
-                      <span>
-                        <img src="dist/imgs/turk.png" alt="" />
-                        English - USD
-                      </span>
+        <!--_______________Nav Bars_______________-->
+        <div class="header" id="header">
+            <!--_______________top nav_______________-->
+            <div class="top-nav">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <ul class="list-style left-list-style">
+                                <li class="list">
+                                    <a href="about.html">
+                About
+              </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#">
+                Forum
+              </a>
+                                </li>
+                                <li class="list">
+                                    <a href="contact.html">
+                Talk to us
+              </a>
+                                </li>
+                                <li class="list">
+                                    <a href="#">
+                Sell with us
+              </a>
+                                </li>
+                                <li class="list">
+                                    <a href="tenders-for-user.html">
+                Tenders
+              </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <ul class="list-style right-list-style">
+                                <li class="list">
+                                    <div class="dropdown">
+                                        <span>
+                  <img src="dist/imgs/turk.png" alt="" />
+                  English - USD
+                </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <!--_______________middle nav_______________-->
-        <div class="middle-nav">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-1">
-                <div class="logo">
-                  <a href="Home.html">
-                    <img src="dist/icons/logo.svg" alt="logo" />
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="search-bar">
-                  <div class="dropdown">
-                    <button
-                      class="btn btn-secondary dropdown-toggle"
-                      type="button"
-                      id="dropdown"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Dropdown
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdown">
-                      <button class="dropdown-item" type="button">
-                        Action
-                      </button>
-                      <button class="dropdown-item" type="button">
-                        Another action
-                      </button>
-                      <button class="dropdown-item" type="button">
-                        Something else here
-                      </button>
-                    </div>
-                  </div>
-                  <form action="" class="search-form">
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="what are you looking for?"
-                      aria-label="Search"
-                    />
-                    <button type="submit" class="icon-search">
-                      <img src="dist/icons/search.svg" alt="search" />
-                    </button>
-                  </form>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="middle-nav-btns">
-                  <ul class="list-style">
-                    <li class="list">
-                      <a href="#">
-                        <img src="dist/icons/heart.svg" alt="" />
-                        Wishlist
-                      </a>
-                    </li>
-                    <li class="list">
-                      <a href="login.html">Sign In</a>
-                    </li>
-                    <li class="list">
-                      <a href="signup.html" class="register-btn">Register</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--_______________materials-desc_______________-->
-      <div class="materials-desc">
-        <div class="container">
-          <div class="row">
-            <!--left side desc-->
-            <div class="col-lg-8">
-              <div class="left-side desc">
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <span>Materiales</span>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <span>Construction Materiales</span>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <span>Sand</span>
-                    </li>
-                  </ol>
-                </nav>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <!-- Thumbnail Large Image start -->
-                    <div class="show-image-product">
-                      <div class="origin-country">
-                        <img src="dist/imgs/turk.png" alt="" class="mb-2" />
-                        <span class="country">turkey</span>
-                      </div>
-                      <div class="tab-content">
-                        <div id="thumb1" class="tab-pane active">
-                          <a
-                            data-fancybox="images"
-                            href="dist/imgs/materialsDesc/a.png"
-                            ><img
-                              src="dist/imgs/materialsDesc/a.png"
-                              alt="product-view"
-                          /></a>
-                        </div>
-                        <div id="thumb2" class="tab-pane">
-                          <a
-                            data-fancybox="images"
-                            href="dist/imgs/materialsDesc/b.png"
-                            ><img
-                              src="dist/imgs/materialsDesc/b.png"
-                              alt="product-view"
-                          /></a>
-                        </div>
-                        <div id="thumb3" class="tab-pane">
-                          <a
-                            data-fancybox="images"
-                            href="dist/imgs/materialsDesc/c.png"
-                            ><img
-                              src="dist/imgs/materialsDesc/c.png"
-                              alt="product-view"
-                          /></a>
-                        </div>
-                        <div id="thumb4" class="tab-pane">
-                          <a
-                            data-fancybox="images"
-                            href="dist/imgs/materialsDesc/b.png"
-                            ><img
-                              src="dist/imgs/materialsDesc/b.png"
-                              alt="product-view"
-                          /></a>
-                        </div>
-                        <div id="thumb5" class="tab-pane">
-                          <a
-                            data-fancybox="images"
-                            href="dist/imgs/materialsDesc/b.png"
-                            ><img
-                              src="dist/imgs/materialsDesc/b.png"
-                              alt="product-view"
-                          /></a>
-                        </div>
-                      </div>
-
-                      <!-- Thumbnail Image End -->
-                      <div class="product-thumbnail mt-3">
-                        <div class="thumb-menu nav">
-                          <a class="active" data-toggle="tab" href="#thumb1">
-                            <img
-                              src="dist/imgs/materialsDesc/a.png"
-                              alt="product-thumbnail"
-                          /></a>
-                          <a data-toggle="tab" href="#thumb2">
-                            <img
-                              src="dist/imgs/materialsDesc/b.png"
-                              alt="product-thumbnail"
-                          /></a>
-                          <a data-toggle="tab" href="#thumb3">
-                            <img
-                              src="dist/imgs/materialsDesc/c.png"
-                              alt="product-thumbnail"
-                          /></a>
-                          <a data-toggle="tab" href="#thumb4">
-                            <img
-                              src="dist/imgs/materialsDesc/b.png"
-                              alt="product-thumbnail"
-                          /></a>
-                          <a data-toggle="tab" href="#thumb5">
-                            <img
-                              src="dist/imgs/materialsDesc/b.png"
-                              alt="product-thumbnail"
-                          /></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="title-desc">
-                      <div class="header">
-                        <h3 class="title">
-                          SECOND HAND WELL MAINTAINED IN GOOD CONDITION WHEEL
-                          LOADER BACKHOE CAT 416E FOR SALE WITH LOW PRICE
-                          (NEGOTIABLE)
-                        </h3>
-                        <p class="price mt-3">
-                          <b>9.00$</b> <span class="per">Per Ton</span>
-                        </p>
-                        <p class="min-order">
-                          min order: <span class="number">4</span> tons
-                        </p>
-                      </div>
-                      <div class="overview">
-                        <h2 class="overview-title">overview</h2>
-                        <p class="overview-desc">
-                          In the year of 2003, located in state of Perak,
-                          Peninsular Malaysia, an environmentally nature gifted
-                          zone where collectively surrounded by mountains and
-                          lakes, a team of knowledgeable individuals with 20
-                        </p>
-                      </div>
-                      <div class="available">
-                        <ul class="list-style">
-                          <li class="list">
-                            <h3 class="available-title">Colors</h3>
-                            <div class="available-content">
-                              <span>White</span>
-                              <span>Orange</span>
+            <!--_______________middle nav_______________-->
+            <div class="middle-nav">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <div class="logo">
+                                <a href="Home.html">
+                                    <img src="dist/icons/logo.svg" alt="logo" />
+                                </a>
                             </div>
-                          </li>
-                          <li class="list mt-3">
-                            <h3 class="available-title">Tons available</h3>
-                            <div class="available-content">
-                              <span>1 - 40 Tons</span>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="search-bar">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown">
+                                        <button class="dropdown-item" type="button">
+                  Action
+                </button>
+                                        <button class="dropdown-item" type="button">
+                  Another action
+                </button>
+                                        <button class="dropdown-item" type="button">
+                  Something else here
+                </button>
+                                    </div>
+                                </div>
+                                <form action="" class="search-form">
+                                    <input class="form-control" type="text" placeholder="what are you looking for?" aria-label="Search" />
+                                    <button type="submit" class="icon-search">
+                <img src="dist/icons/search.svg" alt="search" />
+              </button>
+                                </form>
                             </div>
-                          </li>
-                        </ul>
-                      </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="middle-nav-btns">
+                                <ul class="list-style">
+                                    <li class="list">
+                                        <a href="#">
+                                            <img src="dist/icons/heart.svg" alt="" /> Wishlist
+                                        </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="login.html">Sign In</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="signup.html" class="register-btn">Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="row mt-5">
-                  <div class="col-lg-12">
-                    <div class="more-details">
-                      <h2 class="title">description</h2>
-                      <ul class="list-style">
-                        <li class="list mb-3">
-                          <p class="description">
-                            In the year of 2003, located in state of Perak,
-                            Peninsular Malaysia, an environmentally nature
-                            gifted zone where collectively surrounded by
-                            mountains and lakes, a team of knowledgeable
-                            individuals with 20 over years of experience in
-                            Minerals sales and manufacturing, founded this
-                            company, As a result of rapid growth and
-                            increasingly market needs of minerals, our company,
-                            is purported to supply good quality and certified
-                          </p>
-                          <div class="product-img">
-                            <img src="dist/imgs/ss.jpg" alt="" />
-                          </div>
-                        </li>
-                        <li class="list">
-                          <p class="description">
-                            In the year of 2003, located in state of Perak,
-                            Peninsular Malaysia, an environmentally nature
-                            gifted zone where collectively surrounded by
-                            mountains and lakes, a team of knowledgeable
-                            individuals with 20 over years of experience in
-                            Minerals sales and manufacturing, founded this
-                            company, As a result of rapid growth and
-                            increasingly market needs of minerals, our company,
-                            is purported to supply good quality and certified
-                          </p>
-                          <div class="product-img">
-                            <img src="dist/imgs/rec (2).png" alt="" />
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-5">
-                  <div class="col-lg-12">
-                    <div class="rating">
-                      <div class="rats"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <!--right side desc-->
-            <div class="col-lg-4">
-              <div class="btns">
+
+
+
+            <!--_______________responsive nav_______________-->
+            <div class="responsive-nav">
                 <ul class="list-style">
-                  <li class="list">
-                    <button class="btn-love">
+                    <li class="list">
+                        <div class="logo">
+                            <img src="dist/icons/i-logo.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="list">
+                        <i class="fa fa-align-justify toggle-sidebar"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-resp">
+                <ul class="main-list-style">
+                    <li class="main-list"><a href="about.html">About</a></li>
+                    <li class="main-list"><a href="#">Forum</a></li>
+                    <li class="main-list"><a href="contact.html">Talk to us</a></li>
+                    <li class="main-list"><a href="#">Sell with us</a></li>
+                    <li class="main-list"><a href="tender-apply.html">Tenders</a></li>
+                </ul>
+                <ul class="main-list-style">
+                    <li class="main-list"><a href="login.html">Sign In</a></li>
+                    <li class="main-list"><a href="signup.html">Register</a></li>
+                    <li class="main-list">
+                        <div class="dropdown-search">
+                            <button class="drop-search">Search</button>
+                            <div class="search-box">
+                                <form class="form-inline">
+                                    <input class="form-control input-focus" type="search" placeholder="Search" aria-label="Search">
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--_______________materials-desc_______________-->
+        <div class="materials-desc">
+            <div class="container">
+                <div class="row">
+                    <!--left side desc-->
+                    <div class="col-lg-8 col-md-12 col-xs-12">
+                        <div class="left-side desc">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <span>Materiales</span>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <span>Construction Materiales</span>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <span>Sand</span>
+                                    </li>
+                                </ol>
+                            </nav>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 col-xs-12">
+                                    <!-- Thumbnail Large Image start -->
+                                    <div class="show-image-product">
+                                        <div class="origin-country">
+                                            <img src="dist/imgs/turk.png" alt="" class="mb-2" />
+                                            <span class="country">turkey</span>
+                                        </div>
+                                        <div class="tab-content">
+                                            <div id="thumb1" class="tab-pane active">
+                                                <a data-fancybox="images" href="dist/imgs/materialsDesc/a.png"><img src="dist/imgs/materialsDesc/a.png" alt="product-view" /></a>
+                                            </div>
+                                            <div id="thumb2" class="tab-pane">
+                                                <a data-fancybox="images" href="dist/imgs/materialsDesc/b.png"><img src="dist/imgs/materialsDesc/b.png" alt="product-view" /></a>
+                                            </div>
+                                            <div id="thumb3" class="tab-pane">
+                                                <a data-fancybox="images" href="dist/imgs/materialsDesc/c.png"><img src="dist/imgs/materialsDesc/c.png" alt="product-view" /></a>
+                                            </div>
+                                            <div id="thumb4" class="tab-pane">
+                                                <a data-fancybox="images" href="dist/imgs/materialsDesc/b.png"><img src="dist/imgs/materialsDesc/b.png" alt="product-view" /></a>
+                                            </div>
+                                            <div id="thumb5" class="tab-pane">
+                                                <a data-fancybox="images" href="dist/imgs/materialsDesc/b.png"><img src="dist/imgs/materialsDesc/b.png" alt="product-view" /></a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Thumbnail Image End -->
+                                        <div class="product-thumbnail mt-3">
+                                            <div class="thumb-menu nav">
+                                                <a class="active" data-toggle="tab" href="#thumb1">
+                                                    <img src="dist/imgs/materialsDesc/a.png" alt="product-thumbnail" /></a>
+                                                <a data-toggle="tab" href="#thumb2">
+                                                    <img src="dist/imgs/materialsDesc/b.png" alt="product-thumbnail" /></a>
+                                                <a data-toggle="tab" href="#thumb3">
+                                                    <img src="dist/imgs/materialsDesc/c.png" alt="product-thumbnail" /></a>
+                                                <a data-toggle="tab" href="#thumb4">
+                                                    <img src="dist/imgs/materialsDesc/b.png" alt="product-thumbnail" /></a>
+                                                <a data-toggle="tab" href="#thumb5">
+                                                    <img src="dist/imgs/materialsDesc/b.png" alt="product-thumbnail" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-xs-12">
+                                    <div class="title-desc">
+                                        <div class="header">
+                                            <h3 class="title">
+                                                SECOND HAND WELL MAINTAINED IN GOOD CONDITION WHEEL LOADER BACKHOE CAT 416E FOR SALE WITH LOW PRICE (NEGOTIABLE)
+                                            </h3>
+                                            <p class="price mt-3">
+                                                <b>9.00$</b> <span class="per">Per Ton</span>
+                                            </p>
+                                            <p class="min-order">
+                                                min order: <span class="number">4</span> tons
+                                            </p>
+                                        </div>
+                                        <div class="overview">
+                                            <h2 class="overview-title">overview</h2>
+                                            <p class="overview-desc">
+                                                In the year of 2003, located in state of Perak, Peninsular Malaysia, an environmentally nature gifted zone where collectively surrounded by mountains and lakes, a team of knowledgeable individuals with 20
+                                            </p>
+                                        </div>
+                                        <div class="available">
+                                            <ul class="list-style">
+                                                <li class="list">
+                                                    <h3 class="available-title">Colors</h3>
+                                                    <div class="available-content">
+                                                        <span>White</span>
+                                                        <span>Orange</span>
+                                                    </div>
+                                                </li>
+                                                <li class="list mt-3">
+                                                    <h3 class="available-title">Tons available</h3>
+                                                    <div class="available-content">
+                                                        <span>1 - 40 Tons</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-lg-12 col-md-12 col-xs-12">
+                                    <div class="more-details">
+                                        <h2 class="title">description</h2>
+                                        <ul class="list-style">
+                                            <li class="list mb-3">
+                                                <p class="description">
+                                                    In the year of 2003, located in state of Perak, Peninsular Malaysia, an environmentally nature gifted zone where collectively surrounded by mountains and lakes, a team of knowledgeable individuals with 20 over years of experience in Minerals sales and
+                                                    manufacturing, founded this company, As a result of rapid growth and increasingly market needs of minerals, our company, is purported to supply good quality and certified
+                                                </p>
+                                                <div class="product-img">
+                                                    <img src="dist/imgs/ss.jpg" alt="" />
+                                                </div>
+                                            </li>
+                                            <li class="list">
+                                                <p class="description">
+                                                    In the year of 2003, located in state of Perak, Peninsular Malaysia, an environmentally nature gifted zone where collectively surrounded by mountains and lakes, a team of knowledgeable individuals with 20 over years of experience in Minerals sales and
+                                                    manufacturing, founded this company, As a result of rapid growth and increasingly market needs of minerals, our company, is purported to supply good quality and certified
+                                                </p>
+                                                <div class="product-img">
+                                                    <img src="dist/imgs/rec (2).png" alt="" />
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--right side desc-->
+                    <div class="col-lg-4 col-md-12 col-xs-12">
+                        <div class="btns ">
+                            <ul class="list-style ">
+                                <li class="list ">
+                                    <button class="btn-love ">
                       Save
                     </button>
-                  </li>
-                  <li class="list">
-                    <button
-                      class="share"
-                      data-toggle="modal"
-                      data-target="#shareModel"
-                    >
-                      <img src="dist/icons/share.svg" alt="" />
+                                </li>
+                                <li class="list ">
+                                    <button class="share " data-toggle="modal " data-target="#shareModel ">
+                      <img src="dist/icons/share.svg " alt=" " />
                       Share
                     </button>
-                  </li>
-                </ul>
-              </div>
-              <div class="contact-supplier">
-                <div class="supplier-form">
-                  <h2 class="title">Contact Supplier</h2>
-                  <form action="">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control input-focus"
-                        placeholder="Your name"
-                      />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-supplier ">
+                            <div class="supplier-form ">
+                                <h2 class="title ">Contact Supplier</h2>
+                                <form action=" ">
+                                    <div class="form-group ">
+                                        <input type="text " class="form-control input-focus " placeholder="Your name " />
+                                    </div>
+                                    <div class="form-group ">
+                                        <input type="text " class="form-control input-focus " placeholder="Phone " />
+                                    </div>
+                                    <div class="form-group ">
+                                        <input type="text " class="form-control input-focus " placeholder="E-mail " />
+                                    </div>
+                                    <div class="form-group ">
+                                        <textarea cols="30 " rows="10 " placeholder="Message " class="form-control input-focus "></textarea>
+                                    </div>
+                                    <button class="btn btn-block ">Send</button>
+                                </form>
+                            </div>
+                            <div class="vendor-details ">
+                                <ul class="list-style ">
+                                    <li class="list ">
+                                        <p class="vendor-name ">
+                                            Vendor: <a href="vendor-profile.html ">Ahmed Galal</a>
+                                        </p>
+                                    </li>
+                                    <li class="list vector-contact ">
+                                        <a href="# ">
+                                            <img src="dist/icons/chat.svg " alt=" " /> Chat
+                                        </a>
+                                        <a href="# ">
+                                            <img src="dist/icons/phone.svg " alt=" " /> Call
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control input-focus"
-                        placeholder="Phone"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control input-focus"
-                        placeholder="E-mail"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <textarea
-                        cols="30"
-                        rows="10"
-                        placeholder="Message"
-                        class="form-control input-focus"
-                      ></textarea>
-                    </div>
-                    <button class="btn btn-block">Send</button>
-                  </form>
                 </div>
-                <div class="vendor-details">
-                  <ul class="list-style">
-                    <li class="list">
-                      <p class="vendor-name">
-                        Vendor: <a href="vendor-profile.html">Ahmed Galal</a>
-                      </p>
-                    </li>
-                    <li class="list vector-contact">
-                      <a href="#">
-                        <img src="dist/icons/chat.svg" alt="" />
-                        Chat
-                      </a>
-                      <a href="#">
-                        <img src="dist/icons/phone.svg" alt="" />
-                        Call
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
 
-      <!--_______________more-materials_______________-->
-      <div class="more-materials">
-        <div class="container">
-          <div class="list-style">
-            <p class="title">similar products</p>
-            <a href="#" class="see-more">See more</a>
-          </div>
-          <div class="row">
-            <div class="col-lg-3">
-              <a href="#" class="anchor-card">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="dist/imgs/materials/1.png"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      W156 Model 5ton chinese wheel loader compare to...
-                    </p>
-                    <h5 class="card-title">$4000</h5>
-                    <p class="card-title-2">min order: 4 sets</p>
-                  </div>
+        <!--_______________more-materials_______________-->
+        <div class="more-materials ">
+            <div class="container ">
+                <div class="list-style ">
+                    <p class="title ">similar products</p>
+                    <a href="# " class="see-more ">See more</a>
                 </div>
-              </a>
-            </div>
-            <div class="col-lg-3">
-              <a href="#" class="anchor-card">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="dist/imgs/materials/2.png"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      W156 Model 5ton chinese wheel loader compare to...
-                    </p>
-                    <h5 class="card-title">$4000</h5>
-                    <p class="card-title-2">min order: 4 sets</p>
-                  </div>
+                <div class="row ">
+                    <div class="col-lg-3 col-md-6 col-xs-12 mb-3 ">
+                        <a href="# " class="anchor-card ">
+                            <div class="card ">
+                                <img class="card-img-top " src="dist/imgs/materials/1.png " alt="Card image cap " />
+                                <div class="card-body ">
+                                    <p class="card-text ">
+                                        W156 Model 5ton chinese wheel loader compare to...
+                                    </p>
+                                    <h5 class="card-title ">$4000</h5>
+                                    <p class="card-title-2 ">min order: 4 sets</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 mb-3 ">
+                        <a href="# " class="anchor-card ">
+                            <div class="card ">
+                                <img class="card-img-top " src="dist/imgs/materials/2.png " alt="Card image cap " />
+                                <div class="card-body ">
+                                    <p class="card-text ">
+                                        W156 Model 5ton chinese wheel loader compare to...
+                                    </p>
+                                    <h5 class="card-title ">$4000</h5>
+                                    <p class="card-title-2 ">min order: 4 sets</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 mb-3 ">
+                        <a href="# " class="anchor-card ">
+                            <div class="card ">
+                                <img class="card-img-top " src="dist/imgs/materials/3.png " alt="Card image cap " />
+                                <div class="card-body ">
+                                    <p class="card-text ">
+                                        W156 Model 5ton chinese wheel loader compare to...
+                                    </p>
+                                    <h5 class="card-title ">$4000</h5>
+                                    <p class="card-title-2 ">min order: 4 sets</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 mb-3 ">
+                        <a href="# " class="anchor-card ">
+                            <div class="card ">
+                                <img class="card-img-top " src="dist/imgs/materials/4.png " alt="Card image cap " />
+                                <div class="card-body ">
+                                    <p class="card-text ">
+                                        W156 Model 5ton chinese wheel loader compare to...
+                                    </p>
+                                    <h5 class="card-title ">$4000</h5>
+                                    <p class="card-title-2 ">min order: 4 sets</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-              </a>
             </div>
-            <div class="col-lg-3">
-              <a href="#" class="anchor-card">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="dist/imgs/materials/3.png"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      W156 Model 5ton chinese wheel loader compare to...
-                    </p>
-                    <h5 class="card-title">$4000</h5>
-                    <p class="card-title-2">min order: 4 sets</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-3">
-              <a href="#" class="anchor-card">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="dist/imgs/materials/4.png"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <p class="card-text">
-                      W156 Model 5ton chinese wheel loader compare to...
-                    </p>
-                    <h5 class="card-title">$4000</h5>
-                    <p class="card-title-2">min order: 4 sets</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <!--_______________Footer_______________-->
-      <div class="footer">
-        <div class="container">
-          <div class="top-footer">
-            <div class="row">
-              <div class="col-lg-8">
-                <div class="left-links">
-                  <ul class="list-style">
-                    <li class="list"><a href="about.html">About</a></li>
-                    <li class="list"><a href="faq.html">FAQ</a></li>
-                    <li class="list"><a href="contact.html">Talk to us</a></li>
-                  </ul>
-                  <ul class="list-style">
-                    <li class="list"><a href="faq.html">Privacy policy</a></li>
-                    <li class="list">
-                      <a href="faq.html">Terms & conditions </a>
-                    </li>
-                  </ul>
-                  <ul class="list-style">
-                    <li class="list"><a href="#">Forum</a></li>
-                    <li class="list"><a href="#">Sell with us</a></li>
-                    <li class="list">
-                      <a href="tenders-for-user.html">Tenders</a>
-                    </li>
-                  </ul>
+        <!--_______________Footer_______________-->
+        <div class="footer ">
+            <div class="container ">
+                <div class="top-footer ">
+                    <div class="row ">
+                        <div class="col-lg-8 ">
+                            <div class="left-links ">
+                                <ul class="list-style ">
+                                    <li class="list "><a href="about.html ">About</a></li>
+                                    <li class="list "><a href="faq.html ">FAQ</a></li>
+                                    <li class="list "><a href="contact.html ">Talk to us</a></li>
+                                </ul>
+                                <ul class="list-style ">
+                                    <li class="list "><a href="faq.html ">Privacy policy</a></li>
+                                    <li class="list ">
+                                        <a href="faq.html ">Terms & conditions </a>
+                                    </li>
+                                </ul>
+                                <ul class="list-style ">
+                                    <li class="list "><a href="# ">Forum</a></li>
+                                    <li class="list "><a href="# ">Sell with us</a></li>
+                                    <li class="list ">
+                                        <a href="tenders-for-user.html ">Tenders</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div class="right-links ">
+                                <ul class="list-style ">
+                                    <li class="list ">
+                                        <p class="title ">Follow Us</p>
+                                    </li>
+                                    <li class="list ">
+                                        <ul class="social-media-links ">
+                                            <li class="list ">
+                                                <a href="# "><img src="dist/icons/linkedin.svg " alt=" " /></a>
+                                            </li>
+                                            <li class="list ">
+                                                <a href="# "><img src="dist/icons/twitter.svg " alt=" " /></a>
+                                            </li>
+                                            <li class="list ">
+                                                <a href="# "><img src="dist/icons/facebook.svg " alt=" " /></a>
+                                            </li>
+                                            <li class="list ">
+                                                <a href="# "><img src="dist/icons/instagram.svg " alt=" " /></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list ">
+                                        <button class="lang lang-active ">English</button>
+                                        <button class="lang ">Türk</button>
+                                        <button class="lang ">العربية</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="right-links">
-                  <ul class="list-style">
-                    <li class="list">
-                      <p class="title">Follow Us</p>
-                    </li>
-                    <li class="list">
-                      <ul class="social-media-links">
-                        <li class="list">
-                          <a href="#"
-                            ><img src="dist/icons/linkedin.svg" alt=""
-                          /></a>
-                        </li>
-                        <li class="list">
-                          <a href="#"
-                            ><img src="dist/icons/twitter.svg" alt=""
-                          /></a>
-                        </li>
-                        <li class="list">
-                          <a href="#"
-                            ><img src="dist/icons/facebook.svg" alt=""
-                          /></a>
-                        </li>
-                        <li class="list">
-                          <a href="#"
-                            ><img src="dist/icons/instagram.svg" alt=""
-                          /></a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="list">
-                      <button class="lang lang-active">English</button>
-                      <button class="lang">Türk</button>
-                      <button class="lang">العربية</button>
-                    </li>
-                  </ul>
+            </div>
+            <div class="bottom-footer ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-lg-12 ">
+                            <p class="footer-title ">
+                                © 2020 Albursa® Inc. All rights reserved
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="bottom-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <p class="footer-title">
-                  © 2020 Albursa® Inc. All rights reserved
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- Modal -->
-    <div
-      class="share-model modal fade"
-      id="shareModel"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">
-              Share to
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
+    <div class="share-model modal fade " id="shareModel " tabindex="-1 " role="dialog " aria-labelledby="exampleModalCenterTitle " aria-hidden="true ">
+        <div class="modal-dialog modal-dialog-centered " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLongTitle ">
+                        Share to
+                    </h5>
+                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+              <span aria-hidden="true ">&times;</span>
             </button>
-          </div>
-          <div class="modal-body">
-            <ul class="list-style">
-              <li class="list">
-                <a href="#">
-                  <img src="dist/icons/facebook.svg" alt="" />
-                  <p class="social-media-title">Facebook</p>
-                </a>
-              </li>
-              <li class="list">
-                <a href="#">
-                  <img src="dist/icons/instagram.svg" alt="" />
-                  <p class="social-media-title">Instagram</p>
-                </a>
-              </li>
-              <li class="list">
-                <a href="#">
-                  <img src="dist/icons/linkedin.svg" alt="" />
-                  <p class="social-media-title">linkedin</p>
-                </a>
-              </li>
-              <li class="list">
-                <a href="#">
-                  <img src="dist/icons/twitter.svg" alt="" />
-                  <p class="social-media-title">twitter</p>
-                </a>
-              </li>
-            </ul>
-          </div>
+                </div>
+                <div class="modal-body ">
+                    <ul class="list-style ">
+                        <li class="list ">
+                            <a href="# ">
+                                <img src="dist/icons/facebook.svg " alt=" " />
+                                <p class="social-media-title ">Facebook</p>
+                            </a>
+                        </li>
+                        <li class="list ">
+                            <a href="# ">
+                                <img src="dist/icons/instagram.svg " alt=" " />
+                                <p class="social-media-title ">Instagram</p>
+                            </a>
+                        </li>
+                        <li class="list ">
+                            <a href="# ">
+                                <img src="dist/icons/linkedin.svg " alt=" " />
+                                <p class="social-media-title ">linkedin</p>
+                            </a>
+                        </li>
+                        <li class="list ">
+                            <a href="# ">
+                                <img src="dist/icons/twitter.svg " alt=" " />
+                                <p class="social-media-title ">twitter</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!-- JS
       ================================================== -->
-    <script src="dist/js/vendors/jquery-3.4.1.min.js"></script>
-    <script src="dist/js/vendors/jquery-migrate-1.2.1.min.js"></script>
-    <script src="dist/js/vendors/slick.min.js"></script>
-    <script src="dist/js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="dist/js/vendors/jquery.magnific-popup.min.js"></script>
-    <script src="dist/js/vendors/jquery.fancybox.min.js"></script>
-    <script src="dist/js/main.js"></script>
-  </body>
+    <script src="dist/js/vendors/jquery-3.4.1.min.js "></script>
+    <script src="dist/js/vendors/jquery-migrate-1.2.1.min.js "></script>
+    <script src="dist/js/vendors/slick.min.js "></script>
+    <script src="dist/js/vendors/bootstrap.bundle.min.js "></script>
+    <script src="dist/js/vendors/jquery.magnific-popup.min.js "></script>
+    <script src="dist/js/vendors/jquery.fancybox.min.js "></script>
+    <script src="dist/js/main.js "></script>
+</body>
+
 </html>

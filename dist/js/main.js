@@ -15,6 +15,9 @@ $(function() {
     $(".toggle-sidebar").on("click", function() {
         $(".header .nav-resp").toggleClass("no-sidebar");
     });
+    $(".show-filter").on("click", function() {
+        $(".search-results .filter").toggleClass("no-filter");
+    });
 });
 
 // add another tags

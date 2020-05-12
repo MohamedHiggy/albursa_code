@@ -1,1 +1,3 @@
 sass --watch dist/sass/main.scss:dist/css/main.css
+
+@media screen and (max-width: 985px)

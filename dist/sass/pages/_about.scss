@@ -152,3 +152,27 @@
         }
     }
 }
+
+@media screen and (max-width: 985px) {
+    .about-page {
+        .about {
+            .about-header {
+                .head-title {
+                    .c-title {
+                        font-size: 35px;
+                    }
+                }
+            }
+            .our-about {
+                .content {
+                    margin-bottom: 30px;
+                }
+            }
+            .place-about {
+                .content {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}

@@ -1,73 +1,83 @@
 .category-page {
-  .category-content {
-    padding: 40px 30px;
-    .side-filter {
-      border: 1px solid #c4c4c4;
-      padding: 15px;
-      height: 100%;
-      .list-style {
-        padding: 0;
-        .list {
-          .head-tag {
-            font-size: 18px;
-            &:hover {
-              padding-left: 10px;
+    .category-content {
+        padding: 40px 30px;
+        .side-filter {
+            border: 1px solid #c4c4c4;
+            padding: 15px;
+            height: 100%;
+            .list-style {
+                padding: 0;
+                .list {
+                    .head-tag {
+                        font-size: 18px;
+                        &:hover {
+                            padding-left: 10px;
+                        }
+                        .fa-angle-right {
+                            float: right;
+                            position: relative;
+                            top: 6px;
+                            &.down {
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+                    a {
+                        position: relative;
+                        transition: 0.3s;
+                        font-weight: normal;
+                        font-size: 16px;
+                        color: #000000;
+                        text-decoration: none;
+                        &:hover {
+                            color: #eaa93f;
+                        }
+                    }
+                }
+                .list {
+                    .child-links {
+                        position: relative;
+                        display: none;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            left: 3px;
+                            top: 0;
+                            width: 3px;
+                            height: 100%;
+                            background-color: #666666;
+                        }
+                        a {
+                            position: relative;
+                            margin-left: 15px;
+                            &:hover:before {
+                                content: "";
+                                position: absolute;
+                                left: -12px;
+                                top: 0;
+                                width: 3px;
+                                height: 100%;
+                                background-color: #eaa93f;
+                            }
+                        }
+                    }
+                }
             }
-            .fa-angle-right {
-              float: right;
-              position: relative;
-              top: 6px;
-              &.down {
-                transform: rotate(90deg);
-              }
-            }
-          }
-          a {
-            position: relative;
-            transition: 0.3s;
-            font-weight: normal;
-            font-size: 16px;
-            color: #000000;
-            text-decoration: none;
-            &:hover {
-              color: #eaa93f;
-            }
-          }
         }
-        .list {
-          .child-links {
-            position: relative;
-            display: none;
-            &:before {
-              content: "";
-              position: absolute;
-              left: 3px;
-              top: 0;
-              width: 3px;
-              height: 100%;
-              background-color: #666666;
+        .side-category {
+            .card {
+                border-radius: 0;
             }
-            a {
-              position: relative;
-              margin-left: 15px;
-              &:hover:before {
-                content: "";
-                position: absolute;
-                left: -12px;
-                top: 0;
-                width: 3px;
-                height: 100%;
-                background-color: #eaa93f;
-              }
-            }
-          }
         }
-      }
     }
-    .side-category {
-      .card {
-        border-radius: 0;
-      }
+}
+
+@media screen and (max-width: 985px) {
+    .category-page {
+        .category-content {
+            .side-filter {
+                border: none;
+            }
+        }
     }
-  }
 }
