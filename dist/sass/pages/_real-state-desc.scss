@@ -179,6 +179,23 @@
 
 @media screen and (max-width: 985px) {
     .real-state-desc {
+        .slider {
+            height: 300px;
+            .slide {
+                img {
+                    height: 300px !important;
+                }
+            }
+            .arrow-btn {
+                top: 50%;
+            }
+            .NextArrow {
+                right: 10px;
+            }
+            .PrevArrow {
+                left: 10px;
+            }
+        }
         .desc-content {
             .desc-header {
                 .top-links {

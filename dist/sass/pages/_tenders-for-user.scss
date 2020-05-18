@@ -1,5 +1,4 @@
 .tenders-for-user {
-    width: 100%;
     .main-header {
         height: 550px;
         background-image: url("../../dist/imgs/header.png");
@@ -66,7 +65,6 @@
         }
     }
     .content {
-        width: 100%;
         padding: 20px 0;
         .Tenders-content {
             .box {
@@ -156,18 +154,24 @@
     }
 }
 
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 600px) {
     .tenders-for-user {
-        width: 100% !important;
+        width: 590px !important;
         .main-header,
         .nav-filter {
             width: 100% !important;
         }
         .main-header {
-            display: none;
             .header-content {
                 width: 100% !important;
-                text-align: left
+                text-align: center;
+                .header-title {
+                    font-size: 35px;
+                }
+                .header-desc {
+                    margin: 15px 0;
+                    width: 100%;
+                }
             }
         }
     }

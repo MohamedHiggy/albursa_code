@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!--- basic page needs
       ================================================== -->
     <meta charset="UTF-8" />
@@ -14,84 +15,70 @@
     <link rel="stylesheet" href="dist/css/vendors/normalize.css" />
     <link rel="stylesheet" href="dist/css/vendors/font-awesome.min.css" />
     <link rel="stylesheet" href="dist/css/main.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="Registration ms-form">
-      <!--______________Header______________-->
-      <div class="header">
-        <div class="container">
-          <div class="main-box">
-            <div class="logo">
-              <a href="Home.html">
-                <img src="dist/icons/logo.svg" alt="" />
-              </a>
+        <!--______________Header______________-->
+        <div class="header">
+            <div class="container">
+                <div class="main-box">
+                    <div class="logo">
+                        <a href="Home.html">
+                            <img src="dist/icons/logo.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <!--______________Form______________-->
-      <div class="multi-step-form">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-12 col-md-offset-6"
-            >
-              <div class="bussines-signup">
-                <form id="msform" class="msform">
-                  <!-- progressbar -->
-                  <ul id="progressbar" class="progressbar">
-                    <li class="active">Basic information</li>
-                    <li>Company information</li>
-                    <li>Subscribtion</li>
-                  </ul>
-                  <!-- first fieldset -->
-                  <fieldset class="fieldset-one">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control input-focus"
-                        placeholder="Email Address"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <input
-                        type="password"
-                        class="form-control input-focus"
-                        placeholder="Password"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <select class="form-control input-focus">
+        <!--______________Form______________-->
+        <div class="multi-step-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-12 col-md-offset-6">
+                        <div class="bussines-signup">
+                            <form id="msform" class="msform">
+                                <!-- progressbar -->
+                                <ul id="progressbar" class="progressbar">
+                                    <li class="active">Basic information</li>
+                                    <li>Company information</li>
+                                    <li>Subscribtion</li>
+                                </ul>
+                                <!-- first fieldset -->
+                                <fieldset class="fieldset-one">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control input-focus" placeholder="Email Address" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control input-focus" placeholder="Password" />
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control input-focus">
                         <option class="option">1</option>
                         <option class="option">2</option>
                         <option class="option">3</option>
                         <option class="option">4</option>
                       </select>
-                      <img src="dist/icons/down-arrow.svg" alt="" />
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-2">
-                        <select class="form-control input-focus">
+                                        <img src="dist/icons/down-arrow.svg" alt="" />
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-2">
+                                            <select class="form-control input-focus">
                           <option class="option">+20</option>
                           <option class="option">+30</option>
                           <option class="option">+40</option>
                           <option class="option">+50</option>
                         </select>
-                        <img src="dist/icons/down-arrow.svg" alt="" />
-                      </div>
-                      <div class="col-10">
-                        <input
-                          type="text"
-                          class="form-control input-focus"
-                          placeholder="Phone Number"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-group reg-type">
-                      <p class="title">you are a</p>
-                      <div class="form-check">
-                        <label class="form-check-label" for="company">
+                                            <img src="dist/icons/down-arrow.svg" alt="" />
+                                        </div>
+                                        <div class="col-10">
+                                            <input type="text" class="form-control input-focus" placeholder="Phone Number" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group reg-type">
+                                        <p class="title">you are a</p>
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="company">
                           <input
                             class="form-check-input"
                             type="radio"
@@ -103,9 +90,9 @@
                           Company
                           <span class="checkmark"></span>
                         </label>
-                      </div>
-                      <div class="form-check">
-                        <label class="form-check-label" for="Person">
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="Person">
                           <input
                             class="form-check-input"
                             type="radio"
@@ -116,102 +103,81 @@
                           Person
                           <span class="checkmark"></span>
                         </label>
-                      </div>
-                    </div>
-                    <input
-                      type="button"
-                      name="next"
-                      class="next action-button btn-block"
-                      value="Next"
-                    />
-                  </fieldset>
+                                        </div>
+                                    </div>
+                                    <input type="button" name="next" class="next action-button btn-block" value="Next" />
+                                </fieldset>
 
-                  <!-- second fieldset -->
-                  <fieldset class="fieldset-two">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control input-focus"
-                        placeholder="Company name"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <select class="form-control input-focus">
+                                <!-- second fieldset -->
+                                <fieldset class="fieldset-two">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-focus" placeholder="Your name (Personal name)" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-focus" placeholder="Organization name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control input-focus">
                         <option>Sector</option>
                         <option>Sector1</option>
                         <option>Sector2</option>
                         <option>Sector3</option>
                       </select>
-                      <img src="dist/icons/down-arrow.svg" alt="" />
-                    </div>
-                    <div class="form-group">
-                      <select class="form-control input-focus">
+                                        <img src="dist/icons/down-arrow.svg" alt="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control input-focus">
                         <option>Specialty</option>
                         <option>Specialty1</option>
                         <option>Specialty2</option>
                         <option>Specialty3</option>
                       </select>
-                      <img src="dist/icons/down-arrow.svg" alt="" />
-                    </div>
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control input-focus"
-                        placeholder="ZIP code"
-                      />
-                    </div>
-                    <input
-                      type="button"
-                      name="previous"
-                      class="previous"
-                      value="Back"
-                    />
-                    <input
-                      type="button"
-                      name="next"
-                      class="next"
-                      value="Next"
-                    />
-                  </fieldset>
+                                        <img src="dist/icons/down-arrow.svg" alt="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-focus" placeholder="ZIP code" />
+                                    </div>
+                                    <input type="button" name="previous" class="previous" value="Back" />
+                                    <input type="button" name="next" class="next" value="Next" />
+                                </fieldset>
 
-                  <!-- third fieldset -->
-                  <fieldset class="fieldset-three">
-                    <h3 class="plan-title">Choose your plan</h3>
-                    <p class="text">
-                      Enrich your business and join a vast community where you
-                      can
-                    </p>
-                    <div class="middle-title">
-                      <div class="row">
-                        <div class="col-lg-3">
-                          <div class="title">
-                            <img src="dist/icons/mark.svg" alt="" />
-                            <span>rent/sell real estates</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-3">
-                          <div class="title">
-                            <img src="dist/icons/mark.svg" alt="" />
-                            <span>apply to tenders</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-3">
-                          <div class="title">
-                            <img src="dist/icons/mark.svg" alt="" />
-                            <span>sell products</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-3">
-                          <div class="title">
-                            <img src="dist/icons/mark.svg" alt="" />
-                            <span>sell construction services</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <ul class="list-style list-style-prices">
-                      <li class="list">
-                        <label class="box" for="price1">
+                                <!-- third fieldset -->
+                                <fieldset class="fieldset-three">
+                                    <h3 class="plan-title">Choose your plan</h3>
+                                    <p class="text">
+                                        Enrich your business and join a vast community where you can
+                                    </p>
+                                    <div class="middle-title">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <div class="title">
+                                                    <img src="dist/icons/mark.svg" alt="" />
+                                                    <span>rent/sell real estates</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="title">
+                                                    <img src="dist/icons/mark.svg" alt="" />
+                                                    <span>apply to tenders</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="title">
+                                                    <img src="dist/icons/mark.svg" alt="" />
+                                                    <span>sell products</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="title">
+                                                    <img src="dist/icons/mark.svg" alt="" />
+                                                    <span>sell construction services</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list-style list-style-prices">
+                                        <li class="list">
+                                            <label class="box" for="price1">
                           <input
                             type="radio"
                             name="prices"
@@ -224,9 +190,9 @@
                             <p class="text">billed yearly</p>
                           </div>
                         </label>
-                      </li>
-                      <li class="list">
-                        <label class="box" for="price2">
+                                        </li>
+                                        <li class="list">
+                                            <label class="box" for="price2">
                           <input
                             type="radio"
                             name="prices"
@@ -239,9 +205,9 @@
                             <p class="text">billed every 6 months</p>
                           </div>
                         </label>
-                      </li>
-                      <li class="list">
-                        <label class="box" for="price3">
+                                        </li>
+                                        <li class="list">
+                                            <label class="box" for="price3">
                           <input
                             type="radio"
                             name="prices"
@@ -254,96 +220,55 @@
                             <p class="text">billed monthly</p>
                           </div>
                         </label>
-                      </li>
-                    </ul>
-                    <input
-                      type="button"
-                      name="previous"
-                      class="previous"
-                      value="Back"
-                    />
-                    <input
-                      type="button"
-                      name="next"
-                      class="next"
-                      value="Next"
-                    />
-                  </fieldset>
+                                        </li>
+                                    </ul>
+                                    <input type="button" name="previous" class="previous" value="Back" />
+                                    <input type="button" name="next" class="next" value="Next" />
+                                </fieldset>
 
-                  <!-- fourth fieldset -->
-                  <fieldset class="fieldset-four">
-                    <h3 class="plan-title">Payment</h3>
-                    <ul class="list-style">
-                      <li class="list mr-4">
-                        <img src="dist/icons/master-card.svg" />
-                      </li>
-                      <li class="list mr-4">
-                        <img src="dist/icons/paypal.svg" />
-                      </li>
-                      <li class="list">
-                        <img src="dist/icons/visa.svg" />
-                      </li>
-                    </ul>
-                    <div class="payment-type">
-                      <p class="title">Amount</p>
-                      <p class="type">$5 billed monthly</p>
-                    </div>
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control input-focus"
-                        placeholder="Name on card"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control input-focus"
-                        placeholder="card number"
-                        name="ccnum"
-                        id="ccnum"
-                        inputmode="numeric"
-                        autocomplete="cc-number"
-                      />
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-6">
-                        <input
-                          type="text"
-                          class="form-control input-focus"
-                          placeholder="Expiry date"
-                          name="expiry"
-                          id="expiry"
-                          inputmode="numeric"
-                        />
-                      </div>
-                      <div class="form-group col-6">
-                        <input
-                          type="text"
-                          class="form-control input-focus"
-                          placeholder="Security code (CVV)"
-                          id="cvc"
-                          inputmode="numeric"
-                          autocomplete="cc-csc"
-                        />
-                      </div>
-                    </div>
-                    <input
-                      type="button"
-                      name="previous"
-                      class="previous"
-                      value="Back"
-                    />
-                    <button type="submit" name="submi" class="submit">
+                                <!-- fourth fieldset -->
+                                <fieldset class="fieldset-four">
+                                    <h3 class="plan-title">Payment</h3>
+                                    <ul class="list-style">
+                                        <li class="list mr-4">
+                                            <img src="dist/icons/master-card.svg" />
+                                        </li>
+                                        <li class="list mr-4">
+                                            <img src="dist/icons/paypal.svg" />
+                                        </li>
+                                        <li class="list">
+                                            <img src="dist/icons/visa.svg" />
+                                        </li>
+                                    </ul>
+                                    <div class="payment-type">
+                                        <p class="title">Amount</p>
+                                        <p class="type">$5 billed monthly</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-focus" placeholder="Name on card" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-focus" placeholder="card number" name="ccnum" id="ccnum" inputmode="numeric" autocomplete="cc-number" />
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-6">
+                                            <input type="text" class="form-control input-focus" placeholder="Expiry date" name="expiry" id="expiry" inputmode="numeric" />
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <input type="text" class="form-control input-focus" placeholder="Security code (CVV)" id="cvc" inputmode="numeric" autocomplete="cc-csc" />
+                                        </div>
+                                    </div>
+                                    <input type="button" name="previous" class="previous" value="Back" />
+                                    <button type="submit" name="submi" class="submit">
                       Finish
                     </button>
-                  </fieldset>
-                </form>
-              </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- JS
       ================================================== -->
@@ -352,11 +277,7 @@
     <script src="dist/js/vendors/jquery-easing-min.js"></script>
     <script src="dist/js/vendors/bootstrap.bundle.min.js"></script>
     <script src="dist/js/vendors/payform.js"></script>
-    <script src="dist/js/main.js"></script>
-    <script>
-      payform.cardNumberInput(document.getElementById("ccnum"));
-      payform.expiryInput(document.getElementById("expiry"));
-      payform.cvcInput(document.getElementById("cvc"));
-    </script>
-  </body>
+    <script src="dist/js/ms-form.js"></script>
+</body>
+
 </html>

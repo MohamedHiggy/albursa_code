@@ -742,9 +742,6 @@ table {
 }
 
 @media screen and (max-width: 985px) {
-  .footer .top-footer .left-links {
-    display: block;
-  }
   .footer .top-footer .right-links {
     text-align: center;
     margin: 15px 0 !important;
@@ -1258,6 +1255,7 @@ table {
 }
 .home .tenders-sec .tenders-box .boxes .list-style .main-list .list-style {
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .home .tenders-sec .tenders-box .boxes .list-style .main-list .list-style .icon-title {
   font-size: 12px;
@@ -1269,7 +1267,7 @@ table {
 .home .tenders-sec .tenders-box .boxes .list-style .main-list .features span {
   border: 1px solid #505050;
   color: #505050;
-  margin: 0 10px;
+  margin: 0 15px;
   font-weight: 600;
   font-size: 14px;
   padding: 5px 15px;
@@ -1378,15 +1376,27 @@ table {
 }
 
 @media screen and (max-width: 985px) {
+  .home .main-header {
+    padding: 0 !important;
+  }
+  .home .main-header .slider {
+    height: 300px;
+  }
+  .home .main-header .slider .slide img {
+    height: 300px !important;
+  }
+  .home .main-header .slider .arrow-btn {
+    top: 50%;
+  }
+  .home .main-header .slider .NextArrow {
+    right: 10px;
+  }
+  .home .main-header .slider .PrevArrow {
+    left: 10px;
+  }
   .home .products-sec .content .title-header .main-title {
     font-size: 18px;
     margin-top: 15px;
-  }
-  .home .products-sec .content .card {
-    flex-direction: row;
-  }
-  .home .products-sec .content .card img {
-    width: 50%;
   }
   .home .products-sec .content .card .card-body .home-details .list-style {
     display: flex !important;
@@ -1431,9 +1441,6 @@ table {
   .home .news .card {
     margin-bottom: 30px !important;
   }
-}
-.tenders-for-user {
-  width: 100%;
 }
 .tenders-for-user .main-header {
   height: 550px;
@@ -1501,7 +1508,6 @@ table {
   font-weight: bold;
 }
 .tenders-for-user .content {
-  width: 100%;
   padding: 20px 0;
 }
 .tenders-for-user .content .Tenders-content .box {
@@ -1582,20 +1588,24 @@ table {
   color: #ffffff;
 }
 
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 600px) {
   .tenders-for-user {
-    width: 100% !important;
+    width: 590px !important;
   }
   .tenders-for-user .main-header,
 .tenders-for-user .nav-filter {
     width: 100% !important;
   }
-  .tenders-for-user .main-header {
-    display: none;
-  }
   .tenders-for-user .main-header .header-content {
     width: 100% !important;
-    text-align: left;
+    text-align: center;
+  }
+  .tenders-for-user .main-header .header-content .header-title {
+    font-size: 35px;
+  }
+  .tenders-for-user .main-header .header-content .header-desc {
+    margin: 15px 0;
+    width: 100%;
   }
 }
 .tenders-apply .content {
@@ -1944,6 +1954,21 @@ table {
 }
 
 @media screen and (max-width: 985px) {
+  .real-state-desc .slider {
+    height: 300px;
+  }
+  .real-state-desc .slider .slide img {
+    height: 300px !important;
+  }
+  .real-state-desc .slider .arrow-btn {
+    top: 50%;
+  }
+  .real-state-desc .slider .NextArrow {
+    right: 10px;
+  }
+  .real-state-desc .slider .PrevArrow {
+    left: 10px;
+  }
   .real-state-desc .desc-content .desc-header .top-links .list-style {
     display: block;
   }
@@ -2501,6 +2526,151 @@ table {
   color: #505050;
 }
 
+@media screen and (max-width: 985px) {
+  .faq-page .faq .questions-form form .form-group {
+    width: 80%;
+  }
+}
+.sell-with-us .sell-header {
+  background-color: #D6F7FF;
+  padding: 100px 0;
+}
+.sell-with-us .sell-header .header-title {
+  text-align: center;
+}
+.sell-with-us .sell-header .header-title .title {
+  font-weight: bold;
+  font-size: 48px;
+  color: #243440;
+}
+.sell-with-us .sell-header .header-title .desc {
+  font-weight: normal;
+  font-size: 24px;
+  color: #505050;
+}
+.sell-with-us .sell-why {
+  background-color: #EFFCFF;
+  padding: 100px 0;
+}
+.sell-with-us .sell-why .left-content .header-title .title {
+  font-weight: bold;
+  font-size: 48px;
+  color: #000000;
+}
+.sell-with-us .sell-why .left-content .header-title .title::after {
+  margin-top: 15px;
+  display: block;
+  content: "";
+  width: 267px;
+  height: 5px;
+  background-color: #EAA93F;
+}
+.sell-with-us .sell-why .left-content .features .list-style {
+  padding: 0;
+}
+.sell-with-us .sell-why .left-content .features .list-style .list {
+  margin-bottom: 15px;
+}
+.sell-with-us .sell-why .left-content .features .list-style .list i {
+  margin-right: 5px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: normal;
+  display: inline-block;
+}
+.sell-with-us .sell-why .left-content .features .list-style .list .desc-features {
+  display: inline;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+}
+.sell-with-us .sell-why .right-img img {
+  width: 100%;
+  height: 100%;
+}
+.sell-with-us .sell-target {
+  padding: 80px 0;
+}
+.sell-with-us .sell-target .header-title {
+  text-align: center;
+}
+.sell-with-us .sell-target .header-title .img-sell {
+  margin: 0 auto;
+  width: 514px;
+  height: 400px;
+}
+.sell-with-us .sell-target .header-title .img-sell img {
+  width: 100%;
+  height: 100%;
+}
+.sell-with-us .sell-target .header-title .title {
+  font-weight: bold;
+  font-size: 48px;
+  color: #000000;
+}
+.sell-with-us .sell-target .header-title .footer-title .desc {
+  font-weight: bold;
+  font-size: 28px;
+  color: #000000;
+  margin: 0;
+}
+.sell-with-us .sell-target .header-title .footer-title .sec-desc {
+  font-weight: normal;
+  font-size: 20px;
+  color: #505050;
+}
+.sell-with-us .sell-target .header-title .footer-title button {
+  width: 237px;
+  height: 48px;
+  background-color: #EAA93F;
+  border-radius: 0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+}
+.sell-with-us .sell-target .header-title .footer-title button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 985px) {
+  .sell-with-us .sell-header .header-title .title {
+    font-size: 25px;
+  }
+  .sell-with-us .sell-header .header-title .desc {
+    font-size: 20px;
+  }
+  .sell-with-us .sell-why .left-content .header-title .title {
+    font-size: 25px;
+  }
+  .sell-with-us .sell-why .left-content .features .list-style .list i {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .sell-with-us .sell-why .left-content .features .list-style .list .desc-features {
+    font-size: 14px;
+  }
+  .sell-with-us .sell-target .header-title .title {
+    font-size: 25px;
+  }
+  .sell-with-us .sell-target .header-title .img-sell {
+    width: 200px !important;
+    height: 300px !important;
+  }
+  .sell-with-us .sell-target .header-title .footer-title .desc {
+    font-size: 18px;
+  }
+  .sell-with-us .sell-target .header-title .footer-title .sec-desc {
+    font-size: 14px;
+  }
+}
 .vendor-profile-page .vendor-profile {
   padding: 60px 0;
 }

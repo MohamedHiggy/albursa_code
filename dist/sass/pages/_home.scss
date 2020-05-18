@@ -54,6 +54,7 @@
                         }
                         .list-style {
                             justify-content: space-evenly;
+                            flex-wrap: wrap;
                             .icon-title {
                                 font-size: 12px;
                                 color: #505050;
@@ -64,7 +65,7 @@
                             span {
                                 border: 1px solid #505050;
                                 color: #505050;
-                                margin: 0 10px;
+                                margin: 0 15px;
                                 font-weight: 600;
                                 font-size: 14px;
                                 padding: 5px 15px;
@@ -183,6 +184,26 @@
 
 @media screen and (max-width: 985px) {
     .home {
+        .main-header {
+            padding: 0 !important;
+            .slider {
+                height: 300px;
+                .slide {
+                    img {
+                        height: 300px !important;
+                    }
+                }
+                .arrow-btn {
+                    top: 50%;
+                }
+                .NextArrow {
+                    right: 10px;
+                }
+                .PrevArrow {
+                    left: 10px;
+                }
+            }
+        }
         .products-sec {
             .content {
                 .title-header {
@@ -192,10 +213,6 @@
                     }
                 }
                 .card {
-                    flex-direction: row;
-                    img {
-                        width: 50%;
-                    }
                     .card-body {
                         .home-details {
                             .list-style {
