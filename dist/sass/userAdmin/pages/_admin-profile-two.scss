@@ -1,397 +1,493 @@
 .user-admin-profile-two {
-  .profile-content {
-    .tabs {
-      padding-top: 40px;
-      .list-style {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        border-bottom: 1px solid #f1f1f1;
-        .list {
-          .btn-tab {
-            border: none;
-            background-color: transparent;
-            padding: 0;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 21px;
-            text-transform: capitalize;
-            color: #242424;
-            &:focus {
-              outline: none;
-              box-shadow: none;
-            }
-          }
-          &:hover {
-            border-bottom: 1px solid #eaa93f;
-            .btn-tab {
-              color: #eaa93f;
-            }
-          }
-        }
-        .tab-active {
-          border-bottom: 1px solid #eaa93f;
-          .active-tab {
-            color: #eaa93f;
-          }
-        }
-      }
-    }
-    [data-tab-content] {
-      display: none;
-    }
-    .tab-active[data-tab-content] {
-      display: inline-table;
-    }
-    .wishlist {
-      padding: 30px 0;
-      width: 100%;
-      .items-number {
-        .number {
-          font-weight: 500;
-          font-size: 14px;
-          color: #707070;
-        }
-      }
-      .wishlist-box {
-        position: relative;
-        width: 897px;
-        height: 136px;
-        background: #ffffff;
-        box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
-        .list-style {
-          padding: 0;
-          display: flex;
-          justify-content: start;
-          .list {
-            padding: 5px 10px;
-            .img {
-              width: 100%;
-              height: 100%;
-              img {
-                width: 100%;
-                height: 100%;
-              }
-            }
-            .desc {
-              font-weight: normal;
-              font-size: 16px;
-              color: #505050;
-              margin: 0;
-            }
-            .price {
-              font-weight: bold;
-              font-size: 18px;
-              color: #242424;
-              margin: 0;
-            }
-            .sets-num {
-              font-weight: normal;
-              font-size: 14px;
-              color: #242424;
-            }
-            .status {
-              font-weight: bold;
-              font-size: 16px;
-              color: #4caf50;
-              margin: 0;
-            }
-          }
-        }
-
-        .delete-wishlist-box {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          .close {
-            &:focus {
-              outline: none;
-              box-shadow: none;
-            }
-          }
-        }
-      }
-    }
-    .tenders {
-      width: 90%;
-      padding: 20px 0;
-      .table {
-        thead {
-          border-bottom: 1px solid #f1f1f1;
-          tr {
-            th {
-              font-weight: 500;
-              font-size: 14px;
-              text-transform: capitalize;
-              color: #707070;
-            }
-          }
-        }
-        tbody {
-          tr {
-            .tender-winner {
-              color: #5e8bff;
-            }
-            td,
-            th {
-              font-weight: 500;
-              font-size: 14px;
-              color: #242424;
-              a {
-                color: #242424;
-              }
-            }
-            th {
-              font-weight: bold;
-            }
-            td.status-active {
-              font-weight: bold;
-              color: #4caf50;
-            }
-            td.status-ended {
-              color: #707070;
-            }
-            td.status-rejected {
-              font-weight: bold;
-              color: #ff3b30;
-            }
-
-            td {
-              button {
-                border: none;
-                background-color: transparent;
-                font-weight: 500;
-                font-size: 14px;
-                font-weight: 550;
-                &:focus {
-                  box-shadow: none;
-                  outline: none;
-                }
-              }
-              .delete-row {
-                color: #ff3b30;
-              }
-
-              .edit-row,
-              .see-more-btn {
-                color: #242424;
-              }
-            }
-          }
-        }
-      }
-      .btn-create {
-        height: 48px;
-        width: 180px;
-        line-height: 48px;
-        .btn-create-tender {
-          display: block;
-          width: 100%;
-          height: 100%;
-          text-align: center;
-          background-color: #eaa93f;
-          text-decoration: none;
-          font-weight: 600;
-          font-size: 16px;
-          text-transform: capitalize;
-          color: #ffffff;
-        }
-      }
-    }
-  }
-}
-/*_______________________user-admin-profile-proposals page_______________________*/
-.user-admin-profile-proposals {
-  .profile-user-admin-content {
     .profile-content {
-      .proposals {
-        padding: 35px 0;
-        width: 100%;
-        .header-links {
-          width: 95%;
-          padding-bottom: 10px;
-          border-bottom: 1px solid #f1f1f1;
-          .go-back {
-            text-decoration: none;
-            margin-right: 5px;
-          }
-          .product-name {
-            font-weight: 500;
-            font-size: 22px;
-            color: #000000;
-          }
-          .cat-name {
-            font-weight: 500;
-            font-size: 20px;
-            color: #505050;
-          }
-        }
-        .proposals-num {
-          padding: 10px 0;
-          .num {
-            font-weight: 500;
-            font-size: 18px;
-            color: #505050;
-          }
-        }
-        .proposals-content {
-          .proposal-box {
-            border-bottom: 1px solid #f1f1f1;
-            padding: 10px 0;
+        .tabs {
+            padding-top: 40px;
             .list-style {
-              padding: 0;
-              margin: 0;
-              display: flex;
-              justify-content: space-between;
-              .list {
-                .proposal-name {
-                  font-weight: bold;
-                  font-size: 16px;
-                  color: #505050;
-                }
-                .proposal-desc {
-                  font-weight: bold;
-                  font-size: 13px;
-                  color: #505050;
-                }
-                .proposal-time {
-                  font-weight: 600;
-                  font-size: 14px;
-                  color: #000000;
-                }
-              }
-            }
-            &:hover {
-              background-color: #fffbf4;
-              border-bottom: 1px solid #fffbf4;
-              .list-style {
-                .list {
-                  .proposal-name {
-                    color: #eaa93f;
-                  }
-                  .proposal-desc {
-                    color: #eaa93f;
-                  }
-                  .proposal-time {
-                    color: #eaa93f;
-                  }
-                }
-              }
-            }
-          }
-          .cover-letter {
-            .time {
-              font-weight: normal;
-              font-size: 12px;
-              color: #707070;
-              margin-bottom: 3px;
-            }
-            .title {
-              font-weight: bold;
-              font-size: 16px;
-              text-transform: capitalize;
-              color: #000000;
-            }
-            .cover-letter-desc {
-              font-weight: normal;
-              font-size: 14px;
-              color: rgba(36, 36, 36, 0.81);
-            }
-            .time-cost {
-              .sub-title {
-                font-weight: normal;
-                font-size: 14px;
-                color: rgba(36, 36, 36, 0.81);
-              }
-            }
-            .attachments {
-              .list-style {
-                padding: 0;
-                .list {
-                  margin-bottom: 10px;
-                  a {
-                    background-color: #dbdbdb;
-                    text-decoration: none;
-                    font-weight: 300;
-                    font-size: 12px;
-                    color: #141525;
-                    padding: 6px;
-                    border-radius: 1px;
-                  }
-                  span {
-                    font-weight: normal;
-                    font-size: 14px;
-                    color: #000000;
-                  }
-                }
-              }
-            }
-            .about-vendor {
-              width: 80%;
-              .list-style {
-                padding: 0;
-                display: flex;
-                .list {
-                  img {
-                    max-width: 50px;
-                    max-height: 50px;
-                  }
-                  .vendor-name {
-                    font-weight: normal;
-                    font-size: 16px;
-                    color: #000000;
-                  }
-                  .vendor-desc {
-                    font-weight: normal;
-                    font-size: 14px;
-                    color: #505050;
-                  }
-                }
-              }
-            }
-            .job-start {
-              .list-style {
-                padding: 0;
                 margin: 0;
+                padding: 0;
                 display: flex;
-                .button-list {
-                  width: 50%;
-                }
+                border-bottom: 1px solid #f1f1f1;
                 .list {
-                  .start {
-                    border: none;
-                    width: 100%;
-                    background-color: #eaa93f;
-                    color: #ffffff;
-                    text-decoration: none;
-                    height: 100%;
-                    &:focus {
-                      outline: none;
-                      box-shadow: none;
+                    .btn-tab {
+                        border: none;
+                        background-color: transparent;
+                        padding: 0;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        text-transform: capitalize;
+                        color: #242424;
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
                     }
-                  }
-                  .title {
-                    margin: 0;
-                  }
-                  .note-desc {
-                    font-weight: normal;
-                    font-size: 14px;
-                    color: #476c63;
-                    margin: 0;
-                  }
+                    &:hover {
+                        border-bottom: 1px solid #eaa93f;
+                        .btn-tab {
+                            color: #eaa93f;
+                        }
+                    }
                 }
-              }
+                .tab-active {
+                    border-bottom: 1px solid #eaa93f;
+                    .active-tab {
+                        color: #eaa93f;
+                    }
+                }
             }
-          }
-          .contact-supplier {
-            .vendor-details {
-              .list-style {
-                justify-content: center;
-              }
-            }
-          }
         }
-      }
+        [data-tab-content] {
+            display: none;
+        }
+        .tab-active[data-tab-content] {
+            display: inline-table;
+        }
+        .wishlist {
+            padding: 30px 0;
+            width: 100%;
+            .items-number {
+                .number {
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #707070;
+                }
+            }
+            .wishlist-box {
+                position: relative;
+                width: 897px;
+                height: 125px;
+                background: #ffffff;
+                box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
+                .list-style {
+                    padding: 0;
+                    display: flex;
+                    justify-content: start;
+                    .list {
+                        padding: 5px 10px;
+                        .img {
+                            width: 100%;
+                            height: 100%;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .desc {
+                            font-weight: normal;
+                            font-size: 16px;
+                            color: #505050;
+                            margin: 0;
+                        }
+                        .price {
+                            font-weight: bold;
+                            font-size: 18px;
+                            color: #242424;
+                            margin: 0;
+                        }
+                        .sets-num {
+                            font-weight: normal;
+                            font-size: 14px;
+                            color: #242424;
+                        }
+                        .status {
+                            font-weight: bold;
+                            font-size: 16px;
+                            color: #4caf50;
+                            margin: 0;
+                        }
+                    }
+                }
+                .delete-wishlist-box {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    .close {
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+        .tenders {
+            width: 90%;
+            padding: 20px 0;
+            .table {
+                thead {
+                    border-bottom: 1px solid #f1f1f1;
+                    tr {
+                        th {
+                            font-weight: 500;
+                            font-size: 14px;
+                            text-transform: capitalize;
+                            color: #707070;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        .tender-winner {
+                            color: #5e8bff;
+                        }
+                        td,
+                        th {
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: #242424;
+                            a {
+                                color: #242424;
+                            }
+                        }
+                        th {
+                            font-weight: bold;
+                        }
+                        td.status-active {
+                            font-weight: bold;
+                            color: #4caf50;
+                        }
+                        td.status-ended {
+                            color: #707070;
+                        }
+                        td.status-rejected {
+                            font-weight: bold;
+                            color: #ff3b30;
+                        }
+                        td {
+                            .btn-group {
+                                .dropdown-menu {
+                                    border: 1px solid #f1f1f1;
+                                    a {
+                                        display: block;
+                                        width: 80%;
+                                        text-align: center;
+                                        background-color: #eaa93f;
+                                        color: #ffffff;
+                                        text-decoration: none;
+                                        margin: 20px auto 0;
+                                    }
+                                }
+                            }
+                            button {
+                                border: none;
+                                background-color: transparent;
+                                font-weight: 500;
+                                font-size: 14px;
+                                font-weight: 550;
+                                &:focus {
+                                    box-shadow: none;
+                                    outline: none;
+                                }
+                            }
+                            .delete-row {
+                                color: #ff3b30;
+                            }
+                            .edit-row,
+                            .see-more-btn {
+                                color: #242424;
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-create {
+                height: 48px;
+                width: 180px;
+                line-height: 48px;
+                .btn-create-tender {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    background-color: #eaa93f;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    color: #ffffff;
+                }
+            }
+        }
     }
-  }
+}
+
+@media screen and (max-width: 600px) {
+    .user-admin-profile-two {
+        width: 100%;
+        .profile-user-admin-content {
+            .profile-content {
+                .wishlist {
+                    .wishlist-box {
+                        width: 100%;
+                        height: 210px;
+                        .list-style {
+                            display: block;
+                            text-align: center;
+                            .list {
+                                width: 100%;
+                                .img {
+                                    margin: 0 auto;
+                                    width: 30%;
+                                }
+                                .status,
+                                .sets-num {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*_______________________user-admin-profile-proposals page_______________________*/
+
+.user-admin-profile-proposals {
+    .profile-user-admin-content {
+        .profile-content {
+            .proposals {
+                padding: 35px 0;
+                width: 100%;
+                .header-links {
+                    width: 95%;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #f1f1f1;
+                    .go-back {
+                        text-decoration: none;
+                        margin-right: 5px;
+                    }
+                    .product-name {
+                        font-weight: 500;
+                        font-size: 22px;
+                        color: #000000;
+                    }
+                    .cat-name {
+                        font-weight: 500;
+                        font-size: 20px;
+                        color: #505050;
+                    }
+                }
+                .proposals-num {
+                    padding: 10px 0;
+                    .num {
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: #505050;
+                    }
+                }
+                .proposals-content {
+                    .proposal-box {
+                        border-bottom: 1px solid #f1f1f1;
+                        padding: 10px 0;
+                        .list-style {
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            justify-content: space-between;
+                            .list {
+                                .proposal-name {
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    color: #505050;
+                                }
+                                .proposal-desc {
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                    color: #505050;
+                                }
+                                .proposal-time {
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    color: #000000;
+                                }
+                            }
+                        }
+                        &:hover {
+                            background-color: #fffbf4;
+                            border-bottom: 1px solid #fffbf4;
+                            .list-style {
+                                .list {
+                                    .proposal-name {
+                                        color: #eaa93f;
+                                    }
+                                    .proposal-desc {
+                                        color: #eaa93f;
+                                    }
+                                    .proposal-time {
+                                        color: #eaa93f;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .cover-letter {
+                        .time {
+                            font-weight: normal;
+                            font-size: 12px;
+                            color: #707070;
+                            margin-bottom: 3px;
+                        }
+                        .title {
+                            font-weight: bold;
+                            font-size: 16px;
+                            text-transform: capitalize;
+                            color: #000000;
+                        }
+                        .cover-letter-desc {
+                            font-weight: normal;
+                            font-size: 14px;
+                            color: rgba(36, 36, 36, 0.81);
+                        }
+                        .time-cost {
+                            .sub-title {
+                                font-weight: normal;
+                                font-size: 14px;
+                                color: rgba(36, 36, 36, 0.81);
+                            }
+                        }
+                        .attachments {
+                            .list-style {
+                                padding: 0;
+                                .list {
+                                    margin-bottom: 10px;
+                                    a {
+                                        margin-right: 5px;
+                                        background-color: #dbdbdb;
+                                        text-decoration: none;
+                                        font-weight: 300;
+                                        font-size: 12px;
+                                        color: #141525;
+                                        padding: 6px;
+                                        border-radius: 1px;
+                                    }
+                                    span {
+                                        font-weight: normal;
+                                        font-size: 14px;
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                        .about-vendor {
+                            width: 80%;
+                            .list-style {
+                                padding: 0;
+                                display: flex;
+                                .list {
+                                    img {
+                                        max-width: 50px;
+                                        max-height: 50px;
+                                    }
+                                    .vendor-name {
+                                        font-weight: normal;
+                                        font-size: 16px;
+                                        color: #000000;
+                                    }
+                                    .vendor-desc {
+                                        font-weight: normal;
+                                        font-size: 14px;
+                                        color: #505050;
+                                    }
+                                }
+                            }
+                        }
+                        .job-start {
+                            .list-style {
+                                padding: 0;
+                                margin: 0;
+                                display: flex;
+                                .button-list {
+                                    width: 50%;
+                                }
+                                .list {
+                                    .start {
+                                        border: none;
+                                        width: 100%;
+                                        background-color: #eaa93f;
+                                        color: #ffffff;
+                                        text-decoration: none;
+                                        height: 100%;
+                                        &:focus {
+                                            outline: none;
+                                            box-shadow: none;
+                                        }
+                                    }
+                                    .title {
+                                        margin: 0;
+                                    }
+                                    .note-desc {
+                                        font-weight: normal;
+                                        font-size: 14px;
+                                        color: #476c63;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .contact-supplier {
+                        .vendor-details {
+                            .list-style {
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .user-admin-profile-proposals {
+        .profile-user-admin-content {
+            .profile-content {
+                .tenders {
+                    .proposals-content {
+                        .proposal-box {
+                            .list-style {
+                                display: block;
+                                text-align: center;
+                                .list {
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                        .cover-letter {
+                            .about-vendor {
+                                width: 100%;
+                                text-align: center;
+                                .list-style {
+                                    display: block;
+                                    .list {
+                                        margin-bottom: 15px;
+                                        img {
+                                            margin: 0 auto;
+                                        }
+                                    }
+                                }
+                            }
+                            .job-start {
+                                text-align: center;
+                                .list-style {
+                                    display: block;
+                                    .list {
+                                        width: 100%;
+                                        margin-bottom: 15px;
+                                        .start {
+                                            height: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

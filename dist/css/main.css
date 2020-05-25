@@ -638,8 +638,10 @@ table {
   margin-left: 0;
 }
 .header .nav-resp {
-  margin-left: -1300px;
+  padding: 0 0 100px 0;
+  overflow-x: scroll;
   display: none;
+  margin-left: -1300px;
   background-color: #ffffff;
   width: 100%;
   position: fixed;
@@ -648,6 +650,19 @@ table {
   text-align: center;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+.header .nav-resp .list-style {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: space-between;
+}
+.header .nav-resp .list-style .list a {
+  color: #000000;
+}
+.header .nav-resp .main-list-style-two {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: space-between;
 }
 .header .nav-resp .main-list-style {
   padding: 25px 45px;
@@ -3003,6 +3018,14 @@ ______________________________________________________*/
   color: #eaa93f;
 }
 
+@media screen and (max-width: 1100px) {
+  .side-bar {
+    display: none;
+  }
+}
+.user-admin-profile .profile-user-admin-content .side-bar-icon {
+  display: none;
+}
 .user-admin-profile .profile-user-admin-content .profile-content {
   padding: 40px 0;
 }
@@ -3085,6 +3108,30 @@ ______________________________________________________*/
   padding-right: 0;
 }
 
+@media screen and (max-width: 991px) {
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details {
+    text-align: center;
+  }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .header .vendor-img {
+    margin: 0 auto;
+  }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .bottom .vendor-main-desc {
+    width: 100%;
+  }
+  .user-admin-profile .profile-user-admin-content .profile-content .vendor-details .vendor-rating .edit-profile {
+    width: 100%;
+  }
+  .user-admin-profile .profile-user-admin-content .products-sec .content .title-header {
+    display: block;
+    margin: 0;
+  }
+  .user-admin-profile .profile-user-admin-content .products-sec .content .title-header .main-title {
+    margin: 0;
+  }
+  .user-admin-profile .profile-user-admin-content .products-sec .content .card {
+    margin-bottom: 35px;
+  }
+}
 .user-admin-profile-two .profile-content .tabs {
   padding-top: 40px;
 }
@@ -3138,7 +3185,7 @@ ______________________________________________________*/
 .user-admin-profile-two .profile-content .wishlist .wishlist-box {
   position: relative;
   width: 897px;
-  height: 136px;
+  height: 125px;
   background: #ffffff;
   box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
 }
@@ -3230,6 +3277,18 @@ ______________________________________________________*/
   font-weight: bold;
   color: #ff3b30;
 }
+.user-admin-profile-two .profile-content .tenders .table tbody tr td .btn-group .dropdown-menu {
+  border: 1px solid #f1f1f1;
+}
+.user-admin-profile-two .profile-content .tenders .table tbody tr td .btn-group .dropdown-menu a {
+  display: block;
+  width: 80%;
+  text-align: center;
+  background-color: #eaa93f;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 20px auto 0;
+}
 .user-admin-profile-two .profile-content .tenders .table tbody tr td button {
   border: none;
   background-color: transparent;
@@ -3266,6 +3325,30 @@ ______________________________________________________*/
   color: #ffffff;
 }
 
+@media screen and (max-width: 600px) {
+  .user-admin-profile-two {
+    width: 100%;
+  }
+  .user-admin-profile-two .profile-user-admin-content .profile-content .wishlist .wishlist-box {
+    width: 100%;
+    height: 210px;
+  }
+  .user-admin-profile-two .profile-user-admin-content .profile-content .wishlist .wishlist-box .list-style {
+    display: block;
+    text-align: center;
+  }
+  .user-admin-profile-two .profile-user-admin-content .profile-content .wishlist .wishlist-box .list-style .list {
+    width: 100%;
+  }
+  .user-admin-profile-two .profile-user-admin-content .profile-content .wishlist .wishlist-box .list-style .list .img {
+    margin: 0 auto;
+    width: 30%;
+  }
+  .user-admin-profile-two .profile-user-admin-content .profile-content .wishlist .wishlist-box .list-style .list .status,
+.user-admin-profile-two .profile-user-admin-content .profile-content .wishlist .wishlist-box .list-style .list .sets-num {
+    margin: 0;
+  }
+}
 /*_______________________user-admin-profile-proposals page_______________________*/
 .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals {
   padding: 35px 0;
@@ -3365,6 +3448,7 @@ ______________________________________________________*/
   margin-bottom: 10px;
 }
 .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals .proposals-content .cover-letter .attachments .list-style .list a {
+  margin-right: 5px;
   background-color: #dbdbdb;
   text-decoration: none;
   font-weight: 300;
@@ -3432,6 +3516,41 @@ ______________________________________________________*/
   justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .tenders .proposals-content .proposal-box .list-style {
+    display: block;
+    text-align: center;
+  }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .tenders .proposals-content .proposal-box .list-style .list {
+    margin-bottom: 10px;
+  }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .tenders .proposals-content .cover-letter .about-vendor {
+    width: 100%;
+    text-align: center;
+  }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .tenders .proposals-content .cover-letter .about-vendor .list-style {
+    display: block;
+  }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .tenders .proposals-content .cover-letter .about-vendor .list-style .list {
+    margin-bottom: 15px;
+  }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .tenders .proposals-content .cover-letter .about-vendor .list-style .list img {
+    margin: 0 auto;
+  }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .tenders .proposals-content .cover-letter .job-start {
+    text-align: center;
+  }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .tenders .proposals-content .cover-letter .job-start .list-style {
+    display: block;
+  }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .tenders .proposals-content .cover-letter .job-start .list-style .list {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .tenders .proposals-content .cover-letter .job-start .list-style .list .start {
+    height: 40px;
+  }
+}
 .user-admin-setting .profile-user-admin-content .profile-content {
   padding: 20px 40px;
 }
@@ -3512,6 +3631,12 @@ ______________________________________________________*/
   background-color: #de4848;
 }
 
+@media screen and (max-width: 650px) {
+  .user-admin-setting .profile-user-admin-content .profile-content .edit-form .btn-settings {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
 .admin-tender-details .tender-details {
   padding: 30px 0;
 }
@@ -3614,6 +3739,7 @@ ______________________________________________________*/
 }
 .admin-tender-details .tender-details .desc-content .features .list-style .list {
   margin-right: 15px;
+  margin-bottom: 10px;
 }
 .admin-tender-details .tender-details .desc-content .features .list-style .list .feature {
   padding: 5px 15px;
@@ -3624,6 +3750,38 @@ ______________________________________________________*/
   color: #505050;
 }
 
+@media screen and (max-width: 700px) {
+  .admin-tender-details .tender-details .header {
+    width: 100%;
+  }
+  .admin-tender-details .tender-details .desc-content {
+    width: 100%;
+  }
+  .admin-tender-details .tender-details .desc-content .content-desc {
+    text-align: center;
+  }
+  .admin-tender-details .tender-details .desc-content .content-desc .title {
+    font-size: 35px;
+  }
+  .admin-tender-details .tender-details .desc-content .content-desc .desc {
+    padding: 0;
+  }
+  .admin-tender-details .tender-details .desc-content .attachments {
+    text-align: center;
+  }
+  .admin-tender-details .tender-details .desc-content .attachments .title {
+    font-size: 35px;
+  }
+  .admin-tender-details .tender-details .desc-content .attachments .list-style {
+    padding: 0;
+  }
+  .admin-tender-details .tender-details .desc-content .attachments .list-style .list a {
+    margin: 10px;
+  }
+  .admin-tender-details .tender-details .desc-content .more-content .list-style {
+    flex-wrap: wrap;
+  }
+}
 /*______________________________________________________
 vendor Style
 ______________________________________________________*/

@@ -216,8 +216,10 @@
         margin-left: 0;
     }
     .nav-resp {
-        margin-left: -1300px;
+        padding: 0 0 100px 0;
+        overflow-x: scroll;
         display: none;
+        margin-left: -1300px;
         background-color: #ffffff;
         width: 100%;
         position: fixed;
@@ -226,6 +228,21 @@
         text-align: center;
         -webkit-transition: 0.4s;
         transition: 0.4s;
+        .list-style {
+            display: flex;
+            padding: 10px 15px;
+            justify-content: space-between;
+            .list {
+                a {
+                    color: #000000;
+                }
+            }
+        }
+        .main-list-style-two {
+            display: flex;
+            padding: 10px 15px;
+            justify-content: space-between;
+        }
         .main-list-style {
             padding: 25px 45px;
             list-style: none;
