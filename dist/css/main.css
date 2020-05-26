@@ -3139,32 +3139,28 @@ ______________________________________________________*/
   margin: 0;
   padding: 0;
   display: flex;
-  border-bottom: 1px solid #f1f1f1;
 }
 .user-admin-profile-two .profile-content .tabs .list-style .list .btn-tab {
-  border: none;
   background-color: transparent;
+  text-decoration: none;
+  border: none;
   padding: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
   text-transform: capitalize;
   color: #242424;
+  transition: all 0.2s ease-in-out;
 }
 .user-admin-profile-two .profile-content .tabs .list-style .list .btn-tab:focus {
   outline: none;
   box-shadow: none;
 }
-.user-admin-profile-two .profile-content .tabs .list-style .list:hover {
+.user-admin-profile-two .profile-content .tabs .list-style .list .active-tab {
+  color: #eaa93f;
   border-bottom: 1px solid #eaa93f;
 }
 .user-admin-profile-two .profile-content .tabs .list-style .list:hover .btn-tab {
-  color: #eaa93f;
-}
-.user-admin-profile-two .profile-content .tabs .list-style .tab-active {
-  border-bottom: 1px solid #eaa93f;
-}
-.user-admin-profile-two .profile-content .tabs .list-style .tab-active .active-tab {
   color: #eaa93f;
 }
 .user-admin-profile-two .profile-content [data-tab-content] {
@@ -3348,6 +3344,12 @@ ______________________________________________________*/
 .user-admin-profile-two .profile-user-admin-content .profile-content .wishlist .wishlist-box .list-style .list .sets-num {
     margin: 0;
   }
+  .user-admin-profile-two .profile-user-admin-content .profile-content .table-responsive-sm {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 /*_______________________user-admin-profile-proposals page_______________________*/
 .user-admin-profile-proposals .profile-user-admin-content .profile-content .proposals {
@@ -3517,6 +3519,12 @@ ______________________________________________________*/
 }
 
 @media screen and (max-width: 600px) {
+  .user-admin-profile-proposals .profile-user-admin-content .profile-content .tenders {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
   .user-admin-profile-proposals .profile-user-admin-content .profile-content .tenders .proposals-content .proposal-box .list-style {
     display: block;
     text-align: center;

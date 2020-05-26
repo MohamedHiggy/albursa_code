@@ -6,33 +6,31 @@
                 margin: 0;
                 padding: 0;
                 display: flex;
-                border-bottom: 1px solid #f1f1f1;
                 .list {
                     .btn-tab {
-                        border: none;
                         background-color: transparent;
+                        text-decoration: none;
+                        border: none;
                         padding: 0;
                         font-weight: 500;
                         font-size: 18px;
                         line-height: 21px;
                         text-transform: capitalize;
                         color: #242424;
+                        transition: all 0.20s ease-in-out;
                         &:focus {
                             outline: none;
                             box-shadow: none;
                         }
                     }
-                    &:hover {
+                    .active-tab {
+                        color: #eaa93f;
                         border-bottom: 1px solid #eaa93f;
+                    }
+                    &:hover {
                         .btn-tab {
                             color: #eaa93f;
                         }
-                    }
-                }
-                .tab-active {
-                    border-bottom: 1px solid #eaa93f;
-                    .active-tab {
-                        color: #eaa93f;
                     }
                 }
             }
@@ -237,6 +235,12 @@
                             }
                         }
                     }
+                }
+                .table-responsive-sm {
+                    display: block;
+                    width: 100%;
+                    overflow-x: auto;
+                    -webkit-overflow-scrolling: touch;
                 }
             }
         }
@@ -447,6 +451,10 @@
         .profile-user-admin-content {
             .profile-content {
                 .tenders {
+                    display: block;
+                    width: 100%;
+                    overflow-x: auto;
+                    -webkit-overflow-scrolling: touch;
                     .proposals-content {
                         .proposal-box {
                             .list-style {
