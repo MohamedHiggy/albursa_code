@@ -1,0 +1,116 @@
+.add-real-state {
+    .vendor-content {
+        .vendor-setting-content {
+            width: 100% !important;
+            .add-product-content {
+                width: 100%;
+                .img-upload-content {
+                    width: 95%;
+                    margin: 0 auto;
+                    /*** CUSTOM FILE INPUT STYE ***/
+                    .main-wrap-custom-file {
+                        display: block !important;
+                        width: 90% !important;
+                        .fa {
+                            bottom: 1rem !important;
+                        }
+                    }
+                    .wrap-custom-file {
+                        position: relative;
+                        display: inline-block;
+                        width: 150px;
+                        height: 150px;
+                        margin: 0 0.5rem 1rem;
+                        text-align: center;
+                        input[type="file"] {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 2px;
+                            height: 2px;
+                            overflow: hidden;
+                            opacity: 0;
+                        }
+                        label {
+                            z-index: 1;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            bottom: 0;
+                            right: 0;
+                            width: 100%;
+                            overflow: hidden;
+                            padding: 0 0.5rem;
+                            cursor: pointer;
+                            background-color: #E5E5E5;
+                            border-radius: 4px;
+                            span {
+                                font-weight: normal;
+                                font-size: 12px;
+                                text-align: center;
+                                color: #505050;
+                                display: block;
+                                margin-top: 2rem;
+                                font-size: 1.4rem;
+                            }
+                            .fa {
+                                position: absolute;
+                                bottom: 3.5rem;
+                                left: 50%;
+                                -webkit-transform: translatex(-50%);
+                                -moz-transform: translatex(-50%);
+                                -ms-transform: translatex(-50%);
+                                -o-transform: translatex(-50%);
+                                transform: translatex(-50%);
+                                font-size: 1.5rem;
+                                -webkit-transition: color 0.4s;
+                                -moz-transition: color 0.4s;
+                                -ms-transition: color 0.4s;
+                                -o-transition: color 0.4s;
+                                transition: color 0.4s;
+                            }
+                            &.file-ok {
+                                //Styles img background
+                                background-size: cover;
+                                background-position: center;
+                                span {
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    padding: 0.3rem;
+                                    font-size: 1.1rem;
+                                    color: #000;
+                                    background-color: rgba(255, 255, 255, .7);
+                                }
+                                .fa {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .add-real-state {
+        .vendor-content {
+            .vendor-setting-content {
+                width: 100% !important;
+                .add-product-content {
+                    width: 100%;
+                    .img-upload-content {
+                        width: 95%;
+                        margin: 0 auto;
+                        .wrap-custom-file {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

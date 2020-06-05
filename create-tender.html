@@ -16,12 +16,13 @@
     <link rel="stylesheet" href="dist/css/vendors/font-awesome.min.css" />
     <link rel="stylesheet" href="dist/css/vendors/slick.css" />
     <link rel="stylesheet" href="dist/css/vendors/slick-theme.css" />
+    <link rel="stylesheet" href="dist/css/vendors/tagify.css" />
+    <link rel="stylesheet" href="dist/css/vendors/tags.css" />
     <link rel="stylesheet" href="dist/css/main.css" />
 </head>
 
 <body>
-    <div class="tenders-form">
-
+    <div class="tenders-form ms-form">
         <!--_______________Nav Bars_______________-->
         <div class="header" id="header">
             <!--_______________top nav_______________-->
@@ -170,132 +171,101 @@
                 </ul>
             </div>
         </div>
-
-        <!--_______________form_______________-->
-        <div class="create-tender">
+        <!--______________Form______________-->
+        <div class="multi-step-form">
             <div class="container">
                 <div class="row">
-                    <div class="create-tender-form">
-                        <h1 class="title">Create Tender</h1>
-                        <form action="">
-                            <div class="form-group">
-                                <input type="text" class="form-control input-focus" placeholder="Tender title" />
-                            </div>
-                            <div class="form-group dropdown-select">
-                                <select class="form-control input-focus">
-                                    <option class="option">Secotr</option>
-                                    <option class="option">Secotr 1</option>
-                                    <option class="option">Secotr 2</option>
-                                    <option class="option">Secotr 3</option>
-                                </select>
-                                <img src="dist/icons/down-arrow.svg" alt="" />
-                            </div>
-                            <div class="form-group add-Tags">
-                                <input type="text" class="form-control input-focus" placeholder="Tags" />
-                                <button class="add-tag" type="button" data-toggle="tooltip" data-placement="right" title="add another tag" id="add-tag">
-                                    <img src="dist/icons/plus.svg" alt="" />
-                                </button>
-                            </div>
-                            <!--here inputs of tags add-->
-                            <div id="tagsAdded"></div>
-                            <div class="form-group">
-                                <div class="form-group">
-                                    <textarea cols="40" rows="1" class="form-control input-focus" placeholder="Brief"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="form-group">
-                                    <textarea cols="40" rows="5" class="form-control input-focus" placeholder="Description"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control input-focus" placeholder="Location" />
-                            </div>
-                            <div class="form-group input-Date">
-                                <img src="dist/icons/calendar.svg" alt="" class="clender-icon" />
-                                <input type="text" id="datepicker" autocomplete="off" placeholder="Closing date" class="form-control input-focus" />
-                            </div>
-                            <div class="form-group">
-                                <label for="customFileLang" class="file-label">
-                                    <input type="file" class="file-input" id="customFileLang" />
-                                    <img src="dist/icons/upload 1.svg" alt="" />
-                                    Upload attachment
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-block">post</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-12 col-md-offset-6">
+                        <div class="bussines-signup">
+                            <form id="msform" class="msform">
+                                <h1 class="header mb-5">Create Tender </h1>
+                                <!-- first fieldset -->
+                                <fieldset>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-focus" placeholder="Tender title" />
+                                    </div>
+                                    <div class="form-group dropdown-select">
+                                        <select class="form-control input-focus">
+                                            <option class="option">Secotr</option>
+                                            <option class="option">Secotr 1</option>
+                                            <option class="option">Secotr 2</option>
+                                            <option class="option">Secotr 3</option>
+                                        </select>
+                                        <img src="dist/icons/down-arrow.svg" alt="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-focus " name='tags' placeholder="Tags" />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <textarea cols="40" rows="1" class="form-control input-focus" placeholder="Brief"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <textarea cols="40" rows="5" class="form-control input-focus" placeholder="Description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-focus" placeholder="Location" />
+                                    </div>
+                                    <div class="form-group input-Date">
+                                        <img src="dist/icons/calendar.svg" alt="" class="clender-icon" />
+                                        <input type="text" id="datepicker" autocomplete="off" placeholder="Closing date" class="form-control input-focus" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="customFileLang" class="file-label">
+                                            <input type="file" class="file-input" id="customFileLang" />
+                                            <img src="dist/icons/upload 1.svg" alt="" />
+                                            Upload attachment
+                                        </label>
+                                    </div>
+                                    <button type="button" name="next" class="next action-button btn-block">Move to payment</button>
+                                </fieldset>
+                                <!-- second fieldset -->
+                                <fieldset>
+                                    <ul class="payment-style mt-4">
+                                        <li class="list">
+                                            <div class="payment-type">
+                                                <p class="title">Total budget </p>
+                                                <p class="type">$<span>100</span> </p>
+                                            </div>
+                                        </li>
 
-        <!--_______________Footer_______________-->
-        <div class="footer">
-            <div class="container">
-                <div class="top-footer">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="left-links">
-                                <ul class="list-style">
-                                    <li class="list"><a href="about.html">About</a></li>
-                                    <li class="list"><a href="faq.html">FAQ</a></li>
-                                    <li class="list"><a href="contact.html">Talk to us</a></li>
-                                </ul>
-                                <ul class="list-style">
-                                    <li class="list"><a href="faq.html">Privacy policy</a></li>
-                                    <li class="list">
-                                        <a href="faq.html">Terms & conditions </a>
-                                    </li>
-                                </ul>
-                                <ul class="list-style">
-                                    <li class="list"><a href="#">Forum</a></li>
-                                    <li class="list"><a href="#">Sell with us</a></li>
-                                    <li class="list">
-                                        <a href="tenders-for-user.html">Tenders</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="right-links">
-                                <ul class="list-style">
-                                    <li class="list">
-                                        <p class="title">Follow Us</p>
-                                    </li>
-                                    <li class="list">
-                                        <ul class="social-media-links">
-                                            <li class="list">
-                                                <a href="#"><img src="dist/icons/linkedin.svg" alt="" /></a>
-                                            </li>
-                                            <li class="list">
-                                                <a href="#"><img src="dist/icons/twitter.svg" alt="" /></a>
-                                            </li>
-                                            <li class="list">
-                                                <a href="#"><img src="dist/icons/facebook.svg" alt="" /></a>
-                                            </li>
-                                            <li class="list">
-                                                <a href="#"><img src="dist/icons/instagram.svg" alt="" /></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="list">
-                                        <button class="lang lang-active">English</button>
-                                        <button class="lang">Türk</button>
-                                        <button class="lang">العربية</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p class="footer-title">
-                                © 2020 Albursa® Inc. All rights reserved
-                            </p>
+                                        <li class="list">
+                                            <ul class="list-style">
+                                                <li class="list mr-4">
+                                                    <img src="dist/icons/master-card.svg" />
+                                                </li>
+                                                <li class="list mr-4">
+                                                    <img src="dist/icons/paypal.svg" />
+                                                </li>
+                                                <li class="list">
+                                                    <img src="dist/icons/visa.svg" />
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-focus" placeholder="Name on card" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-focus" placeholder="card number" name="ccnum" id="ccnum" inputmode="numeric" autocomplete="cc-number" />
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-6">
+                                            <input type="text" class="form-control input-focus" placeholder="Expiry date" name="expiry" id="expiry" inputmode="numeric" />
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <input type="text" class="form-control input-focus" placeholder="Security code (CVV)" id="cvc" inputmode="numeric" autocomplete="cc-csc" />
+                                        </div>
+                                    </div>
+                                    <button type="button" name="previous" class="previous">Back</button>
+                                    <button type="submit" name="submi" class="submit">
+                                        Finish
+                                    </button>
+                                </fieldset>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -308,8 +278,14 @@
     <script src="dist/js/vendors/jquery-migrate-1.2.1.min.js"></script>
     <script src="dist/js/vendors/jquery-ui.min.js"></script>
     <script src="dist/js/vendors/slick.min.js"></script>
+    <script src="dist/js/vendors/jquery-easing-min.js"></script>
     <script src="dist/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/vendors/payform.js"></script>
+    <script src="dist/js/vendors/tagify.js"></script>
+    <script src="dist/js/add-tags.js"></script>
     <script src="dist/js/main.js"></script>
+    <script src="dist/js/ms-form.js"></script>
+
 </body>
 
 </html>

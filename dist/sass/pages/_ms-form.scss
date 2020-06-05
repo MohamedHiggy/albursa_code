@@ -1,312 +1,312 @@
 .ms-form {
-  .multi-step-form {
-    .bussines-signup {
-      padding: 30px 0;
-      .msform {
-        margin: 50px auto;
-        width: 900px;
-        position: relative;
-        .progressbar {
-          margin-bottom: 30px;
-          overflow: hidden;
-          width: 100%;
-          /*CSS counters to number the steps*/
-          counter-reset: step;
-          li {
-            text-align: center;
-            list-style-type: none;
-            color: #eaa93f;
-            font-size: 16px;
-            font-weight: normal;
-            width: 33.33%;
-            float: left;
-            position: relative;
-            &::before {
-              content: counter(step);
-              counter-increment: step;
-              width: 30px;
-              height: 30px;
-              line-height: 30px;
-              display: block;
-              text-align: center;
-              font-size: 16px;
-              font-weight: normal;
-              color: #ffffff;
-              background: #aaaaaa;
-              margin: 0 auto 5px auto;
-            }
-            &::after {
-              content: "";
-              width: 100%;
-              height: 2px;
-              background: #cccccc;
-              position: absolute;
-              left: -50%;
-              top: 9px;
-              z-index: -1; /*put it behind the numbers*/
-            }
-            &:first-child::after {
-              /*connector not needed before the first step*/
-              content: none;
-            }
-          }
-        }
-        .progressbar li.active:before,
-        .progressbar li.active:after {
-          background: #eaa93f;
-          color: white;
-        }
-        .fieldset-one,
-        .fieldset-two,
-        .fieldset-four {
-          padding: 0 150px;
-        }
-        fieldset {
-          text-align: center;
-          border: 0 none;
-          border-radius: 3px;
-          padding: 20px 75px;
-          box-sizing: border-box;
-          width: 100%;
-          /*stacking fieldsets above each other*/
-          position: relative;
-          &:not(:first-of-type) {
-            display: none;
-          }
-          .next,
-          .submit {
-            margin: 0;
-            width: 49%;
-            background-color: #eaa93f;
-            border: none;
-            padding: 10px 0;
-            color: #ffffff;
-            outline: none;
-            &:hover {
-              background-color: #ebb35b;
-            }
-          }
-          .previous {
-            margin: 0;
-            width: 49%;
-            background-color: transparent;
-            border: none;
-            padding: 9px 0;
-            color: #333333;
-            outline: none;
-            border: 1px solid #cccccc;
-            &:hover {
-              background-color: #cccccc;
-            }
-          }
-          .action-button {
-            width: 100%;
-          }
-          .reg-type {
-            text-align: left;
-          }
-          .form-group {
-            input::-webkit-input-placeholder {
-              color: #a4a4a4 !important;
-            }
-
-            input:-moz-placeholder {
-              /* Firefox 18- */
-              color: #a4a4a4 !important;
-            }
-
-            input::-moz-placeholder {
-              /* Firefox 19+ */
-              color: #a4a4a4 !important;
-            }
-
-            input:-ms-input-placeholder {
-              color: #a4a4a4 !important;
-            }
-            position: relative;
-            img {
-              position: absolute;
-              top: 15px;
-              right: 15px;
-            }
-            select {
-              cursor: pointer;
-              -o-appearance: none;
-              -ms-appearance: none;
-              -webkit-appearance: none;
-              -moz-appearance: none;
-              appearance: none;
-              color: #a4a4a4;
-            }
-            select.form-control {
-              .option {
-                border: 10px solid #000000;
-                &:hover {
-                  background-color: #eaa93f !important;
-                }
-              }
-            }
-            .form-control {
-              border-radius: 0;
-            }
-            .title {
-              font-weight: bold;
-              font-size: 14px;
-              margin: 0;
-            }
-            .form-check {
-              display: inline-block;
-              padding: 10px 10px 10px 0; /*rtl file*/
-              .form-check-label {
+    .multi-step-form {
+        .bussines-signup {
+            padding: 30px 0;
+            .msform {
+                margin: 50px auto;
+                width: 900px;
                 position: relative;
-                padding-left: 25px; /*rtl file*/
-                cursor: pointer;
-                font-size: 16px;
-                color: #666;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-                input {
-                  position: absolute;
-                  opacity: 0;
-                  cursor: pointer;
+                .progressbar {
+                    margin-bottom: 30px;
+                    overflow: hidden;
+                    width: 100%;
+                    /*CSS counters to number the steps*/
+                    counter-reset: step;
+                    li {
+                        text-align: center;
+                        list-style-type: none;
+                        color: #eaa93f;
+                        font-size: 16px;
+                        font-weight: normal;
+                        width: 33.33%;
+                        float: left;
+                        position: relative;
+                        &::before {
+                            content: counter(step);
+                            counter-increment: step;
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            display: block;
+                            text-align: center;
+                            font-size: 16px;
+                            font-weight: normal;
+                            color: #ffffff;
+                            background: #aaaaaa;
+                            margin: 0 auto 5px auto;
+                        }
+                        &::after {
+                            content: "";
+                            width: 100%;
+                            height: 2px;
+                            background: #cccccc;
+                            position: absolute;
+                            left: -50%;
+                            top: 9px;
+                            z-index: -1;
+                            /*put it behind the numbers*/
+                        }
+                        &:first-child::after {
+                            /*connector not needed before the first step*/
+                            content: none;
+                        }
+                    }
                 }
-                input:checked ~ .checkmark {
-                  background-color: #e5e5e5;
-                }
-                input:checked ~ .checkmark:after {
-                  display: block;
-                }
-                .checkmark {
-                  position: absolute;
-                  top: 50%;
-                  -webkit-transform: translateY(-50%);
-                  -moz-transform: translateY(-50%);
-                  -ms-transform: translateY(-50%);
-                  -o-transform: translateY(-50%);
-                  transform: translateY(-50%);
-                  left: 0;
-                  height: 20px;
-                  width: 20px;
-                  background-color: #e5e5e5;
-                  -webkit-border-radius: 50%;
-                  -moz-border-radius: 50%;
-                  border-radius: 50%;
-                  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
-                  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
-                  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
-                  &::after {
-                    content: "";
-                    position: absolute;
-                    display: none;
-                    top: 50%;
-                    left: 50%;
-                    -webkit-transform: translate(-50%, -50%);
-                    -moz-transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                    -o-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
-                    width: 12px;
-                    height: 12px;
-                    -webkit-border-radius: 50%;
-                    -moz-border-radius: 50%;
-                    border-radius: 50%;
+                .progressbar li.active:before,
+                .progressbar li.active:after {
                     background: #eaa93f;
-                  }
+                    color: white;
                 }
-              }
-            }
-          }
-          .plan-title {
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-          }
-          .text {
-            margin: 0;
-            text-align: center;
-          }
-          .middle-title {
-            text-align: center;
-            padding: 20px;
-            .title {
-              span {
-                font-weight: normal;
-                font-size: 12px;
-                color: #707070;
-              }
-            }
-          }
-          .list-style {
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            line-height: 3em;
-          }
-          .payment-type {
-            .title {
-              font-weight: bold;
-              font-size: 16px;
-              color: #000000;
-              margin: 0;
-            }
-            .type {
-              font-weight: normal;
-              font-size: 16px;
-              line-height: 19px;
-              color: #000000;
-            }
-          }
-          .list-style-prices {
-            padding: 0;
-            display: flex;
-            justify-content: space-evenly;
-            .list {
-              .box {
-                margin: 0 10px;
-                text-align: center;
-                position: relative;
-                border: 1px solid #c4c4c4;
-                width: 222px;
-                height: 90px;
-                cursor: pointer;
-                .radio {
-                  position: absolute;
-                  top: 10px;
-                  left: 10px;
+                .fieldset-one,
+                .fieldset-two,
+                .fieldset-four {
+                    padding: 0 150px;
                 }
-                .title {
-                  padding: 0;
-                  .price {
-                    font-size: 22px;
-                    font-weight: bold;
-                    color: #000000;
-                    margin: 0;
-                  }
-                  .text {
-                    font-size: 16px;
-                    font-weight: normal;
-                    color: #707070;
-                  }
+                fieldset {
+                    text-align: center;
+                    border: 0 none;
+                    border-radius: 3px;
+                    padding: 20px 75px;
+                    box-sizing: border-box;
+                    width: 100%;
+                    /*stacking fieldsets above each other*/
+                    position: relative;
+                    &:not(:first-of-type) {
+                        display: none;
+                    }
+                    .next,
+                    .submit {
+                        margin: 0;
+                        width: 49%;
+                        background-color: #eaa93f;
+                        border: none;
+                        padding: 10px 0;
+                        color: #ffffff;
+                        outline: none;
+                        &:hover {
+                            background-color: #ebb35b;
+                        }
+                    }
+                    .previous {
+                        margin: 0;
+                        width: 49%;
+                        background-color: transparent;
+                        border: none;
+                        padding: 9px 0;
+                        color: #333333;
+                        outline: none;
+                        border: 1px solid #cccccc;
+                        &:hover {
+                            background-color: #cccccc;
+                        }
+                    }
+                    .action-button {
+                        width: 100%;
+                    }
+                    .reg-type {
+                        text-align: left;
+                    }
+                    .form-group {
+                        input::-webkit-input-placeholder {
+                            color: #a4a4a4 !important;
+                        }
+                        input:-moz-placeholder {
+                            /* Firefox 18- */
+                            color: #a4a4a4 !important;
+                        }
+                        input::-moz-placeholder {
+                            /* Firefox 19+ */
+                            color: #a4a4a4 !important;
+                        }
+                        input:-ms-input-placeholder {
+                            color: #a4a4a4 !important;
+                        }
+                        position: relative;
+                        img {
+                            position: absolute;
+                            top: 15px;
+                            right: 15px;
+                        }
+                        select {
+                            cursor: pointer;
+                            -o-appearance: none;
+                            -ms-appearance: none;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            color: #a4a4a4;
+                        }
+                        select.form-control {
+                            .option {
+                                border: 10px solid #000000;
+                                &:hover {
+                                    background-color: #eaa93f !important;
+                                }
+                            }
+                        }
+                        .form-control {
+                            border-radius: 0;
+                        }
+                        .title {
+                            font-weight: bold;
+                            font-size: 14px;
+                            margin: 0;
+                        }
+                        .form-check {
+                            display: inline-block;
+                            padding: 10px 10px 10px 0;
+                            /*rtl file*/
+                            .form-check-label {
+                                position: relative;
+                                padding-left: 25px;
+                                /*rtl file*/
+                                cursor: pointer;
+                                font-size: 16px;
+                                color: #666;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                                input {
+                                    position: absolute;
+                                    opacity: 0;
+                                    cursor: pointer;
+                                }
+                                input:checked~.checkmark {
+                                    background-color: #e5e5e5;
+                                }
+                                input:checked~.checkmark:after {
+                                    display: block;
+                                }
+                                .checkmark {
+                                    position: absolute;
+                                    top: 50%;
+                                    -webkit-transform: translateY(-50%);
+                                    -moz-transform: translateY(-50%);
+                                    -ms-transform: translateY(-50%);
+                                    -o-transform: translateY(-50%);
+                                    transform: translateY(-50%);
+                                    left: 0;
+                                    height: 20px;
+                                    width: 20px;
+                                    background-color: #e5e5e5;
+                                    -webkit-border-radius: 50%;
+                                    -moz-border-radius: 50%;
+                                    border-radius: 50%;
+                                    -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+                                    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+                                    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+                                    &::after {
+                                        content: "";
+                                        position: absolute;
+                                        display: none;
+                                        top: 50%;
+                                        left: 50%;
+                                        -webkit-transform: translate(-50%, -50%);
+                                        -moz-transform: translate(-50%, -50%);
+                                        -ms-transform: translate(-50%, -50%);
+                                        -o-transform: translate(-50%, -50%);
+                                        transform: translate(-50%, -50%);
+                                        width: 12px;
+                                        height: 12px;
+                                        -webkit-border-radius: 50%;
+                                        -moz-border-radius: 50%;
+                                        border-radius: 50%;
+                                        background: #eaa93f;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .plan-title {
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    .text {
+                        margin: 0;
+                        text-align: center;
+                    }
+                    .middle-title {
+                        text-align: center;
+                        padding: 20px;
+                        .title {
+                            span {
+                                font-weight: normal;
+                                font-size: 12px;
+                                color: #707070;
+                            }
+                        }
+                    }
+                    .list-style {
+                        display: flex;
+                        justify-content: center;
+                        padding: 0;
+                        line-height: 3em;
+                    }
+                    .payment-type {
+                        .title {
+                            font-weight: bold;
+                            font-size: 16px;
+                            color: #000000;
+                            margin: 0;
+                        }
+                        .type {
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #000000;
+                        }
+                    }
+                    .list-style-prices {
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-evenly;
+                        .list {
+                            .box {
+                                margin: 0 10px;
+                                text-align: center;
+                                position: relative;
+                                border: 1px solid #c4c4c4;
+                                width: 222px;
+                                height: 90px;
+                                cursor: pointer;
+                                .radio {
+                                    position: absolute;
+                                    top: 10px;
+                                    left: 10px;
+                                }
+                                .title {
+                                    padding: 0;
+                                    .price {
+                                        font-size: 22px;
+                                        font-weight: bold;
+                                        color: #000000;
+                                        margin: 0;
+                                    }
+                                    .text {
+                                        font-size: 16px;
+                                        font-weight: normal;
+                                        color: #707070;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-              }
             }
-          }
         }
-      }
     }
-  }
 }
 
 @media (max-width: 576px) {
-  .multi-step-form {
-    .bussines-signup {
-      .msform {
-        .progressbar {
-          width: 100% !important;
+    .multi-step-form {
+        .bussines-signup {
+            .msform {
+                .progressbar {
+                    width: 100% !important;
+                }
+            }
         }
-      }
     }
-  }
 }

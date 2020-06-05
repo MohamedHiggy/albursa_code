@@ -1,7 +1,7 @@
 .add-product {
     .vendor-content {
         .vendor-setting-content {
-            width: 80%;
+            width: 100%;
             .add-product-content {
                 padding-bottom: 50px;
                 form {
@@ -15,6 +15,15 @@
                             display: flex;
                         }
                         .form-group {
+                            .add-more-amenities {
+                                font-weight: normal;
+                                font-size: 14px;
+                                color: #D5B34F;
+                                &:focus {
+                                    outline: none;
+                                    box-shadow: none;
+                                }
+                            }
                             .btn-delete-row {
                                 background-color: #ffffff;
                                 border: none;

@@ -23,16 +23,6 @@ $(function() {
     });
 });
 
-
-// add another tags
-$(document).ready(function() {
-    var counter = 0;
-    $('.form-group #add-tag').on('click', function() {
-        counter++;
-        $('#tagsAdded').append('<div class="form-group"><input type="text" class="form-control input-focus" placeholder=" tag ' + counter + ' "></div>');
-    });
-});
-
 // FAQ
 $(document).ready(function() {
     $(".set > a").on("click", function() {

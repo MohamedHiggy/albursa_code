@@ -31,6 +31,94 @@
     }
 }
 
+.add-real-state {
+    .vendor-content {
+        .vendor-setting-content {
+            .add-product-content {
+                .reg-type {
+                    padding: 0 0 5px 0;
+                    .form-check {
+                        display: inline-block;
+                        padding: 0 40px 15px 5px;
+                        /*rtl file*/
+                        .form-check-label {
+                            position: relative;
+                            padding: 0 0 0 025px;
+                            /*rtl file*/
+                            cursor: pointer;
+                            font-size: 16px;
+                            color: #666;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            input {
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                            }
+                            input:checked~.checkmark {
+                                background-color: #e5e5e5;
+                            }
+                            input:checked~.checkmark:after {
+                                display: block;
+                            }
+                            .checkmark {
+                                position: absolute;
+                                top: 50%;
+                                -webkit-transform: translateY(-50%);
+                                -moz-transform: translateY(-50%);
+                                -ms-transform: translateY(-50%);
+                                -o-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                                left: 0;
+                                height: 20px;
+                                width: 20px;
+                                background-color: #e5e5e5;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                border-radius: 50%;
+                                -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+                                -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+                                box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    display: none;
+                                    top: 50%;
+                                    left: 50%;
+                                    -webkit-transform: translate(-50%, -50%);
+                                    -moz-transform: translate(-50%, -50%);
+                                    -ms-transform: translate(-50%, -50%);
+                                    -o-transform: translate(-50%, -50%);
+                                    transform: translate(-50%, -50%);
+                                    width: 12px;
+                                    height: 12px;
+                                    -webkit-border-radius: 50%;
+                                    -moz-border-radius: 50%;
+                                    border-radius: 50%;
+                                    background: #eaa93f;
+                                }
+                            }
+                        }
+                    }
+                }
+                .input-Date {
+                    position: relative;
+                    .clender-icon {
+                        position: absolute;
+                        top: 5px;
+                        left: 10px;
+                    }
+                    .form-control {
+                        padding-left: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .vendor-side-bar {
         display: none;

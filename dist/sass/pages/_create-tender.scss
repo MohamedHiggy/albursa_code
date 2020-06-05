@@ -1,67 +1,103 @@
 .tenders-form {
-  .create-tender {
-    padding: 50px 0;
-    .create-tender-form {
-      .title {
-        text-align: center;
-        font-weight: 500;
-        font-size: 28px;
-        color: #000000;
-      }
-      margin: 0 auto;
-      form {
-        .dropdown-select {
-          position: relative;
-          select {
-            -ms-appearance: none;
-            -o-appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            cursor: pointer;
-          }
-          img {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-          }
-        }
-        .input-Date {
-          position: relative;
-          .input-focus {
-            padding-left: 35px;
-          }
-          .clender-icon {
-            position: absolute;
-            top: 5px;
-            left: 5px; /*rtl file*/
-          }
-        }
-        .add-Tags {
-          position: relative;
-          .add-tag {
-            position: absolute;
-            border: none;
-            background-color: transparent;
-            top: 0;
-            right: 0;
-            outline: none;
-            height: 100%;
-            img {
-              height: 100%;
+    height: 150vh;
+    .multi-step-form {
+        height: auto;
+        width: 40% !important;
+        margin: 0 auto;
+        .msform {
+            width: 100% !important;
+            .header {
+                width: 40%;
+                margin: 0 auto;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 33px;
+                color: #000000;
             }
-          }
+            .title {
+                text-align: center;
+                font-weight: 500;
+                font-size: 28px;
+                color: #000000;
+            }
+            margin: 0 auto;
+            width: 100% !important;
+            fieldset {
+                padding: 0 !important;
+                width: 100% !important;
+                text-align: left !important;
+                .payment-style {
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    list-style: none;
+                    .list {
+                        .payment-type {
+                            text-align: left;
+                        }
+                        .list-style {
+                            .list {
+                                img {
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .dropdown-select {
+                    position: relative;
+                    select {
+                        -ms-appearance: none;
+                        -o-appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        cursor: pointer;
+                    }
+                    img {
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                    }
+                }
+                .input-Date {
+                    position: relative;
+                    .input-focus {
+                        padding-left: 35px;
+                    }
+                    .clender-icon {
+                        position: absolute;
+                        top: 5px !important;
+                        left: 5px !important;
+                        /*rtl file*/
+                    }
+                }
+                .add-Tags {
+                    position: relative;
+                    .add-tag {
+                        position: absolute;
+                        border: none;
+                        background-color: transparent;
+                        top: 0;
+                        right: 0;
+                        outline: none;
+                        height: 100%;
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
+                .btn {
+                    background-color: #eaa93f;
+                    outline: none;
+                    border: 0;
+                    border-radius: 0;
+                    color: #ffffff;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
         }
-        .btn {
-          background-color: #eaa93f;
-          outline: none;
-          border: 0;
-          border-radius: 0;
-          color: #ffffff;
-          font-size: 16px;
-          font-weight: bold;
-        }
-      }
     }
-  }
 }

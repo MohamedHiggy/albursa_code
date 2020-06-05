@@ -1,0 +1,7 @@
+tags {
+    overflow-y: scroll;
+}
+
+.disabled tags {
+    display: none;
+}
