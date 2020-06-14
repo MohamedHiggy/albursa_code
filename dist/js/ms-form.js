@@ -83,3 +83,14 @@ $(document).ready(function() {
 payform.cardNumberInput(document.getElementById("ccnum"));
 payform.expiryInput(document.getElementById("expiry"));
 payform.cvcInput(document.getElementById("cvc"));
+
+
+
+$(document).ready(function() {
+    $('input[type="radio"]').click(function() {
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".hide-show").not(targetBox).hide();
+        $(targetBox).show();
+    });
+});

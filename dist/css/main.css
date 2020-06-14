@@ -1029,6 +1029,9 @@ table {
 .ms-form .multi-step-form .bussines-signup .msform fieldset .reg-type {
   text-align: left;
 }
+.ms-form .multi-step-form .bussines-signup .msform fieldset .hide-show {
+  display: none;
+}
 .ms-form .multi-step-form .bussines-signup .msform fieldset .form-group {
   position: relative;
 }

@@ -87,3 +87,40 @@ $(document).ready(function() {
         x--;
     });
 });
+
+
+
+$(document).ready(function() {
+    var max_fields = 9;
+    var wrapper = $(".add-product-content .add-more-category-content");
+    var add_button = $(
+        ".add-product-content .form-row .form-group .add-more-category"
+    );
+    var x = 1;
+    $(add_button).click(function(e) {
+        e.preventDefault();
+        if (x < max_fields) {
+            x++;
+            $(wrapper).append(
+                `<div class="form-group col-lg-6 col-md-6 col-xs-12">
+                <select class="form-control input-focus" id="select3" name="select3">
+                    <option value="1">subCategory 1</option>
+                    <option value="2">subCategory 2</option>
+                    <option value="3">subCategory 3</option>
+                    <option value="4">subCategory 4</option>
+                </select>
+                <img src="../dist/icons/adminIcons/down-arrow.svg" alt="" class="select-arrow" />
+                <button class="btn btn-danger btn-sm mt-2 mb-2 delete">Delete</button>
+            </div>`
+            ); //add input box
+        } else {
+            alert("You Reached the limits");
+        }
+    });
+
+    $(wrapper).on("click", ".delete", function(e) {
+        e.preventDefault();
+        $(this).parent("div").remove();
+        x--;
+    });
+});
