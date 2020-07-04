@@ -229,6 +229,186 @@
     }
 }
 
+.materials-rating {
+    .header-rate {
+        .title {
+            font-weight: bold;
+            font-size: 22px;
+            text-transform: capitalize;
+            color: #000000;
+        }
+        .content {
+            width: 50%;
+            display: flex;
+            .show-rates {
+                width: 30%;
+                .ratio {
+                    font-weight: bold;
+                    font-size: 22px;
+                    text-transform: capitalize;
+                    color: #000000;
+                    margin-bottom: 0;
+                }
+                .rates {
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                .numbers {
+                    font-weight: normal;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    color: #505050;
+                }
+            }
+            .rates-digram {
+                width: 100%;
+                .rates-content {
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    margin: 5px 15px;
+                    .num-stars,
+                    .star-num {
+                        font-weight: normal;
+                        font-size: 12px;
+                        text-transform: capitalize;
+                        color: #505050;
+                    }
+                    .progress {
+                        margin: 5px 10px 0 10px;
+                        width: 209px;
+                        height: 8px;
+                        border-radius: 0;
+                        background-color: #E3E3E3;
+                        .progress-bar {
+                            background-color: #EAA93F;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .comments {
+        padding: 20px 0;
+        .single-comment {
+            display: none;
+            width: 50%;
+            padding: 10px 0;
+            .rates {
+                span {
+                    font-size: 20px;
+                }
+            }
+            .user-comment {
+                padding: 5px 0;
+                .name {
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    color: #000000;
+                    margin-right: 10px;
+                }
+                .date {
+                    font-weight: normal;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    color: #707070;
+                }
+            }
+            .content-comment {
+                .title {
+                    font-weight: normal;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    color: #000000;
+                }
+            }
+        }
+        .load-more {
+            background-color: transparent;
+            width: 200px;
+            height: 25px;
+            font-weight: normal;
+            font-size: 16px;
+            text-transform: capitalize;
+            border: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            color: #000000;
+            img {
+                margin-left: 5px;
+            }
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+            &:hover {
+                img {
+                    transition: ease-in-out .5s;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+    .rate-product {
+        padding: 40px 0;
+        .title {
+            font-weight: 600;
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000000;
+        }
+        .pick-comment {
+            transition: ease-in-out .6s;
+            display: none;
+            border-radius: 3px;
+            padding: 15px;
+            width: 50%;
+            box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 8px rgba(0, 0, 0, 0.1);
+            .send-review {
+                width: 200px;
+                height: 40px;
+                font-weight: 600;
+                font-size: 14px;
+                color: #FFFFFF;
+                border: none;
+                background-color: #EAA93F;
+                &:focus {
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+        }
+        .star {
+            display: inline-block;
+            font-size: 0;
+            position: relative;
+        }
+        .star-item {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAMAAADJ7yrpAAAAYFBMVEUAAAD92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92Un92UmCTPEWAAAAH3RSTlMA9iwe++hAgPLJo13i3Td8JO3Sk4xtYkYUC76cVBIjGgBFCwAAAMtJREFUKM+1kUkOhCAQRUEFBHGep67737JRlEFNJ73wbyAv9WtRD/1O3z/AqrqzDqC7spEAkPECGagwlwRJE28wbpJAk5xjcIJ5rmBBwAsp9nLpsvJYkMWWxRk6QrHZSJFJesIU2UQnjCwLwSQ0kG4zQmzzdmcCuA5VocaQGNiyQX8G1qK/8q6jNH1wtCx3RxwhfnUkM3Vs6ToSdNUDK52NI6JL+4R1JD/HYaXriOsP9xxN+p08R0JV1ZlnzxELRBSJIPccSe1IvufoCxGAFoLwSVOBAAAAAElFTkSuQmCC') center top no-repeat;
+        }
+        input[type="radio"] {
+            position: absolute;
+            clip: rect(0, 0, 0, 0)
+        }
+        input[type="radio"]:checked+.star-item~.star-item {
+            background-position: center bottom;
+        }
+        .star:hover label.star-item {
+            background-position: center top!important;
+        }
+        label.star-item:hover~.star-item {
+            background-position: center bottom!important;
+        }
+    }
+}
+
 @media screen and (max-width: 985px) {
     .materials-desc-page {
         .materials-desc {

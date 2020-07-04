@@ -30,17 +30,24 @@
                 width: 100%;
                 height: auto;
                 background-color: #f6f6f6;
-                a {
+                .faq-drop {
                     font-weight: normal;
                     font-size: 18px;
                     color: #000000;
-                    display: block;
                     padding: 10px 15px;
-                    text-decoration: none;
+                    text-align: left;
+                    width: 100%;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
                     border-bottom: 1px solid #eeeeee;
                     -webkit-transition: all 0.2s linear;
                     -moz-transition: all 0.2s linear;
                     transition: all 0.2s linear;
+                    &:focus {
+                        box-shadow: none;
+                        outline: none;
+                    }
                     &:last-child {
                         border-bottom: none;
                     }

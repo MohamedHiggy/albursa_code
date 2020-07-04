@@ -42,6 +42,37 @@
                                 display: flex;
                                 .list {
                                     margin-right: 15px;
+                                    .clear {
+                                        color: #EAA93F;
+                                        background-color: transparent;
+                                        border: none;
+                                        font-weight: normal;
+                                        font-size: 18px;
+                                        padding: 10px;
+                                        &:focus {
+                                            box-shadow: none;
+                                            outline: none;
+                                        }
+                                    }
+                                    .search-bar-filter {
+                                        position: relative;
+                                        .searh-btn {
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            height: 100%;
+                                            width: 50px;
+                                            border: none;
+                                            background-color: #EAA93F;
+                                            img {
+                                                margin-top: -5px;
+                                            }
+                                            &:focus {
+                                                box-shadow: none;
+                                                outline: none;
+                                            }
+                                        }
+                                    }
                                     .form-group {
                                         position: relative;
                                         .input-search {
@@ -224,6 +255,128 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    .inner {
+        transition: ease-in-out .5s;
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 20px;
+        width: 681px;
+        left: 40%;
+        position: fixed;
+        margin-left: -150px;
+        top: 30%;
+        .header {
+            width: 50%;
+            margin: 0 auto;
+            .title {
+                font-weight: normal;
+                font-size: 24px;
+                color: #000000;
+                .vendor-name {
+                    font-weight: bold;
+                }
+            }
+        }
+        .posts-accepted {
+            padding: 15px 0;
+            .list-style {
+                padding: 0;
+                margin: 0;
+                .list {
+                    margin-bottom: 10px;
+                    display: flex;
+                    img {
+                        max-width: 53px;
+                        max-height: 34px;
+                    }
+                    .title {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #505050;
+                    }
+                    a {
+                        font-weight: normal;
+                        font-size: 14px;
+                        color: #DA9421;
+                    }
+                }
+            }
+        }
+        .got-it {
+            text-decoration: none;
+            display: block;
+            margin: 0 auto;
+            border: none;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            background-color: #EAA93F;
+            font-weight: 600;
+            font-size: 16px;
+            color: #FFFFFF;
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        .close-window {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: none;
+            background-color: transparent;
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    }
+}
+
+#popup {
+    display: none;
+}
+
+.model-success {
+    .inner {
+        height: 551px;
+        margin-top: -125px;
+        .img {
+            width: 50%;
+            margin: 10px auto;
+        }
+        .posts-accepted {
+            .list-style {
+                .list {
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    }
+}
+
+.model-refuse {
+    .inner {
+        height: 327px;
+        .posts-accepted {
+            .list-style {
+                .list {
+                    justify-content: center;
                 }
             }
         }

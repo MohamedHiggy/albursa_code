@@ -14,6 +14,15 @@
                         .sss {
                             display: flex;
                         }
+                        .dropdown-Price {
+                            position: relative;
+                            .dropdown-Price-select {
+                                position: absolute;
+                                width: 20%;
+                                top: 0;
+                                right: 0;
+                            }
+                        }
                         .form-group {
                             .add-more-amenities {
                                 font-weight: normal;
@@ -80,6 +89,26 @@
                         &:focus {
                             outline: none;
                             box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .add-product {
+        .vendor-content {
+            .vendor-setting-content {
+                .add-product-content {
+                    form {
+                        .form-row {
+                            .dropdown-Price {
+                                .dropdown-Price-select {
+                                    width: 50% !important;
+                                }
+                            }
                         }
                     }
                 }

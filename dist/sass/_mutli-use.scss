@@ -51,7 +51,16 @@ nav {
     }
 }
 
+.unchecked {
+    color: #C4C4C4;
+}
+
+.checked {
+    color: orange;
+}
+
 .card {
+    height: 300px;
     width: 100% !important;
     .theater {
         position: absolute;

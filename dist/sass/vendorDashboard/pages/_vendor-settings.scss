@@ -40,40 +40,43 @@
                 width: 100%;
                 .div-tab {
                     padding: 30px 0;
-                    .form-row {
-                        .form-group {
-                            position: relative;
-                            label {
-                                font-weight: normal;
-                                font-size: 15px;
-                                line-height: 19px;
-                                text-transform: capitalize;
-                                color: #000000;
-                            }
-                            .edit-icon {
-                                position: absolute;
-                                top: 42px;
-                                right: 20px;
-                            }
-                            .delete-icon {
-                                position: absolute;
-                                top: 42px;
-                                right: 20px;
-                                cursor: pointer;
-                            }
-                            select {
-                                cursor: pointer;
-                                -o-appearance: none;
-                                -ms-appearance: none;
-                                -webkit-appearance: none;
-                                -moz-appearance: none;
-                                appearance: none;
-                            }
-                            .select-arrow {
-                                position: absolute;
-                                top: 45px;
-                                right: 20px;
-                            }
+                    .form-group {
+                        position: relative;
+                        label {
+                            font-weight: normal;
+                            font-size: 15px;
+                            line-height: 19px;
+                            text-transform: capitalize;
+                            color: #000000;
+                        }
+                        .edit-icon {
+                            position: absolute;
+                            top: 42px;
+                            right: 20px;
+                        }
+                        .delete-icon {
+                            position: absolute;
+                            top: 42px;
+                            right: 20px;
+                            cursor: pointer;
+                        }
+                        select {
+                            cursor: pointer;
+                            -o-appearance: none;
+                            -ms-appearance: none;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                        }
+                        .select-arrow {
+                            position: absolute;
+                            top: 45px;
+                            right: 15px;
+                        }
+                        .select-arrow2 {
+                            position: absolute;
+                            top: 15px;
+                            right: 20px;
                         }
                     }
                     .btn-settings {
@@ -102,6 +105,24 @@
                         }
                     }
                     .profile-settings {
+                        .add-more-websites {
+                            border: none;
+                            background-color: transparent;
+                            color: #eaa93f;
+                            &:focus {
+                                box-shadow: none;
+                                outline: none;
+                            }
+                        }
+                        .btn-remove-customer {
+                            height: 30px;
+                            border: none;
+                            background-color: transparent;
+                            &:focus {
+                                box-shadow: none;
+                                outline: none;
+                            }
+                        }
                         .upload-img {
                             width: 120px;
                             height: 120px;
@@ -224,6 +245,24 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.deactivate-model {
+    .modal-content {
+        padding: 30px;
+        text-align: center;
+        .title {
+            font-size: 18px;
+        }
+        .btn-close {
+            background-color: #eaa93f;
+            color: #ffffff;
+        }
+        .btn-submit {
+            background-color: red;
+            color: #ffffff;
         }
     }
 }

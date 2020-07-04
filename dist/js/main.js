@@ -33,26 +33,47 @@ $(function() {
     });
 });
 
+//change background color of checkbox 
+$(function() {
+    $('td:first-child input').change(function() {
+        $(this).closest('tr').toggleClass("highlight", this.checked);
+    });
+});
+
+
 // FAQ
 $(document).ready(function() {
-    $(".set > a").on("click", function() {
+    $(".set > button").on("click", function() {
         if ($(this).hasClass("active")) {
             $(this).removeClass("active");
             $(this).siblings(".content").slideUp(200);
-            $(".set > a i").removeClass("fa-angle-down").addClass("fa-angle-up");
+            $(".set > button i").removeClass("fa-angle-down").addClass("fa-angle-up");
         } else {
-            $(".set > a i").removeClass("fa-angle-down").addClass("fa-angle-up");
+            $(".set > button i").removeClass("fa-angle-down").addClass("fa-angle-up");
             $(this)
                 .find("i")
                 .removeClass("fa-angle-up")
                 .addClass("fa-angle-down");
-            $(".set > a").removeClass("active");
+            $(".set > button").removeClass("active");
             $(this).addClass("active");
             $(".content").slideUp(200);
             $(this).siblings(".content").slideDown(200);
         }
     })
 });
+
+// see all comments
+$(document).ready(function() {
+    $(".single-comment").slice(0, 3).show();
+    $("#loadMore").click(function(e) {
+        e.preventDefault();
+        $(".single-comment:hidden").slice(0, 3).fadeIn("slow");
+
+        if ($(".single-comment:hidden").length == 0) {
+            $("#loadMore").fadeOut("slow");
+        }
+    });
+})
 
 //slider
 $(document).ready(function() {
@@ -68,7 +89,6 @@ $(document).ready(function() {
         fadeSpeed: 2000,
     })
 });
-
 
 //slider-range-price
 $(function() {
