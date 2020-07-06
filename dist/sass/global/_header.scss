@@ -62,6 +62,35 @@
                     box-shadow: none;
                 }
             }
+            .form-group {
+                position: absolute;
+                width: 20%;
+                top: 0;
+                left: 0;
+                select {
+                    cursor: pointer;
+                    -o-appearance: none;
+                    -ms-appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                }
+                img {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                }
+                &::after {
+                    display: block;
+                    top: 7px;
+                    right: 0;
+                    position: absolute;
+                    content: "";
+                    width: .5px;
+                    height: 25px;
+                    background-color: #C4C4C4;
+                }
+            }
             .search-form {
                 position: relative;
                 width: 100%;
@@ -71,6 +100,7 @@
                     border-radius: 0 !important;
                     border: none;
                     width: 95%;
+                    text-align: center;
                     &:focus {
                         border-color: 0;
                         box-shadow: none;

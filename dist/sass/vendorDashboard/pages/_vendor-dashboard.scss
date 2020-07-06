@@ -358,7 +358,11 @@
         margin-top: -125px;
         .img {
             width: 50%;
+            height: 200px;
             margin: 10px auto;
+            img {
+                height: 100%;
+            }
         }
         .posts-accepted {
             .list-style {

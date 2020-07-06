@@ -431,6 +431,12 @@
                                 <div class="user-comment">
                                     <span class="name">Ahmed Elsayed</span>
                                     <span class="date">11 Jan 2020</span>
+                                    <button type="button" class="edit-comment" data-toggle="modal" data-target="#editcomment">
+                                        <img src="dist/icons/adminIcons/a-edit.svg" alt="">
+                                    </button>
+                                    <button type="button" class="delete-comment" data-toggle="modal" data-target="#deletecomment">
+                                        <img src="dist/icons/adminIcons/a-delete.svg" alt="">
+                                    </button>
                                 </div>
                                 <div class="content-comment">
                                     <p class="title">I've bought several tons product from here. It's very good!</p>
@@ -748,6 +754,61 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- edit -->
+    <div class="modal fade edit-comment" id="editcomment" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"> Edit your review </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="star">
+                            <input type="radio" name="items" id="item6" checked />
+                            <label class="star-item" for="item6"></label>
+
+                            <input type="radio" name="items" id="item7" />
+                            <label class="star-item" for="item7"></label>
+
+                            <input type="radio" name="items" id="item8" />
+                            <label class="star-item" for="item8"></label>
+
+                            <input type="radio" name="items" id="item9" />
+                            <label class="star-item" for="item9"></label>
+
+                            <input type="radio" name="items" id="item10" />
+                            <label class="star-item" for="item10"></label>
+                        </div>
+                        <div class="form-group ">
+                            <input type="text" class="form-control input-focus " placeholder="add comment " />
+                        </div>
+                        <button type="submit" class="send-review">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- delete -->
+    <div class="modal fade delete-comment" id="deletecomment" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"> delete your review </h5>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <button type="submit" class="send-review deletebtn">delete</button>
+                        <button type="button" data-dismiss="modal" aria-label="Close" class="delete-review deletebtn">cancel</button>
+                    </form>
                 </div>
             </div>
         </div>
