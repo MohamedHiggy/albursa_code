@@ -1,9 +1,212 @@
 .vendor-mails {
     .vendor-content {
         .vendor-setting-content {
+            .dropdown-menu {
+                padding: 0;
+                width: 293px;
+                border: none;
+                background-color: #F8F8F8;
+                box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.25);
+                .list-style {
+                    padding: 10px 15px 0px 15px;
+                    .list {
+                        padding: 15px 0;
+                        .drop-btn {
+                            padding-left: 0;
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: #505050;
+                            img {
+                                margin-right: 20px;
+                            }
+                        }
+                        .delete-mail {
+                            color: #FF3B30;
+                        }
+                        border-bottom: 1.2px solid rgba(80, 80, 80, 0.26);
+                        &:last-child {
+                            border: none;
+                        }
+                    }
+                }
+            }
+            .vendor-mail-desc {
+                .header {
+                    border-bottom: 1px solid #D2D2D2;
+                    .title {
+                        font-weight: bold;
+                        font-size: 18px;
+                        text-transform: lowercase;
+                        color: #000000;
+                        button {
+                            background-color: transparent;
+                            border: none;
+                            margin-right: 20px;
+                            &:focus {
+                                box-shadow: none;
+                                outline: none;
+                            }
+                        }
+                    }
+                    .sender-detials {
+                        padding: 5px 0 0 60px;
+                        display: flex;
+                        justify-content: space-between;
+                        .sub-title {
+                            .content {
+                                font-weight: 600;
+                                font-size: 16px;
+                                text-transform: capitalize;
+                                color: #242424;
+                                span {
+                                    color: #505050;
+                                }
+                            }
+                        }
+                        .time {
+                            span {
+                                font-weight: 600;
+                                font-size: 16px;
+                                color: #242424;
+                            }
+                            button {
+                                background-color: transparent;
+                                border: none;
+                                margin-right: 20px;
+                                &:focus {
+                                    box-shadow: none;
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .mail-content {
+                    height: 400px;
+                    padding: 30px 20px;
+                    .title {
+                        font-weight: 500;
+                        font-size: 20px;
+                        color: rgba(0, 0, 0, 0.67);
+                    }
+                }
+                .mail-sender {
+                    padding: 20px;
+                    .title {
+                        color: #242424;
+                        font-size: 16px;
+                        .name {
+                            font-weight: 600;
+                            font-size: 18px;
+                            text-transform: capitalize;
+                        }
+                        .sender-mail,
+                        .num {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
             .vendor-tabs-content {
                 width: 100%;
                 .div-tab {
+                    .embty-mails {
+                        width: 50%;
+                        margin: 0 auto;
+                        text-align: center;
+                        padding: 50px 0;
+                        .img-embty {
+                            width: 253.63px;
+                            height: 241.37px;
+                            margin: 0 auto;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .add-product-sec {
+                            .title {
+                                padding: 10px 0 5px 0;
+                                b {
+                                    color: #242424;
+                                }
+                                font-size: 18px;
+                                line-height: 21px;
+                                text-align: center;
+                                color: #505050;
+                            }
+                            .add-product {
+                                display: block;
+                                width: 180px;
+                                height: 48px;
+                                text-decoration: none;
+                                font-weight: 600;
+                                font-size: 16px;
+                                text-transform: capitalize;
+                                color: #FFFFFF;
+                                background-color: #EAA93F;
+                                margin: 0 auto;
+                                line-height: 48px;
+                            }
+                        }
+                    }
+                    .header-mails {
+                        padding-bottom: 40px;
+                        .search-mail-box {
+                            .form-group {
+                                position: relative;
+                                width: 50%;
+                                .form-control {
+                                    width: 100%;
+                                }
+                                .submit-search {
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    height: 100%;
+                                    width: 15%;
+                                    background-color: #EAA93F;
+                                    border: none;
+                                    &:hover {
+                                        box-shadow: none;
+                                        outline: none;
+                                    }
+                                }
+                            }
+                        }
+                        .list-style {
+                            margin: 0;
+                            padding: 0;
+                            display: flex;
+                            justify-content: flex-end;
+                            .list {
+                                padding: 5px;
+                                .numbers-of-mails {
+                                    background-color: #EAA93F;
+                                    display: block;
+                                    width: 30px;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    color: #ffffff;
+                                    border-radius: 50%;
+                                }
+                                button {
+                                    border: none;
+                                    background-color: transparent;
+                                    span {
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        color: #505050;
+                                    }
+                                    &:focus {
+                                        box-shadow: none;
+                                        outline: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
                     table {
                         margin: 0;
                         tbody {
@@ -28,35 +231,6 @@
                                             &:focus {
                                                 box-shadow: none;
                                                 outline: none;
-                                            }
-                                        }
-                                        .dropdown-menu {
-                                            padding: 0;
-                                            width: 293px;
-                                            border: none;
-                                            background-color: #F8F8F8;
-                                            box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.25);
-                                            .list-style {
-                                                padding: 10px 15px 0px 15px;
-                                                .list {
-                                                    padding: 15px 0;
-                                                    .drop-btn {
-                                                        padding-left: 0;
-                                                        font-weight: 500;
-                                                        font-size: 14px;
-                                                        color: #505050;
-                                                        img {
-                                                            margin-right: 20px;
-                                                        }
-                                                    }
-                                                    .delete-mail {
-                                                        color: #FF3B30;
-                                                    }
-                                                    border-bottom: 1.2px solid rgba(80, 80, 80, 0.26);
-                                                    &:last-child {
-                                                        border: none;
-                                                    }
-                                                }
                                             }
                                         }
                                     }
@@ -128,6 +302,52 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.delete-single-mail,
+.delete-all-mail {
+    .modal-header {
+        border: none;
+    }
+    .modal-body {
+        text-align: center;
+        .img-model {
+            width: 50.4px;
+            height: 61.71px;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .title {
+            padding: 5px 0;
+            font-weight: bold;
+            font-size: 18px;
+            color: #242424;
+        }
+        form {
+            button {
+                margin: 0 15px;
+                border: none;
+                width: 150px;
+                height: 40px;
+                font-weight: 600;
+                font-size: 16px;
+                color: #FFFFFF;
+                &:focus {
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+            .delete-single-mail {
+                background-color: #FF3B30;
+            }
+            .cancel-single-mail {
+                background-color: #EAA93F;
             }
         }
     }

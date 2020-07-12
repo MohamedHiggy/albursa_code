@@ -5270,8 +5270,201 @@ ______________________________________________________*/
     width: 50% !important;
   }
 }
+.vendor-mails .vendor-content .vendor-setting-content .dropdown-menu {
+  padding: 0;
+  width: 293px;
+  border: none;
+  background-color: #F8F8F8;
+  box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.vendor-mails .vendor-content .vendor-setting-content .dropdown-menu .list-style {
+  padding: 10px 15px 0px 15px;
+}
+.vendor-mails .vendor-content .vendor-setting-content .dropdown-menu .list-style .list {
+  padding: 15px 0;
+  border-bottom: 1.2px solid rgba(80, 80, 80, 0.26);
+}
+.vendor-mails .vendor-content .vendor-setting-content .dropdown-menu .list-style .list .drop-btn {
+  padding-left: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #505050;
+}
+.vendor-mails .vendor-content .vendor-setting-content .dropdown-menu .list-style .list .drop-btn img {
+  margin-right: 20px;
+}
+.vendor-mails .vendor-content .vendor-setting-content .dropdown-menu .list-style .list .delete-mail {
+  color: #FF3B30;
+}
+.vendor-mails .vendor-content .vendor-setting-content .dropdown-menu .list-style .list:last-child {
+  border: none;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .header {
+  border-bottom: 1px solid #D2D2D2;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .header .title {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: lowercase;
+  color: #000000;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .header .title button {
+  background-color: transparent;
+  border: none;
+  margin-right: 20px;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .header .title button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .header .sender-detials {
+  padding: 5px 0 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .header .sender-detials .sub-title .content {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #242424;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .header .sender-detials .sub-title .content span {
+  color: #505050;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .header .sender-detials .time span {
+  font-weight: 600;
+  font-size: 16px;
+  color: #242424;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .header .sender-detials .time button {
+  background-color: transparent;
+  border: none;
+  margin-right: 20px;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .header .sender-detials .time button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .mail-content {
+  height: 400px;
+  padding: 30px 20px;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .mail-content .title {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.67);
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .mail-sender {
+  padding: 20px;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .mail-sender .title {
+  color: #242424;
+  font-size: 16px;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .mail-sender .title .name {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .mail-sender .title .sender-mail,
+.vendor-mails .vendor-content .vendor-setting-content .vendor-mail-desc .mail-sender .title .num {
+  font-weight: normal;
+}
 .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content {
   width: 100%;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .embty-mails {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .embty-mails .img-embty {
+  width: 253.63px;
+  height: 241.37px;
+  margin: 0 auto;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .embty-mails .img-embty img {
+  width: 100%;
+  height: 100%;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .embty-mails .add-product-sec .title {
+  padding: 10px 0 5px 0;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #505050;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .embty-mails .add-product-sec .title b {
+  color: #242424;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .embty-mails .add-product-sec .add-product {
+  display: block;
+  width: 180px;
+  height: 48px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  background-color: #EAA93F;
+  margin: 0 auto;
+  line-height: 48px;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .header-mails {
+  padding-bottom: 40px;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .header-mails .search-mail-box .form-group {
+  position: relative;
+  width: 50%;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .header-mails .search-mail-box .form-group .form-control {
+  width: 100%;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .header-mails .search-mail-box .form-group .submit-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 15%;
+  background-color: #EAA93F;
+  border: none;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .header-mails .search-mail-box .form-group .submit-search:hover {
+  box-shadow: none;
+  outline: none;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .header-mails .list-style {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .header-mails .list-style .list {
+  padding: 5px;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .header-mails .list-style .list .numbers-of-mails {
+  background-color: #EAA93F;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 50%;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .header-mails .list-style .list button {
+  border: none;
+  background-color: transparent;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .header-mails .list-style .list button span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #505050;
+}
+.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab .header-mails .list-style .list button:focus {
+  box-shadow: none;
+  outline: none;
 }
 .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table {
   margin: 0;
@@ -5302,35 +5495,6 @@ ______________________________________________________*/
 .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .btn-group .btn:focus {
   box-shadow: none;
   outline: none;
-}
-.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .btn-group .dropdown-menu {
-  padding: 0;
-  width: 293px;
-  border: none;
-  background-color: #F8F8F8;
-  box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.25);
-}
-.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .btn-group .dropdown-menu .list-style {
-  padding: 10px 15px 0px 15px;
-}
-.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .btn-group .dropdown-menu .list-style .list {
-  padding: 15px 0;
-  border-bottom: 1.2px solid rgba(80, 80, 80, 0.26);
-}
-.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .btn-group .dropdown-menu .list-style .list .drop-btn {
-  padding-left: 0;
-  font-weight: 500;
-  font-size: 14px;
-  color: #505050;
-}
-.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .btn-group .dropdown-menu .list-style .list .drop-btn img {
-  margin-right: 20px;
-}
-.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .btn-group .dropdown-menu .list-style .list .delete-mail {
-  color: #FF3B30;
-}
-.vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td .btn-group .dropdown-menu .list-style .list:last-child {
-  border: none;
 }
 .vendor-mails .vendor-content .vendor-setting-content .vendor-tabs-content .div-tab table tbody tr td a {
   font-weight: bold;
@@ -5389,6 +5553,56 @@ ______________________________________________________*/
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.delete-single-mail .modal-header,
+.delete-all-mail .modal-header {
+  border: none;
+}
+.delete-single-mail .modal-body,
+.delete-all-mail .modal-body {
+  text-align: center;
+}
+.delete-single-mail .modal-body .img-model,
+.delete-all-mail .modal-body .img-model {
+  width: 50.4px;
+  height: 61.71px;
+  margin: 0 auto;
+}
+.delete-single-mail .modal-body .img-model img,
+.delete-all-mail .modal-body .img-model img {
+  width: 100%;
+  height: 100%;
+}
+.delete-single-mail .modal-body .title,
+.delete-all-mail .modal-body .title {
+  padding: 5px 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: #242424;
+}
+.delete-single-mail .modal-body form button,
+.delete-all-mail .modal-body form button {
+  margin: 0 15px;
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.delete-single-mail .modal-body form button:focus,
+.delete-all-mail .modal-body form button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.delete-single-mail .modal-body form .delete-single-mail,
+.delete-all-mail .modal-body form .delete-single-mail {
+  background-color: #FF3B30;
+}
+.delete-single-mail .modal-body form .cancel-single-mail,
+.delete-all-mail .modal-body form .cancel-single-mail {
+  background-color: #EAA93F;
 }
 
 @media screen and (max-width: 600px) {
