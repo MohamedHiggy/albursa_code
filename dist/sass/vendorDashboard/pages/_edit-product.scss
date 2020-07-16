@@ -1,0 +1,55 @@
+.add-product {
+    .vendor-content {
+        .vendor-setting-content {
+            .add-product-content {
+                form {
+                    .edit-header {
+                        .title {
+                            font-weight: 600;
+                            font-size: 24px;
+                            color: #000000;
+                        }
+                        padding: 10px 40px;
+                        width: 60%;
+                        display: flex;
+                        justify-content: space-between;
+                        .right-content {
+                            button {
+                                border: none;
+                                margin: 0 15px;
+                                font-weight: 500;
+                                font-size: 16px;
+                                background-color: transparent;
+                                &:focus {
+                                    box-shadow: none;
+                                    outline: none;
+                                }
+                            }
+                            .btn-product {
+                                color: #FF3B30;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .add-product {
+        .vendor-content {
+            .vendor-setting-content {
+                .add-product-content {
+                    form {
+                        .edit-header {
+                            text-align: center;
+                            width: 100% !important;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

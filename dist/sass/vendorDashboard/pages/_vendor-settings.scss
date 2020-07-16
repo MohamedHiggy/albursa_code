@@ -4,6 +4,71 @@
         .vendor-setting-content {
             height: 100%;
             padding-top: 100px;
+            .change-plan {
+                .title {
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    color: #242424;
+                }
+                .submit-change {
+                    width: 200px;
+                    border: none;
+                    height: 40px;
+                    background-color: #EAA93F;
+                    color: #ffffff;
+                    font-weight: 600;
+                    font-size: 16px;
+                    &:focus {
+                        box-shadow: none;
+                        outline: none;
+                    }
+                }
+                small {
+                    font-weight: normal;
+                    font-size: 14px;
+                    color: #414141;
+                    margin-top: 10px;
+                    display: block;
+                }
+                .change-content {
+                    .list-style-prices {
+                        padding: 0;
+                        display: flex;
+                        .list {
+                            .box {
+                                margin: 0 10px;
+                                text-align: center;
+                                position: relative;
+                                border: 1px solid #c4c4c4;
+                                width: 222px;
+                                height: 90px;
+                                cursor: pointer;
+                                .radio {
+                                    position: absolute !important;
+                                    top: 10px;
+                                    left: 10px;
+                                    clip: auto !important;
+                                }
+                                .title {
+                                    padding: 0;
+                                    .price {
+                                        font-size: 22px;
+                                        font-weight: bold;
+                                        color: #000000;
+                                        margin: 0;
+                                    }
+                                    .text {
+                                        font-size: 16px;
+                                        font-weight: normal;
+                                        color: #707070;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             .vendor-tabs {
                 width: 50%;
                 .list-style {
@@ -299,6 +364,16 @@
 }
 
 @media screen and (max-width: 700px) {
+    .change-content {
+        width: 100% !important;
+        text-align: center;
+        .list-style-prices {
+            display: block !important;
+            .list {
+                margin: 15px 0;
+            }
+        }
+    }
     .vendor-tabs-content {
         .div-tab {
             .account-settings {
