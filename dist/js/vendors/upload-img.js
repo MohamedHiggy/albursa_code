@@ -1,33 +1,27 @@
-/**
- * CUSTOM FILE INPUTS FOR IMAGES
- *
- * Version: 1.0.0
- *
- * Custom file inputs with image preview and 
- * image file name on selection.
- */
-$('input[type="file"]').each(function() {
-    // Refs
-    var $file = $(this),
-        $label = $file.next('label'),
-        $labelText = $label.find('span'),
-        labelDefault = $labelText.text();
+$(".imgAdd").click(function() {
+    $(this).closest(".row").find('.imgAdd').before('<div class="col-sm-2 imgUp"><div class="imagePreview"></div><label class="btn btn-primary">Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width:0px;height:0px;overflow:hidden;"></label><i class="fa fa-times del"></i></div>');
+});
 
-    // When a new file is selected
-    $file.on('change', function(event) {
-        var fileName = $file.val().split('\\').pop(),
-            tmppath = URL.createObjectURL(event.target.files[0]);
-        //Check successfully selection
-        if (fileName) {
-            $label
-                .addClass('file-ok')
-                .css('background-image', 'url(' + tmppath + ')');
-            $labelText.text(fileName);
-        } else {
-            $label.removeClass('file-ok');
-            $labelText.text(labelDefault);
+$(document).on("click", "i.del", function() {
+    $(this).parent().remove();
+});
+
+
+$(function() {
+    $(document).on("change", ".uploadFile", function() {
+        var uploadFile = $(this);
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+        if (/^image/.test(files[0].type)) { // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+
+            reader.onloadend = function() { // set image data as background of div
+                //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+                uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url(" + this.result + ")");
+            }
         }
-    });
 
-    // End loop of file input elements  
+    });
 });

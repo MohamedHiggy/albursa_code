@@ -10,7 +10,7 @@
                             color: #000000;
                         }
                         padding: 10px 40px;
-                        width: 60%;
+                        width: 100%;
                         display: flex;
                         justify-content: space-between;
                         .right-content {
@@ -43,9 +43,26 @@
                 .add-product-content {
                     form {
                         .edit-header {
-                            text-align: center;
+                            text-align: left !important;
                             width: 100% !important;
                             display: block;
+                            overflow-wrap: break-word;
+                            .title {
+                                font-size: 18px;
+                                width: 100% !important;
+                            }
+                            button {
+                                border: 1px solid !important;
+                                padding: 5px;
+                                width: 100%;
+                            }
+                            .btn-product {
+                                margin-bottom: 10px !important;
+                            }
+                        }
+                        .btn-post {
+                            margin: 5px 0 !important;
+                            width: 100%;
                         }
                     }
                 }

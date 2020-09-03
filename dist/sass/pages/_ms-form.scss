@@ -7,6 +7,7 @@
                 width: 900px;
                 position: relative;
                 .progressbar {
+                    padding: 0;
                     margin-bottom: 30px;
                     overflow: hidden;
                     width: 100%;
@@ -147,6 +148,11 @@
                                 }
                             }
                         }
+                        .new-Payment {
+                            font-weight: normal;
+                            font-size: 14px;
+                            color: #D5B34F;
+                        }
                         .form-control {
                             border-radius: 0;
                         }
@@ -247,6 +253,23 @@
                         padding: 0;
                         line-height: 3em;
                     }
+                    .list-style-payment {
+                        list-style: none;
+                        text-align: left;
+                        padding: 0;
+                        .card-num {
+                            font-weight: 900;
+                            font-size: 16px;
+                            text-transform: capitalize;
+                            color: #242424;
+                        }
+                        .title {
+                            font-weight: normal;
+                            font-size: 12px;
+                            text-transform: capitalize;
+                            color: #707070;
+                        }
+                    }
                     .payment-type {
                         .title {
                             font-weight: bold;
@@ -275,9 +298,12 @@
                                 height: 90px;
                                 cursor: pointer;
                                 .radio {
-                                    position: absolute;
-                                    top: 10px;
-                                    left: 10px;
+                                    position: absolute !important;
+                                    top: 10px !important;
+                                    left: 10px !important;
+                                }
+                                input[type="radio"] {
+                                    clip: auto !important;
                                 }
                                 .title {
                                     padding: 0;
@@ -306,8 +332,21 @@
     .multi-step-form {
         .bussines-signup {
             .msform {
+                width: 100% !important;
                 .progressbar {
                     width: 100% !important;
+                    .li {
+                        font-size: 10px;
+                    }
+                }
+                fieldset {
+                    padding: 0 !important;
+                    .form-group {
+                        width: 100% !important;
+                        .form-control {
+                            width: 100% !important;
+                        }
+                    }
                 }
             }
         }

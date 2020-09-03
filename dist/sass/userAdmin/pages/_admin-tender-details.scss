@@ -279,3 +279,16 @@
         }
     }
 }
+
+@media screen and (max-width: 1080px) {
+    .model-tender-winner {
+        .inner {
+            width: 100% !important;
+            width: 681px;
+            left: 0%;
+            position: fixed;
+            margin-left: 0px;
+            top: 20%;
+        }
+    }
+}

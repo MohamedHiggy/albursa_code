@@ -282,8 +282,8 @@
                     <li class="main-list"><a href="signup.html">Register</a></li>
                     <li class="main-list">
                         <div class="dropdown-search">
-                            <button class="drop-search">Search</button>
-                            <div class="search-box">
+                            <button class="drop-search" onclick="hiddenfun()">Search</button>
+                            <div class="search-box" id="search-box">
                                 <form class="form-inline">
                                     <input class="form-control input-focus" type="search" placeholder="Search" aria-label="Search">
                                 </form>
@@ -293,13 +293,14 @@
                 </ul>
             </div>
         </div>
+
         <!--_______________Header_______________-->
         <div class="main-header">
             <div class="container-fluid">
                 <div class="col-lg-12 col-md-12 col-xs-12">
                     <div class="slider" id="wrapper">
                         <div class="slide">
-                            <img src="dist/imgs/state-desc/1.png" alt="" />
+                            <img src="dist/imgs/1.png" alt="" />
                         </div>
                         <div class="slide">
                             <img src="dist/imgs/state-desc/2.jpg" alt="" />
@@ -333,7 +334,7 @@
                                             <img class="card-img-top" src="dist/imgs/materials/1.png" alt="Card image cap" />
                                             <div class="card-body">
                                                 <p class="card-text">
-                                                    W156 Model 5ton chinese wheel loader compare to...
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis commodi id quo. Quibusdam.
                                                 </p>
                                                 <h3 class="card-title">
                                                     <span class="dollar">$</span> 4000
@@ -717,7 +718,6 @@
                             <div class="boxes">
                                 <ul class="list-style list-style-resp">
                                     <li class="main-list">
-
                                         <a href="tender-apply.html" class="anchor-card">
                                             <h3 class="title">Residential Tower</h3>
                                             <div class="time"><span>Posted</span>2 Hours ago</div>
@@ -828,7 +828,7 @@
                             <div class="card-body">
                                 <p class="card-title">Theater & Dance</p>
                                 <p class="card-text">
-                                    New York is one of the world’s great cities for the arts — but the damage from the pandemic is proving to be catastrophic
+                                    New York is one of the world’s great cities for the arts — but the damage from the pandemic is proving to be catastrophicNew York is one of the world’s great cities for the arts — but the damage from the pandemic is proving to be catastrophic
                                 </p>
                             </div>
                         </div>
@@ -1009,6 +1009,17 @@
     <script src="dist/js/vendors/slick.min.js"></script>
     <script src="dist/js/vendors/bootstrap.bundle.min.js"></script>
     <script src="dist/js/main.js"></script>
+
+    <script>
+        function hiddenfun() {
+            var x = document.getElementById("search-box");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

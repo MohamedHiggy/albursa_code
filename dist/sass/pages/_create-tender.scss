@@ -101,3 +101,18 @@
         }
     }
 }
+
+@media screen and (max-width: 985px) {
+    .tenders-form {
+        .multi-step-form {
+            width: 100% !important;
+            .msform {
+                .header {
+                    width: 80% !important;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

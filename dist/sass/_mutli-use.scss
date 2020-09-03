@@ -118,8 +118,10 @@ label.star-item:hover~.star-item {
 }
 
 .card {
-    height: 300px;
     width: 100% !important;
+    .card-img-top {
+        max-height: 200px;
+    }
     .theater {
         position: absolute;
         top: 10px;
@@ -134,6 +136,7 @@ label.star-item:hover~.star-item {
         }
     }
     .card-body {
+        height: 150px !important;
         padding: 8px;
         border: none;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
@@ -367,14 +370,17 @@ table {
 }
 
 .slider {
-    width: 100%;
     overflow: hidden;
     height: 400px;
     position: relative;
     .slide {
         img {
-            width: 100% !important;
-            height: 100% !important;
+            object-fit: cover;
+            width: 100%;
+            height: 40vh;
+            image-rendering: auto;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated;
         }
         .sale {
             position: absolute;
@@ -460,12 +466,11 @@ table {
 }
 
 .block-alert {
-    display: none;
+    display: block;
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: rgba(187, 187, 187, 0.98);
     top: 0;
     left: 0;
     .block-alert-desc {
@@ -513,6 +518,15 @@ table {
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .block-alert {
+        .block-alert-desc {
+            height: 400px;
+            padding: 60px 40px 40px 40px;
         }
     }
 }

@@ -229,6 +229,16 @@
     }
 }
 
+@media screen and (max-width: 985px) {
+    .materials-rating {
+        .header-rate {
+            .content {
+                display: block !important;
+            }
+        }
+    }
+}
+
 .materials-rating {
     .header-rate {
         .title {
@@ -387,6 +397,25 @@
             padding: 15px;
             width: 50%;
             box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 8px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .materials-rating {
+        .header-rate {
+            .content {
+                display: block !important;
+                text-align: center;
+                .show-rates {
+                    width: 100%;
+                }
+            }
+        }
+        .rate-product {
+            .pick-comment {
+                width: 100% !important;
+            }
         }
     }
 }

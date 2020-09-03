@@ -62,13 +62,15 @@
                         }
                         .features {
                             padding: 15px 0px;
+                            display: flex;
+                            flex-wrap: wrap;
                             span {
                                 border: 1px solid #505050;
                                 color: #505050;
-                                margin: 0 15px;
                                 font-weight: 600;
                                 font-size: 14px;
                                 padding: 5px 15px;
+                                margin: 5px 10px;
                             }
                         }
                     }
@@ -251,7 +253,6 @@
                             flex-wrap: wrap;
                         }
                         .features {
-                            display: block !important;
                             span {
                                 margin-bottom: 5px;
                             }

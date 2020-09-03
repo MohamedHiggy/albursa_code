@@ -19,10 +19,12 @@ $(document).ready(function() {
                                         <img src="../dist/icons/adminIcons/down-arrow.svg" alt="" class="select-arrow" />
                                     </div>
                                     <div class="form-group col-lg-12 col-md-12 col-xs-12">
-                                        <input type="text" class="form-control input-focus" name='tags' id="available-items" placeholder="Available items" />
+                                        <input type="text" class="form-control input-focus tags` + x + `"  id="available-items" placeholder="Available items" />
                                     </div>
                                     <button class="btn btn-danger btn-sm mb-2 ml-2 delete">Delete</button>
                                 </div>`); //add input box
+            var ele2 = $(`.tags` + x + ``);
+            tagify = new Tagify(ele2[0]);
         } else {
             alert("You Reached the limits");
         }

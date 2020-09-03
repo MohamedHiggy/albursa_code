@@ -63,6 +63,7 @@
                 }
                 .list-style {
                     margin: 0;
+                    justify-content: space-between;
                     display: flex;
                     padding: 5px 0;
                     .list {
@@ -250,6 +251,15 @@
                     .place {
                         font-size: 14px;
                         margin-bottom: 5px;
+                    }
+                }
+                .overview {
+                    .list-style {
+                        width: 100%;
+                        flex-wrap: wrap !important;
+                        .list {
+                            margin: 0;
+                        }
                     }
                 }
                 .amenities {
