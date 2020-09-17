@@ -1,30 +1,28 @@
-body {
-    background-color: #333333;
+.bussines-signup .header a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
 }
 
-.index {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    text-align: center;
+.bussines-signup .header a:hover {
+    text-decoration: none !important;
 }
 
-.list-style {
-    padding: 0;
+.payment-style {
     list-style: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 65%;
+    padding: 0;
 }
 
-.list-style .list {
-    margin-bottom: 15px;
-}
-
-.list-style .list a {
-    color: #ffffff;
+.payment-style .list .title {
     font-weight: bold;
-    font-size: 30px;
+}
+
+.btn-sm {
+    background-color: #eaa93f;
+    border: none;
+}
+
+.btn-sm:active {
+    outline: none;
+    box-shadow: none;
 }

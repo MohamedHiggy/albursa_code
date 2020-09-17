@@ -63,6 +63,38 @@
                 .fieldset-four {
                     padding: 0 150px;
                 }
+                .fieldset-four {
+                    #billing_form {
+                        .card {
+                            margin-bottom: 20px;
+                            .card-header {
+                                font-weight: bold !important;
+                                border: none !important;
+                            }
+                            #checkout-form {
+                                padding: 20px;
+                                #coupon-check {
+                                    background-color: #eaa93f !important;
+                                    border: none !important;
+                                }
+                                .card-body {
+                                    margin-top: 20px !important;
+                                    box-shadow: none !important;
+                                    .StripeElement {
+                                        margin-top: 10px !important;
+                                    }
+                                    #card-button {
+                                        background-color: #eaa93f !important;
+                                        border: none !important;
+                                        &:hover {
+                                            background-color: #b98229 !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
                 fieldset {
                     text-align: center;
                     border: 0 none;
@@ -288,6 +320,7 @@
                         padding: 0;
                         display: flex;
                         justify-content: space-evenly;
+                        flex-wrap: wrap;
                         .list {
                             .box {
                                 margin: 0 10px;

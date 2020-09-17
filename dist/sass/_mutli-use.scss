@@ -3,6 +3,11 @@ html {
     font-family: "San Francisco", Helvetica, Arial, san-serif;
 }
 
+p {
+    text-align: justify;
+    text-justify: auto;
+}
+
 .list-style {
     list-style: none;
 }
@@ -121,6 +126,7 @@ label.star-item:hover~.star-item {
     width: 100% !important;
     .card-img-top {
         max-height: 200px;
+        height: 200px;
     }
     .theater {
         position: absolute;
@@ -136,7 +142,8 @@ label.star-item:hover~.star-item {
         }
     }
     .card-body {
-        height: 150px !important;
+        height: 160px;
+        max-height: 200px;
         padding: 8px;
         border: none;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
@@ -172,6 +179,14 @@ label.star-item:hover~.star-item {
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        .card-body {
+            height: 180px !important;
         }
     }
 }
@@ -248,19 +263,8 @@ label.star-item:hover~.star-item {
     }
     .ads {
         width: 100%;
-        overflow: hidden;
         position: relative;
-        height: 100%;
-        .images-ad {
-            padding: 15px 0;
-            width: 300px;
-            height: 600px;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
+        height: auto;
     }
 }
 
@@ -370,16 +374,16 @@ table {
 }
 
 .slider {
+    border: 1px solid;
     overflow: hidden;
-    height: 400px;
+    height: 500px;
     position: relative;
     .slide {
+        height: 100% !important;
         img {
-            object-fit: cover;
-            width: 100%;
-            height: 40vh;
-            image-rendering: auto;
-            image-rendering: crisp-edges;
+            object-fit: fill;
+            max-width: 100%;
+            height: 100%;
             image-rendering: pixelated;
         }
         .sale {
@@ -439,6 +443,21 @@ table {
     }
 }
 
+@media screen and (min-width: 1905px) {
+    .slider {
+        .slide {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.slider-2 {
+    border: 1px solid red;
+    height: 534px;
+}
+
 .share-model {
     .modal-dialog {
         .modal-content {
@@ -473,6 +492,7 @@ table {
     z-index: 9999;
     top: 0;
     left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
     .block-alert-desc {
         padding: 60px 40px 0 40px;
         position: absolute;

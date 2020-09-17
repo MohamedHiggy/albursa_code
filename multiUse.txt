@@ -1,2 +1,28 @@
-sass --watch dist/sass/main.scss:dist/css/main.css
+sass --watch dist/sass/main.scss:dist/css/main.css --style compressed
 
+
+https://www.albursa.com/category/materials
+
+.side-filter {
+    height: 30%;
+    overflow: auto;
+}
+
+.show-filter {
+    border: none;
+    background-color: #eaa93f;
+    padding: 10px;
+    color: #fff;
+}
+
+mb-3 fl class esmo category-box
+
+ht4el f sf7t 
+https://www.albursa.com/vendor/billing el br ele abl el resume
+
+
+fl navbar ele fl responsive mesh m7tota f li y3ne el ul mesh m7tota f li 
+
+
+slider top and bottom 1821 * 500
+slider side 429 * 534
