@@ -1,5 +1,9 @@
 .about-page {
     .about {
+        p {
+            text-align: justify;
+            text-justify: auto;
+        }
         .about-header {
             padding: 40px 0 60px 0;
             background-color: #F2DA7C;

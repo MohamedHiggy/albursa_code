@@ -1,0 +1,116 @@
+.bussines-signup .header a {
+    text-decoration: none !important;
+    cursor: pointer !important;
+    color: #333333 !important;
+}
+
+.bussines-signup .header a:hover {
+    text-decoration: none !important;
+}
+
+.payment-style {
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+.payment-style .list .title {
+    font-weight: bold !important;
+}
+
+.btn-sm {
+    background-color: #eaa93f !important;
+    border: none !important;
+}
+
+.btn-sm:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.chatter_sidebar ul.nav.nav-pills.nav-stacked {
+    border: 1px solid #f1f1f1;
+    padding: 5px 10px;
+    display: block;
+    list-style: none;
+    height: 500px;
+    overflow: auto;
+}
+
+.chatter_sidebar ul.nav.nav-pills.nav-stacked li {
+    margin: 10px 0;
+}
+
+.chatter_sidebar ul.nav.nav-pills.nav-stacked li a {
+    color: #333333;
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    .chatter_cat {
+        display: block !important;
+        margin-top: 10px;
+        max-width: 250px !important;
+        word-break: break-all;
+    }
+    .chatter_middle {
+        margin-left: 0 !important;
+    }
+    .chatter_posts .chatter_middle .chatter_body img {
+        width: 100% !important;
+    }
+}
+
+.chatter_posts .chatter_middle .chatter_body img {
+    height: auto;
+}
+
+input#accordion_search_bar {
+    margin: 30px 0 !important;
+    padding: 15px !important;
+}
+
+input#accordion_search_bar:focus {
+    border: 1px solid #eaa93f !important;
+}
+
+#accordion_search_bar_container:after {
+    display: none !important;
+}
+
+#chatter.discussion #new_response {
+    padding: 0 !important;
+}
+
+#chatter .chatter_avatar {
+    display: none;
+}
+
+#chatter.discussion #new_response #new_discussion {
+    left: 0px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+}
+
+.search_empty {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+    padding: 10px 0;
+    background-color: #dadada4d;
+    border-radius: 15px;
+}
+
+div#search-result {
+    border: 1px solid #a7a7a7 !important;
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+
+div#search-result ul.pagination {
+    justify-content: center;
+}
+
+div#search-resultul .discussions {
+    margin: 0px 0 35px 0 !important;
+}
